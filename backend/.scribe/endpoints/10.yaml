@@ -1,0 +1,102 @@
+name: 'AI Service'
+description: |-
+
+  Controller for proxying requests to Google's Generative Language API (Gemini).
+  Provides a backend relay for frontend applications to securely access AI features.
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/ai/generate
+    metadata:
+      custom: []
+      groupName: 'AI Service'
+      groupDescription: |-
+
+        Controller for proxying requests to Google's Generative Language API (Gemini).
+        Provides a backend relay for frontend applications to securely access AI features.
+      subgroup: ''
+      subgroupDescription: ''
+      title: "Proxy request to Google's Generative Language API."
+      description: "Relays prompts and configurations to the Gemini API and returns the AI's response."
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      prompt:
+        custom: []
+        name: prompt
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      systemInstruction:
+        custom: []
+        name: systemInstruction
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      model:
+        custom: []
+        name: model
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      images:
+        custom: []
+        name: images
+        description: ''
+        required: false
+        example: null
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      imageConfig:
+        custom: []
+        name: imageConfig
+        description: ''
+        required: false
+        example: null
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      prompt: architecto
+      systemInstruction: architecto
+      model: architecto
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

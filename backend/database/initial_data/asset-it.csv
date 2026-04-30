@@ -1,0 +1,135 @@
+﻿id;kode_asset;type;category;brand;model;serial_number;name;license_key;device;ip_address;location;status;assigned_to;purchase_date;warranty_expiry;expiry_date;delivery_date;created_at;updated_at
+1;3100101007.01;hardware;PC Workstation;DELL;Dell Precision Rack 7910 CTO Base + Monitor Dell P;;;;;;0101010 - Ruang Server;Baik;;2015-09-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+2;3100102001.04;hardware;P.C Unit;DELL;DELL;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2006-11-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+3;3100102001.06;hardware;P.C Unit;DELL;DELL/OPTIPLEK 330;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2008-10-28;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+4;3100102001.10;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+5;3100102001.11;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+6;3100102001.12;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+7;3100102001.15;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+8;3100102001.16;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+9;3100102001.17;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+10;3100102001.18;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+11;3100102001.19;hardware;P.C Unit;Lenovo;Lenovo/ThinkCentre M80;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+12;3100102001.26;hardware;P.C Unit;DELL;Dell/Optiplex;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2013-03-19;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+13;3100102001.27;hardware;P.C Unit;DELL;Dell/Optiplex;;;;;;0101005 - Ruang Perpustakaan;Rusak Ringan;;2013-03-19;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+14;3100102001.28;hardware;P.C Unit;DELL;Dell/ Optilex 3010 DT;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2013-03-18;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+15;3100102001.29;hardware;P.C Unit;DELL;Dell/ Optilex 3010 DT;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2013-03-18;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+16;3100102001.30;hardware;P.C Unit;DELL;Dell OptiPlex 3020 Micro + Monitor Dell E2214H;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2015-09-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+17;3100102001.31;hardware;P.C Unit;DELL;Dell OptiPlex 3020 Micro + Monitor Dell E2214H;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2015-09-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+18;3100102001.33;hardware;P.C Unit;ASUS;ASUS Tower Desktop M32CD;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+19;3100102001.34;hardware;P.C Unit;ACER;Acer TC-860 i7;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+20;3100102001.35;hardware;P.C Unit;ACER;Acer TC-860 i7;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+21;3100102001.36;hardware;P.C Unit;ACER;Acer TC-860 i7;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+22;3100102001.37;hardware;P.C Unit;ACER;Acer TC860 i5;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+23;3100102001.38;hardware;P.C Unit;Lenovo;Lenovo ThinkStation P320;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2018-12-31;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+24;3100102001.40;hardware;P.C Unit;DELL;DELL/OPTILEX 780;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2010-06-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+25;3100102001.41;hardware;P.C Unit;DELL;Dell/ Optilex 3010 DT;;;;;;0101005 - Ruang Perpustakaan;Rusak Berat;;2013-03-18;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+26;3100102001.42;hardware;P.C Unit;DELL;Dell/ Optilex 3010 DT;;;;;;0101005 - Ruang Perpustakaan;Rusak Berat;;2013-03-18;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+27;3100102001.43;hardware;P.C Unit;DELL;Dell/ Optilex 3010 DT;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2013-03-18;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+28;3100102001.44;hardware;P.C Unit;Lenovo;ThinkCentre M720t;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2019-12-09;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+29;3100102001.45;hardware;P.C Unit;Lenovo;ThinkCentre M720t;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2019-12-09;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+30;3100102001.46;hardware;P.C Unit;Lenovo;Lenovo All In One 340 Core I3;;;;;;0101002 - Lobby;Baik;;2020-11-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+31;3100102001.47;hardware;P.C Unit;Lenovo;Lenovo All In One 340 Core I5;;;;;;0101001 - Ruang Kepala Kantor;Baik;;2020-11-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+32;3100102001.48;hardware;P.C Unit;Lenovo;Lenovo All In One 340 Core I5;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2020-11-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+33;3100102001.49;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+34;3100102001.50;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+35;3100102001.51;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+36;3100102001.52;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+37;3100102001.53;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+38;3100102001.54;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101010 - Ruang Server;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+39;3100102001.55;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+40;3100102001.56;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+41;3100102001.57;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+42;3100102001.58;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+43;3100102001.59;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+44;3100102001.60;hardware;P.C Unit;ACER;MB Acer H510M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2021-12-03;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+45;3100102001.61;hardware;P.C Unit;DELL;Dell Optiplex 3020M;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2015-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+46;3100102001.62;hardware;P.C Unit;DELL;Dell Optiplex 3020M;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2015-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+47;3100102001.63;hardware;P.C Unit;DELL;Dell Optiplex 3020M;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2015-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+48;3100102001.64;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+49;3100102001.65;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+50;3100102001.66;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+51;3100102001.67;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+52;3100102001.68;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+53;3100102001.69;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+54;3100102001.70;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+55;3100102001.71;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+56;3100102001.72;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+57;3100102001.73;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101010 - Ruang Server;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+58;3100102001.74;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+59;3100102001.75;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+60;3100102001.76;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+61;3100102001.77;hardware;P.C Unit;AXIOO;AXIOO MYPC PRO L7V;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2022-11-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+62;3100102001.78;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+63;3100102001.79;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+64;3100102001.80;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+65;3100102001.81;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+66;3100102001.82;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+67;3100102001.83;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+68;3100102001.84;hardware;P.C Unit;ACER;Accer Veriton;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2023-11-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+69;3100102002.13;hardware;Lap Top;Lenovo;Lenovo/Thinkpad L412;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+70;3100102002.21;hardware;Lap Top;Lenovo;Lenovo/Thinkpad L412;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2010-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+71;3100102002.23;hardware;Lap Top;Fujitsu;Fujitsu/Lifebook T580;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-04-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+72;3100102002.24;hardware;Lap Top;ASUS;Asus A455LF-WX040D;;;;;;0101014 - Organik;Baik;;2016-03-22;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+73;3100102002.25;hardware;Lap Top;ASUS;Asus A455LF-WX040D;;;;;;0101014 - Organik;Rusak Ringan;;2016-03-22;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+74;3100102002.26;hardware;Lap Top;ASUS;Asus A455LF-WX040D;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2016-03-22;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+75;3100102002.27;hardware;Lap Top;Lenovo;LENOVO/ThinkPad T 420;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2012-06-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+76;3100102002.28;hardware;Lap Top;DELL;Dell 5420;;;;;;0101014 - Organik;Baik;;2021-11-15;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+77;3100102002.29;hardware;Lap Top;DELL;Dell 5420;;;;;;0101014 - Organik;Baik;;2021-11-15;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+78;3100102002.30;hardware;Lap Top;HP;HP 240 G8(365K6PA);;;;;;0101009 - Ruang Arsip;Rusak Ringan;;2021-12-13;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+79;3100102002.31;hardware;Lap Top;ACER;Acer i7-A514;;;;;;0101014 - Organik;Baik;;2021-12-30;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+80;3100102002.32;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+81;3100102002.33;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+82;3100102002.34;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+83;3100102002.35;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+84;3100102002.36;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+85;3100102002.37;hardware;Lap Top;ASUS;Asus ExpertBook BG1408CVA;;;;;;0101014 - Organik;Baik;;2024-12-06;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+86;3100102003.01;hardware;Note Book;TOSHIBA;TOSHIBA SATELITE;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2008-06-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+87;3100102003.02;hardware;Note Book;DELL;Dell Latitude 6410 ATG;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-04-13;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+88;3100102003.03;hardware;Note Book;DELL;Dell/Latitude E6420 ATG;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-09-12;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+89;3100102003.04;hardware;Note Book;DELL;Dell/Latitude E6420 ATG;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-09-12;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+90;3100102003.05;hardware;Note Book;Lenovo;Lenovo/T420 4177;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-09-12;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+91;3100102003.06;hardware;Note Book;Fujitsu;Fujitsu/ SH782;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2013-05-02;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+92;3100102003.08;hardware;Note Book;HP;HP Business Notebook 348 G4;;;;;;0101003 - Ruang Subbagian Umum;Rusak Ringan;;2018-12-31;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+93;3100102008.01;hardware;Ultra Mobile P.C.;Fujitsu;Fujitsu M532;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2013-05-13;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+94;3100202012.01;hardware;Viewer (Proyektor);ACER;ACER XD1150 TRIPOAD;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2008-10-21;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+95;3100202015.01;network;Auto Switch/Data Switch;EDGE;Edge/CorE ES4528V;;;;;;0101010 - Ruang Server;Baik;;2010-12-13;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+96;3100202015.02;network;Auto Switch/Data Switch;D-Link;D-Link DGS-1008A 8 Port Gigabit Desktop;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+97;3100202015.03;network;Auto Switch/Data Switch;D-Link;D-Link DGS-1008A 8 Port Gigabit Desktop;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+98;3100203003.09;hardware;Printer;HP;HP LaserJet Pro M201dw;;;;;;1 - Gudang depan;Rusak Berat;;2015-05-08;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+99;3100203003.10;hardware;Printer;HP;HP LaserJet Pro M201dw;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2015-05-08;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+100;3100203003.12;hardware;Printer;HP;HP Laserjet Pro 1102 Monochrome;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+101;3100203003.13;hardware;Printer;HP;HP Laserjet Pro 1102 Monochrome;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+102;3100203003.14;hardware;Printer;HP;HP Color Laserjet M254MW;;;;;;0101003 - Ruang Subbagian Umum;Rusak Ringan;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+103;3100203003.15;hardware;Printer;EPSON;Epson L1300 Ink Tank A3;;;;;;0101008 - Gudang / R. Dokumen;Rusak Berat;;2018-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+104;3100203003.16;hardware;Printer;EPSON;Epson Printer InkJet L1455;;;;;;1 - Gudang depan;Rusak Berat;;2018-12-19;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+105;3100203003.17;hardware;Printer;HP;Laserjet Enterprise M507dn;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2019-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+106;3100203003.18;hardware;Printer;HP;Laserjet Enterprise M507dn;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2019-12-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+107;3100203003.19;hardware;Printer;EPSON;Printer Epson L-4150;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2020-11-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+108;3100203003.20;hardware;Printer;HP;Printer HP Neverstop 1200;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2020-11-25;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+109;3100203003.21;hardware;Printer;HP;HP Laser MFP 135w;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2021-12-10;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+110;3100203003.22;hardware;Printer;HP;HP Neverstop Laser MFP 120;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2021-12-10;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+111;3100203003.23;hardware;Printer;HP;HP Laserjet Pro 1102 Monochrome;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+112;3100203003.24;hardware;Printer;EPSON;Epson (EcoTank L15160);;;;;;0101006 - Ruang Komputer / IPDS;Rusak Ringan;;2022-12-05;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+113;3100203003.25;hardware;Printer;CANON;Canon MG2570s;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2024-07-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+114;3100203003.26;hardware;Printer;HP;HP 1216;;;;;;0101001 - Ruang Kepala Kantor;Baik;;2024-07-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+115;3100203003.27;hardware;Printer;BROTHER;Bother MFC-T4500DW;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2018-12-10;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+116;3100203003.28;hardware;Printer;EPSON;EPSON ECOTANK L15180 A3 WI-FI DUPLEX MULTI-FUNCTION INK TANK A3;;;;;;0101004 - Ruang Teknis/Katim;Baik;;2025-10-27;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+117;3100203003.29;hardware;Printer;EPSON;Epson L14150;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2025-12-01;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+118;3100203004.01;hardware;Scanner;Fujitsu;FUJITSU/FI-5530C2;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2010-05-05;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+119;3100203004.02;hardware;Scanner;Fujitsu;Fujitsu Image Scanner fi-7260;;;;;;0101009 - Ruang Arsip;Rusak Ringan;;2015-11-27;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+120;3100203004.03;hardware;Scanner;Fujitsu;Fujitsu FID-AFFIU2;;;;;;0101003 - Ruang Subbagian Umum;Baik;;2023-10-26;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+121;3100203007.01;hardware;External;BUFFALO;BUFFALO/HD-HS500U2;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2008-10-28;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+122;3100203007.03;hardware;External;SAMSUNG;Samsung/Slim External DVD Writer;;;;;;0101009 - Ruang Arsip;Rusak Berat;;2011-04-14;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+123;3100203017.01;hardware;External/ Portable Hardisk;TRANSCEND;Transcend Storejet 25H3 2TB;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+124;3100203017.02;hardware;External/ Portable Hardisk;TRANSCEND;Transcend Storejet 25H3 2TB;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+125;3100204001.01;hardware;Server;Fujitsu;Fujitsu/Primergy Rx300 s6;;;;;;0101010 - Ruang Server;Rusak Berat;;2010-12-13;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+126;3100204002.01;network;Router;MIKROTIK;Mikrotik RB-450G;;;;;;0101010 - Ruang Server;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+127;3100204004.02;network;Modem;HUAWEI;Huawei HG8045H;;;;;;0101002 - Lobby Lt 2;Baik;;2023-03-08;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+128;3100204014.01;hardware;Rak Server;INDO RACK;Indo Rack 27U IR9027P;;;;;;0101010 - Ruang Server;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+129;3100204015.01;network;Firewall;DELL;Dell SonicWall TZ 300 Wireless;;;;;;0101009 - Ruang Arsip;Rusak Ringan;;2015-12-29;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+130;3100204023.01;network;Wireless Access Point;Ubiquiti;Ubiquiti UBNT Unifi AP AC PRO (UAP-AC-PRO);;;;;;0101010 - Ruang Server;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+131;3100204023.02;network;Wireless Access Point;Ubiquiti;Ubiquiti UBNT Unifi AP AC PRO (UAP-AC-PRO);;;;;;0101004 - Ruang Teknis/Katim;Baik;;2017-04-04;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+132;3100204023.03;network;Wireless Access Point;LINKSYS;LINKSYS;;;;;;0101010 - Ruang Server;Baik;;2022-11-16;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+133;3100204024.01;network;Switch;DELL;Dell Networking X1018;;;;;;0101006 - Ruang Komputer / IPDS;Baik;;2015-12-28;;;;2025-12-31 15:10:05;2025-12-31 15:10:05
+134;3100204024.02;network;Switch;TPLINK;TPLINK TL-SG1016PE(UN);;;;;;0101009 - Ruang Arsip;Rusak Berat;;2022-11-16;;;;2025-12-31 15:10:05;2025-12-31 15:10:05

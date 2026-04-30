@@ -1,0 +1,1305 @@
+name: 'Nomor Surat Permintaan'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/permintaan
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar surat permintaan dengan pagination dan filtering.'
+      description: |-
+        Endpoint ini mengembalikan daftar surat permintaan dengan kemampuan filtering
+        berdasarkan tahun, tanggal, dan pencarian. Mendukung pagination dan sorting.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 10). Contoh: 10'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      search:
+        custom: []
+        name: search
+        description: "Pencarian berdasarkan 'dari' dan 'perihal'. Contoh: BPS"
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'date Filter berdasarkan tanggal (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Filter berdasarkan tahun (default: tahun saat ini). Contoh: 2024'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      sort_by:
+        custom: []
+        name: sort_by
+        description: 'Kolom untuk sorting (default: tanggal). Contoh: tanggal'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      sort_dir:
+        custom: []
+        name: sort_dir
+        description: 'Arah sorting ASC/DESC (default: DESC). Contoh: DESC'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 16
+      cursor: architecto
+      search: architecto
+      tanggal: architecto
+      tahun: architecto
+      sort_by: architecto
+      sort_dir: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "thn": "2024",
+                "tanggal": "2024-01-15",
+                "nomor": "0001",
+                "no_sisip": null,
+                "tanggal_indo": "15 Januari 2024",
+                "kode_klas": "100",
+                "no_surat": "0001/BPS-100/2024",
+                "dari": "Kepala BPS Kota ABC",
+                "perihal": "Permohonan Data Statistik",
+                "created_by": 1,
+                "created_at": "2024-01-15T00:00:00.000000Z",
+                "updated_at": "2024-01-15T00:00:00.000000Z"
+              }
+            ],
+            "meta": {
+              "per_page": 10,
+              "has_more": false,
+              "count": 1
+            },
+            "links": {
+              "next_cursor": null,
+              "next_page_url": null,
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://localhost:8000/api/kantor/nomor-surat/permintaan"
+            },
+            "pagination_info": {
+              "total_page": 1,
+              "total_records": 1
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/permintaan/dates
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar tanggal yang tersedia untuk filtering.'
+      description: |-
+        Endpoint ini mengembalikan daftar tanggal yang tersedia dalam database
+        untuk filtering data surat permintaan berdasarkan tahun.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Filter berdasarkan tahun (default: tahun saat ini). Contoh: 2024'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      tahun: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Dates retrieved successfully",
+            "data": [
+              "2024-01-15",
+              "2024-01-20",
+              "2024-02-01"
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/permintaan/years
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar tahun yang tersedia untuk filtering.'
+      description: |-
+        Endpoint ini mengembalikan daftar tahun yang tersedia dalam database
+        untuk filtering data surat permintaan.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Years retrieved successfully",
+            "data": [
+              "2022",
+              "2023",
+              "2024"
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/permintaan/klasifikasi
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar klasifikasi surat untuk dropdown.'
+      description: |-
+        Endpoint ini mengembalikan daftar klasifikasi surat yang tersedia
+        untuk digunakan pada dropdown pilihan klasifikasi surat.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Klasifikasi retrieved successfully",
+            "data": [
+              {
+                "kode": "100",
+                "keterangan": "Organisasi"
+              },
+              {
+                "kode": "200",
+                "keterangan": "Tata Usaha"
+              },
+              {
+                "kode": "300",
+                "keterangan": "Kepegawaian"
+              }
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/permintaan/form-options
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan options untuk form (klasifikasi dan nomor baru).'
+      description: |-
+        endpoint ini mengembalikan data klasifikasi dan nomor surat baru (max + 1)
+        untuk tahun saat ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Form options retrieved successfully",
+            "data": {
+              "klasifikasi": [
+                { "kode": "100", "keterangan": "Organisasi" }
+              ],
+              "nomor_baru": 1
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/surat/permintaan/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan detail surat permintaan berdasarkan ID.'
+      description: |-
+        Endpoint ini mengembalikan detail lengkap surat permintaan berdasarkan ID yang diberikan.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat permintaan. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": {
+              "id": 1,
+              "thn": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "no_surat": "0001/BPS-100/2024",
+              "dari": "Kepala BPS Kota ABC",
+              "perihal": "Permohonan Data Statistik",
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Surat permintaan not found",
+            "errors": "No query results for model [App\\Models\\SuratPermintaan] 999"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/surat/permintaan
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Membuat surat permintaan baru dengan nomor otomatis.'
+      description: |-
+        Endpoint ini membuat surat permintaan baru dengan sistem penomoran otomatis.
+        Nomor akan diformat sesuai dengan template yang ada di settings.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      thn:
+        custom: []
+        name: thn
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nomor:
+        custom: []
+        name: nomor
+        description: 'Nomor urut surat. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi surat. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      dari:
+        custom: []
+        name: dari
+        description: 'Pengirim surat. Contoh: Kepala BPS Kota ABC'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      perihal:
+        custom: []
+        name: perihal
+        description: 'Perihal surat. Contoh: Permohonan Data Statistik'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      no_sisip:
+        custom: []
+        name: no_sisip
+        description: 'Nomor sisip (opsional). Contoh: 1'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      thn: architecto
+      tanggal: architecto
+      nomor: architecto
+      kode_klas: architecto
+      dari: architecto
+      perihal: architecto
+      no_sisip: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/BPS-100/2024 berhasil disimpan",
+            "data": {
+              "id": 1,
+              "thn": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "no_surat": "0001/BPS-100/2024",
+              "dari": "Kepala BPS Kota ABC",
+              "perihal": "Permohonan Data Statistik",
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "thn": ["Field thn wajib diisi."],
+              "tanggal": ["Field tanggal wajib diisi."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to create surat permintaan",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/surat/permintaan/sisip
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Membuat surat permintaan sisip (insert) dengan nomor di antara nomor yang sudah ada.'
+      description: |-
+        Endpoint ini membuat surat permintaan dengan nomor sisip yang disisipkan di antara
+        nomor yang sudah ada. Nomor sisip akan ditambahkan setelah nomor utama (contoh: 0001.1).
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The <code>id</code> of an existing record in the surat_permintaan table.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi surat. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      dari:
+        custom: []
+        name: dari
+        description: 'Pengirim surat. Contoh: Kepala BPS Kota ABC'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      perihal:
+        custom: []
+        name: perihal
+        description: 'Perihal surat. Contoh: Permohonan Data Statistik Sisip'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      thn:
+        custom: []
+        name: thn
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nomor:
+        custom: []
+        name: nomor
+        description: 'Nomor urut surat. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      no_sisip:
+        custom: []
+        name: no_sisip
+        description: 'Nomor sisip yang akan disisipkan. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      id: architecto
+      tanggal: architecto
+      kode_klas: architecto
+      dari: architecto
+      perihal: architecto
+      thn: architecto
+      nomor: architecto
+      no_sisip: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001.1/BPS-100/2024 berhasil disisipkan",
+            "data": {
+              "id": 2,
+              "thn": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": "1",
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "no_surat": "0001.1/BPS-100/2024",
+              "dari": "Kepala BPS Kota ABC",
+              "perihal": "Permohonan Data Statistik Sisip",
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "no_sisip": ["The no sisip field is required."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to create sisip surat permintaan",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/surat/permintaan/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Memperbarui data surat permintaan berdasarkan ID.'
+      description: |-
+        Endpoint ini memperbarui data surat permintaan dengan ID yang diberikan.
+        Nomor surat akan di-generate ulang sesuai dengan data yang diubah.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat permintaan. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi surat. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      dari:
+        custom: []
+        name: dari
+        description: 'Pengirim surat. Contoh: Kepala BPS Kota ABC'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      perihal:
+        custom: []
+        name: perihal
+        description: 'Perihal surat. Contoh: Permohonan Data Statistik'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      thn:
+        custom: []
+        name: thn
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nomor:
+        custom: []
+        name: nomor
+        description: 'Nomor urut surat. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      no_sisip:
+        custom: []
+        name: no_sisip
+        description: 'Nomor sisip (opsional). Contoh: 1'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      tanggal: architecto
+      kode_klas: architecto
+      dari: architecto
+      perihal: architecto
+      thn: architecto
+      nomor: architecto
+      no_sisip: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/BPS-100/2024 berhasil diubah",
+            "data": {
+              "id": 1,
+              "thn": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "no_surat": "0001/BPS-100/2024",
+              "dari": "Kepala BPS Kota ABC Updated",
+              "perihal": "Permohonan Data Statistik Updated",
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to update surat permintaan",
+            "errors": "No query results for model [App\\Models\\SuratPermintaan] 999"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "thn": ["The thn field is required."],
+              "tanggal": ["The tanggal field is required."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to update surat permintaan",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/surat/permintaan/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menghapus surat permintaan berdasarkan ID.'
+      description: |-
+        Endpoint ini menghapus surat permintaan dengan ID yang diberikan secara permanen.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat permintaan yang akan dihapus. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/BPS-100/2024 berhasil dihapus",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to delete surat permintaan",
+            "errors": "No query results for model [App\\Models\\SuratPermintaan] 999"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to delete surat permintaan",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/surat/permintaan/bulk-update-status
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Permintaan'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Bulk update status for multiple surat permintaan.'
+      description: |-
+        Endpoint ini memungkinkan pembaruan status massal untuk beberapa surat permintaan sekaligus.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      ids:
+        custom: []
+        name: ids
+        description: 'Array of surat permintaan IDs to update. Contoh: [1, 2, 3]'
+        required: true
+        example:
+          - architecto
+        type: 'string[]'
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'New status for the surat permintaan. Contoh: approved'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      ids:
+        - architecto
+      status: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Status updated successfully",
+            "data": {
+              "updated_count": 3
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {}
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

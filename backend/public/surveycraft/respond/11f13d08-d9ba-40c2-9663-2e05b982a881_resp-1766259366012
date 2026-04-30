@@ -1,0 +1,12 @@
+{
+  "id": "c7f136f7-a79f-48e0-81e6-2cce0eac1013",
+  "surveyId": "11f13d08-d9ba-40c2-9663-2e05b982a881",
+  "submittedAt": "2025-12-20T19:36:06.011Z",
+  "answers": {
+    "q1": [
+      "opt1"
+    ],
+    "q2": 5,
+    "q3": "mantap"
+  }
+}

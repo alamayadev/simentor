@@ -1,0 +1,18 @@
+{
+  "alokasi": [
+    "id\";\"idsls\";\"kdprov\";\"kdkab\";\"kdkec\";\"kddesa\";\"kdsls\";\"nmprov\";\"nmkab\";\"nmkec\";\"nmdesa\";\"nmsls\";\"periode\";\"idsubsls\";\"iddesa\";\"ALOKASI_SCAN\";\"ALOKASI_GEOREF\";\"ALOKASI_GEOJSON\";\"ALOKASI_MUATAN",
+    "1;\"32150100010001\";\"32\";\"15\";\"010\";\"001\";\"0001\";\"JAWA BARAT\";\"KARAWANG\";\"PANGKALAN\";\"MEDALSARI\";\"RT 001 RW 001 DUSUN 1\";\"2025_1\";\"3215010001000100\";\"3215010001\";\"Nabilla Putri Nurizha\";\"Nabilla Putri Nurizha\";\"Rihadhatul Aisy\";\"Nabilla Putri Nurizha",
+    "2;\"32150100010002\";\"32\";\"15\";\"010\";\"001\";\"0002\";\"JAWA BARAT\";\"KARAWANG\";\"PANGKALAN\";\"MEDALSARI\";\"RT 002 RW 001 DUSUN 1\";\"2025_1\";\"3215010001000200\";\"3215010001\";\"Nabilla Putri Nurizha\";\"Nabilla Putri Nurizha\";\"Rihadhatul Aisy\";\"Nabilla Putri Nurizha",
+    "3;\"32150100010003\";\"32\";\"15\";\"010\";\"001\";\"0003\";\"JAWA BARAT\";\"KARAWANG\";\"PANGKALAN\";\"MEDALSARI\";\"RT 003 RW 001 DUSUN 1\";\"2025_1\";\"3215010001000300\";\"3215010001\";\"Nabilla Putri Nurizha\";\"Nabilla Putri Nurizha\";\"Rihadhatul Aisy\";\"Nabilla Putri Nurizha",
+    "4;\"32150100010004\";\"32\";\"15\";\"010\";\"001\";\"0004\";\"JAWA BARAT\";\"KARAWANG\";\"PANGKALAN\";\"MEDALSARI\";\"RT 004 RW 002 DUSUN 2\";\"2025_1\";\"3215010001000400\";\"3215010001\";\"Nabilla Putri Nurizha\";\"Nabilla Putri Nurizha\";\"Rihadhatul Aisy\";\"Nabilla Putri Nurizha"
+  ],
+  "olah_georef": [
+    "﻿kec;desa;Filename;FullPath;CreatedTime;Jenis;Lokasi;Kodename;Kode"
+  ],
+  "olah_scan": [
+    "kec;desa;Filename;FullPath;CreatedTime;Jenis;Lokasi;Kodename;Kode"
+  ],
+  "users": [
+    "remember_token"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Survei Kepuasan Pengunjung Pusat Statistik Terpadu",
+  "description": "Survei ini bertujuan untuk mengetahui kepuasan pengunjung Pusat Statistik Terpadu. Mohon berikan jawaban yang jujur dan objektif.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "MULTIPLE_CHOICE",
+      "title": "Apa yang menjadi tujuan Anda mengunjungi Pusat Statistik Terpadu?",
+      "description": "",
+      "required": true,
+      "options": [
+        {
+          "id": "opt1",
+          "label": "Mencari data statistik"
+        },
+        {
+          "id": "opt2",
+          "label": "Mengikuti pelatihan atau workshop"
+        },
+        {
+          "id": "opt3",
+          "label": "Mengunjungi pameran atau expo"
+        },
+        {
+          "id": "opt4",
+          "label": "Lain-lain"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "RATING",
+      "title": "Berikan penilaian Anda tentang kualitas layanan yang diberikan oleh Pusat Statistik Terpadu",
+      "description": "",
+      "required": true,
+      "options": [
+        {
+          "id": "opt1",
+          "label": "Sangat Puas"
+        },
+        {
+          "id": "opt2",
+          "label": "Puas"
+        },
+        {
+          "id": "opt3",
+          "label": "Cukup"
+        },
+        {
+          "id": "opt4",
+          "label": "Tidak Puas"
+        },
+        {
+          "id": "opt5",
+          "label": "Sangat Tidak Puas"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "SINGLE_INPUT",
+      "title": "Apa saran atau kritik Anda untuk meningkatkan kualitas layanan Pusat Statistik Terpadu?",
+      "description": "",
+      "required": false
+    }
+  ],
+  "id": "11f13d08-d9ba-40c2-9663-2e05b982a881",
+  "createdAt": 1766256410813,
+  "language": "id",
+  "serverId": 2,
+  "owner_id": 5
+}

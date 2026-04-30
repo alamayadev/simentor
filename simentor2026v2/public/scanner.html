@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Position Scanner</title>
+  <style>
+    body { font-family: monospace; background: #1a1a2e; color: #0f0; padding: 20px; }
+    #log { white-space: pre-wrap; font-size: 13px; }
+    #result { background: #16213e; padding: 15px; border-radius: 8px; margin-top: 20px; max-height: 60vh; overflow: auto; }
+    button { background: #e94560; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 14px; margin: 5px; }
+    button:hover { background: #ff6b6b; }
+  </style>
+</head>
+<body>
+  <h2>🔍 Simentor Position Scanner</h2>
+  <p>Token: <input id="token" value="" style="width:400px; background:#16213e; color:#0f0; border:1px solid #333; padding:5px;" /></p>
+  <button onclick="startScan()">▶ Start Full Scan</button>
+  <button onclick="copyResult()">📋 Copy Result</button>
+  <div id="log"></div>
+  <div id="result"></div>
+
+  <script>
+    const ROUTES = [
+      '/skp/dashboard', '/skp/progres', '/skp/daftar',
+      '/umum/pengaturan',
+      '/umum/rkk-dipa/monitoring', '/umum/rkk-dipa/perencanaan',
+      '/umum/rkk-dipa/pencairan', '/umum/rkk-dipa/riwayat',
+      '/umum/rkk-dipa/integritas', '/umum/rkk-dipa/revisi-import',
+      '/umum/surat/keluar', '/umum/surat/tugas',
+      '/umum/surat/keputusan', '/umum/surat/permintaan',
+      '/umum/pegawai', '/umum/libur',
+      '/kegiatan/daftar', '/kegiatan/kalender',
+      '/kegiatan/penugasan', '/kegiatan/petugas',
+      '/kegiatan/evaluasi', '/kegiatan/monitoring',
+      '/kontraktual/monitoring', '/kontraktual/spk-bast',
+      '/ipds/tiket', '/ipds/asset',
+      '/admin/pengguna', '/admin/peran', '/admin/izin', '/admin/metadata',
+    ];
+
+    const logEl = document.getElementById('log');
+    const resultEl = document.getElementById('result');
+    let finalResult = {};
+
+    function log(msg) {
+      logEl.textContent += msg + '\n';
+      logEl.scrollTop = logEl.scrollHeight;
+    }
+
+    function translatePosition(rect) {
+      const ww = 2560, wh = 945; // match user's viewport
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      let h = cx < ww/3 ? 'kiri' : cx < 2*ww/3 ? 'tengah' : 'kanan';
+      let v = cy < wh/3 ? 'atas' : cy < 2*wh/3 ? 'tengah' : 'bawah';
+      if (h === 'tengah' && v === 'tengah') return 'di tengah layar';
+      return `di ${h} ${v} halaman`;
+    }
+
+    async function scanFrame(iframe) {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      const elements = doc.querySelectorAll('[data-scan]');
+      const results = {};
+      elements.forEach(el => {
+        const label = el.getAttribute('data-scan');
+        if (label) {
+          const rect = el.getBoundingClientRect();
+          results[label] = { position: translatePosition(rect) };
+        }
+      });
+      return results;
+    }
+
+    async function startScan() {
+      finalResult = {};
+      logEl.textContent = '';
+      const token = document.getElementById('token').value;
+      if (!token) { log('❌ Please provide an auth token'); return; }
+
+      log('Starting scan of ' + ROUTES.length + ' routes...\n');
+
+      // Create a hidden iframe for loading pages
+      let iframe = document.getElementById('scanner-frame');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'scanner-frame';
+        iframe.style.cssText = 'width:2560px;height:945px;border:1px solid #333;margin-top:10px;';
+        document.body.appendChild(iframe);
+      }
+
+      for (let i = 0; i < ROUTES.length; i++) {
+        const route = ROUTES[i];
+        const routeKey = route.startsWith('/') ? route.slice(1) : route;
+        log(`[${i+1}/${ROUTES.length}] Loading: ${route}...`);
+
+        // Load the route in the iframe with auth
+        await new Promise((resolve) => {
+          iframe.onload = () => {
+            // Inject the auth token into localStorage of the iframe
+            try {
+              iframe.contentWindow.localStorage.setItem('auth_token', token);
+            } catch(e) {}
+            resolve();
+          };
+          iframe.src = 'http://localhost:5000' + route;
+        });
+
+        // Wait for React to render
+        await new Promise(r => setTimeout(r, 3000));
+
+        // Re-load after setting token (first load may redirect to login)
+        if (iframe.contentWindow.location.pathname === '/login' || iframe.contentWindow.location.pathname === '/') {
+          log('  → Redirected to login, retrying with token...');
+          iframe.contentWindow.localStorage.setItem('auth_token', token);
+          await new Promise((resolve) => {
+            iframe.onload = resolve;
+            iframe.src = 'http://localhost:5000' + route;
+          });
+          await new Promise(r => setTimeout(r, 3000));
+        }
+
+        // Try to use the app's own scanCurrentPage if available
+        let result;
+        try {
+          result = iframe.contentWindow.scanCurrentPage();
+        } catch(e) {
+          // Fallback: scan DOM directly
+          const elements = iframe.contentDocument.querySelectorAll('[data-scan]');
+          const pageResult = {};
+          elements.forEach(el => {
+            const label = el.getAttribute('data-scan');
+            if (label) {
+              const rect = el.getBoundingClientRect();
+              pageResult[label] = { position: translatePosition(rect) };
+            }
+          });
+          result = { [routeKey]: pageResult };
+        }
+
+        const key = Object.keys(result)[0];
+        const count = Object.keys(result[key] || {}).length;
+        log(`  ✓ Found ${count} elements`);
+
+        Object.assign(finalResult, result);
+      }
+
+      const json = JSON.stringify(finalResult, null, 2);
+      resultEl.textContent = json;
+      log('\n✅ Scan complete! ' + Object.keys(finalResult).length + ' routes scanned.');
+      log('Click "Copy Result" to copy the JSON.');
+    }
+
+    function copyResult() {
+      const json = JSON.stringify(finalResult, null, 2);
+      navigator.clipboard.writeText(json).then(() => {
+        log('📋 Copied to clipboard!');
+      }).catch(() => {
+        log('⚠️ Could not copy. Select text from the result box manually.');
+      });
+    }
+  </script>
+</body>
+</html>

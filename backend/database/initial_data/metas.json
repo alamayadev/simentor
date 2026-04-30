@@ -1,0 +1,692 @@
+[
+    {
+        "id": 1,
+        "parent_id": null,
+        "name": "Fungsi",
+        "name2": null
+    },
+    {
+        "id": 2,
+        "parent_id": 1,
+        "name": "Umum",
+        "name2": null
+    },
+    {
+        "id": 3,
+        "parent_id": 1,
+        "name": "Distribusi",
+        "name2": null
+    },
+    {
+        "id": 4,
+        "parent_id": 1,
+        "name": "Produksi",
+        "name2": null
+    },
+    {
+        "id": 5,
+        "parent_id": 1,
+        "name": "Sosial",
+        "name2": null
+    },
+    {
+        "id": 6,
+        "parent_id": 1,
+        "name": "Nerwilis",
+        "name2": null
+    },
+    {
+        "id": 7,
+        "parent_id": 1,
+        "name": "IPDS",
+        "name2": null
+    },
+    {
+        "id": 8,
+        "parent_id": null,
+        "name": "Golongan",
+        "name2": null
+    },
+    {
+        "id": 9,
+        "parent_id": 8,
+        "name": "Ia",
+        "name2": null
+    },
+    {
+        "id": 10,
+        "parent_id": 8,
+        "name": "Ib",
+        "name2": null
+    },
+    {
+        "id": 11,
+        "parent_id": 8,
+        "name": "Ic",
+        "name2": null
+    },
+    {
+        "id": 12,
+        "parent_id": 8,
+        "name": "Id",
+        "name2": null
+    },
+    {
+        "id": 13,
+        "parent_id": 8,
+        "name": "IIa",
+        "name2": null
+    },
+    {
+        "id": 14,
+        "parent_id": 8,
+        "name": "IIb",
+        "name2": null
+    },
+    {
+        "id": 15,
+        "parent_id": 8,
+        "name": "IIc",
+        "name2": null
+    },
+    {
+        "id": 16,
+        "parent_id": 8,
+        "name": "IId",
+        "name2": null
+    },
+    {
+        "id": 17,
+        "parent_id": 8,
+        "name": "IIIa",
+        "name2": null
+    },
+    {
+        "id": 18,
+        "parent_id": 8,
+        "name": "IIIb",
+        "name2": null
+    },
+    {
+        "id": 19,
+        "parent_id": 8,
+        "name": "IIIc",
+        "name2": null
+    },
+    {
+        "id": 20,
+        "parent_id": 8,
+        "name": "IIId",
+        "name2": null
+    },
+    {
+        "id": 21,
+        "parent_id": 8,
+        "name": "IVa",
+        "name2": null
+    },
+    {
+        "id": 22,
+        "parent_id": 8,
+        "name": "IVb",
+        "name2": null
+    },
+    {
+        "id": 23,
+        "parent_id": 8,
+        "name": "IVc",
+        "name2": null
+    },
+    {
+        "id": 24,
+        "parent_id": 8,
+        "name": "IVd",
+        "name2": null
+    },
+    {
+        "id": 25,
+        "parent_id": 8,
+        "name": "IVe",
+        "name2": null
+    },
+    {
+        "id": 26,
+        "parent_id": null,
+        "name": "Jabatan Tugas",
+        "name2": null
+    },
+    {
+        "id": 27,
+        "parent_id": 26,
+        "name": "PCL",
+        "name2": null
+    },
+    {
+        "id": 28,
+        "parent_id": 26,
+        "name": "PML",
+        "name2": null
+    },
+    {
+        "id": 29,
+        "parent_id": 26,
+        "name": "OPERATOR",
+        "name2": null
+    },
+    {
+        "id": 30,
+        "parent_id": 26,
+        "name": "SUPERVISOR",
+        "name2": null
+    },
+    {
+        "id": 31,
+        "parent_id": null,
+        "name": "Jabatan",
+        "name2": null
+    },
+    {
+        "id": 32,
+        "parent_id": 31,
+        "name": "Kepala",
+        "name2": null
+    },
+    {
+        "id": 33,
+        "parent_id": 31,
+        "name": "Statistisi Terampil",
+        "name2": null
+    },
+    {
+        "id": 34,
+        "parent_id": 31,
+        "name": "Statistisi Mahir",
+        "name2": null
+    },
+    {
+        "id": 35,
+        "parent_id": 31,
+        "name": "Statistisi Penyelia",
+        "name2": null
+    },
+    {
+        "id": 36,
+        "parent_id": 31,
+        "name": "Statistisi Ahli Pertama",
+        "name2": null
+    },
+    {
+        "id": 37,
+        "parent_id": 31,
+        "name": "Statistisi Ahli Muda",
+        "name2": null
+    },
+    {
+        "id": 38,
+        "parent_id": 31,
+        "name": "Statistisi Ahli Madya",
+        "name2": null
+    },
+    {
+        "id": 39,
+        "parent_id": 31,
+        "name": "Statistisi Ahli Utama",
+        "name2": null
+    },
+    {
+        "id": 40,
+        "parent_id": 31,
+        "name": "Pranata Komputer Mahir",
+        "name2": null
+    },
+    {
+        "id": 41,
+        "parent_id": 31,
+        "name": "Pranata Komputer Penyelia",
+        "name2": null
+    },
+    {
+        "id": 42,
+        "parent_id": 31,
+        "name": "Pranata Komputer Ahli Muda",
+        "name2": null
+    },
+    {
+        "id": 43,
+        "parent_id": 31,
+        "name": "Pranata Komputer Ahli Madya",
+        "name2": null
+    },
+    {
+        "id": 44,
+        "parent_id": 31,
+        "name": "Pranata Komputer Ahli Utama",
+        "name2": null
+    },
+    {
+        "id": 45,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Terampil",
+        "name2": null
+    },
+    {
+        "id": 46,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Mahir",
+        "name2": null
+    },
+    {
+        "id": 47,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Penyelia",
+        "name2": null
+    },
+    {
+        "id": 48,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Ahli Pertama",
+        "name2": null
+    },
+    {
+        "id": 49,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Ahli Muda",
+        "name2": null
+    },
+    {
+        "id": 50,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Ahli Madya",
+        "name2": null
+    },
+    {
+        "id": 51,
+        "parent_id": 31,
+        "name": "Pranata Keuangan APBN Ahli Utama",
+        "name2": null
+    },
+    {
+        "id": 52,
+        "parent_id": 31,
+        "name": "Pegolah Data",
+        "name2": null
+    },
+    {
+        "id": 53,
+        "parent_id": null,
+        "name": "Jenis Kegiatan",
+        "name2": null
+    },
+    {
+        "id": 54,
+        "parent_id": 53,
+        "name": "PERSIAPAN",
+        "name2": null
+    },
+    {
+        "id": 55,
+        "parent_id": 53,
+        "name": "PENGUMPULAN DATA",
+        "name2": null
+    },
+    {
+        "id": 56,
+        "parent_id": 53,
+        "name": "PENGOLAHAN",
+        "name2": null
+    },
+    {
+        "id": 57,
+        "parent_id": 53,
+        "name": "DISEMINASI",
+        "name2": null
+    },
+    {
+        "id": 58,
+        "parent_id": 53,
+        "name": "PENGAWASAN/SUPERVISI",
+        "name2": null
+    },
+    {
+        "id": 59,
+        "parent_id": null,
+        "name": "Jenis Keluhan",
+        "name2": null
+    },
+    {
+        "id": 60,
+        "parent_id": 59,
+        "name": "Sistem",
+        "name2": null
+    },
+    {
+        "id": 61,
+        "parent_id": 59,
+        "name": "Software",
+        "name2": null
+    },
+    {
+        "id": 62,
+        "parent_id": 59,
+        "name": "Printer",
+        "name2": null
+    },
+    {
+        "id": 63,
+        "parent_id": 59,
+        "name": "Hardware PC/Laptop",
+        "name2": null
+    },
+    {
+        "id": 64,
+        "parent_id": 59,
+        "name": "Jaringan",
+        "name2": null
+    },
+    {
+        "id": 65,
+        "parent_id": 59,
+        "name": "Akun BPS",
+        "name2": null
+    },
+    {
+        "id": 66,
+        "parent_id": 59,
+        "name": "Lainnya",
+        "name2": null
+    },
+    {
+        "id": 67,
+        "parent_id": null,
+        "name": "Pangkat",
+        "name2": null
+    },
+    {
+        "id": 68,
+        "parent_id": 67,
+        "name": "Juru Muda",
+        "name2": null
+    },
+    {
+        "id": 69,
+        "parent_id": 67,
+        "name": "Juru Muda Tk. I",
+        "name2": null
+    },
+    {
+        "id": 70,
+        "parent_id": 67,
+        "name": "Juru",
+        "name2": null
+    },
+    {
+        "id": 71,
+        "parent_id": 67,
+        "name": "Juru Tk. I",
+        "name2": null
+    },
+    {
+        "id": 72,
+        "parent_id": 67,
+        "name": "Pengatur Muda",
+        "name2": null
+    },
+    {
+        "id": 73,
+        "parent_id": 67,
+        "name": "Pengatur Muda Tk. I",
+        "name2": null
+    },
+    {
+        "id": 74,
+        "parent_id": 67,
+        "name": "Pengatur",
+        "name2": null
+    },
+    {
+        "id": 75,
+        "parent_id": 67,
+        "name": "Pengatur Tk. I",
+        "name2": null
+    },
+    {
+        "id": 76,
+        "parent_id": 67,
+        "name": "Penata Muda",
+        "name2": null
+    },
+    {
+        "id": 77,
+        "parent_id": 67,
+        "name": "Penata Muda Tk. I",
+        "name2": null
+    },
+    {
+        "id": 78,
+        "parent_id": 67,
+        "name": "Penata",
+        "name2": null
+    },
+    {
+        "id": 79,
+        "parent_id": 67,
+        "name": "Penata Tk. I",
+        "name2": null
+    },
+    {
+        "id": 80,
+        "parent_id": 67,
+        "name": "Pembina",
+        "name2": null
+    },
+    {
+        "id": 81,
+        "parent_id": 67,
+        "name": "Pembina Tk. I",
+        "name2": null
+    },
+    {
+        "id": 82,
+        "parent_id": 67,
+        "name": "Pembina Utama Muda",
+        "name2": null
+    },
+    {
+        "id": 83,
+        "parent_id": 67,
+        "name": "Pembina Utama Madya",
+        "name2": null
+    },
+    {
+        "id": 84,
+        "parent_id": 67,
+        "name": "Pembina Utama",
+        "name2": null
+    },
+    {
+        "id": 85,
+        "parent_id": null,
+        "name": "Satuan",
+        "name2": null
+    },
+    {
+        "id": 86,
+        "parent_id": 85,
+        "name": "O-K",
+        "name2": null
+    },
+    {
+        "id": 87,
+        "parent_id": 85,
+        "name": "Lembar",
+        "name2": null
+    },
+    {
+        "id": 88,
+        "parent_id": 85,
+        "name": "O-H",
+        "name2": null
+    },
+    {
+        "id": 89,
+        "parent_id": 85,
+        "name": "Paket",
+        "name2": null
+    },
+    {
+        "id": 90,
+        "parent_id": 85,
+        "name": "Dok",
+        "name2": null
+    },
+    {
+        "id": 91,
+        "parent_id": 85,
+        "name": "DOK",
+        "name2": null
+    },
+    {
+        "id": 92,
+        "parent_id": 85,
+        "name": "Set",
+        "name2": null
+    },
+    {
+        "id": 93,
+        "parent_id": 85,
+        "name": "O-J",
+        "name2": null
+    },
+    {
+        "id": 94,
+        "parent_id": 85,
+        "name": "O-P",
+        "name2": null
+    },
+    {
+        "id": 95,
+        "parent_id": 85,
+        "name": "OJP",
+        "name2": null
+    },
+    {
+        "id": 96,
+        "parent_id": 85,
+        "name": "Resp",
+        "name2": null
+    },
+    {
+        "id": 97,
+        "parent_id": 85,
+        "name": "Kunj",
+        "name2": null
+    },
+    {
+        "id": 98,
+        "parent_id": 85,
+        "name": "SLS",
+        "name2": null
+    },
+    {
+        "id": 99,
+        "parent_id": 85,
+        "name": "Desa",
+        "name2": null
+    },
+    {
+        "id": 100,
+        "parent_id": 85,
+        "name": "BS",
+        "name2": null
+    },
+    {
+        "id": 101,
+        "parent_id": 85,
+        "name": "Ruta",
+        "name2": null
+    },
+    {
+        "id": 102,
+        "parent_id": 85,
+        "name": "RUTA",
+        "name2": null
+    },
+    {
+        "id": 103,
+        "parent_id": 85,
+        "name": "O-B",
+        "name2": null
+    },
+    {
+        "id": 104,
+        "parent_id": 85,
+        "name": "BUAH",
+        "name2": null
+    },
+    {
+        "id": 105,
+        "parent_id": 85,
+        "name": "Segmen",
+        "name2": null
+    },
+    {
+        "id": 106,
+        "parent_id": 85,
+        "name": "Sgmen",
+        "name2": null
+    },
+    {
+        "id": 107,
+        "parent_id": 85,
+        "name": "Tahun",
+        "name2": null
+    },
+    {
+        "id": 108,
+        "parent_id": 85,
+        "name": "Bulan",
+        "name2": null
+    },
+    {
+        "id": 109,
+        "parent_id": 85,
+        "name": "U/THN",
+        "name2": null
+    },
+    {
+        "id": 110,
+        "parent_id": 85,
+        "name": "THN",
+        "name2": null
+    },
+    {
+        "id": 111,
+        "parent_id": 85,
+        "name": "M2/TH",
+        "name2": null
+    },
+    {
+        "id": 112,
+        "parent_id": 85,
+        "name": "O-TH",
+        "name2": null
+    },
+    {
+        "id": 113,
+        "parent_id": 85,
+        "name": "EA/PS",
+        "name2": null
+    },
+    {
+        "id": 114,
+        "parent_id": 85,
+        "name": "EA/PR",
+        "name2": null
+    },
+    {
+        "id": 115,
+        "parent_id": 85,
+        "name": "EA",
+        "name2": null
+    }
+]

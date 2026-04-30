@@ -1,0 +1,1118 @@
+name: 'IPDS - Asset IT'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/ipds/assets/filters
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get unique filter values for type, status, and category.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Filters retrieved successfully",
+            "data": {
+              "type": ["hardware", "software", "network"],
+              "status": ["active", "in-use", "maintenance", "inactive"],
+              "category": ["Server", "Workstation", "Printer"]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/ipds/assets/statistics
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get asset statistics'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Statistics retrieved successfully",
+            "data": {
+              "total_aset": 55,
+              "status_counts": {
+                "active": 35,
+                "in-use": 15,
+                "maintenance": 3,
+                "inactive": 2
+              }
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/ipds/assets
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the assets.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 15). Contoh: 15'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[category]':
+        custom: []
+        name: 'filter[category]'
+        description: 'Filter berdasarkan kategori asset. Contoh: Server'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[object_category]':
+        custom: []
+        name: 'filter[object_category]'
+        description: 'Filter berdasarkan object kategori asset. Contoh: hardware'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[type]':
+        custom: []
+        name: 'filter[type]'
+        description: 'Filter berdasarkan type asset (hardware, software, network). Contoh: hardware'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[status]':
+        custom: []
+        name: 'filter[status]'
+        description: 'Filter berdasarkan status asset. Contoh: active'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      sort:
+        custom: []
+        name: sort
+        description: 'Sort field (default: -created_at).'
+        required: false
+        example: kode_asset
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 16
+      cursor: architecto
+      'filter[category]': architecto
+      'filter[object_category]': architecto
+      'filter[type]': architecto
+      'filter[status]': architecto
+      sort: kode_asset
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "kode_asset": "AS-001",
+                "type": "hardware",
+                "category": "Server",
+                "brand": "Dell",
+                "model": "PowerEdge R740",
+                "serial_number": "SN123456789",
+                "name": "Web Server",
+                "license_key": null,
+                "device": null,
+                "ip_address": "192.168.1.100",
+                "location": "Data Center Jakarta",
+                "status": "active",
+                "assigned_to": "Infrastructure Team",
+                "purchase_date": "2023-01-15",
+                "warranty_expiry": "2026-01-15",
+                "expiry_date": null,
+                "delivery_date": "2023-01-10",
+                "created_at": "2024-01-01T00:00:00.000000Z",
+                "updated_at": "2024-01-01T00:00:00.000000Z",
+                "maintenance_schedules": [
+                  {
+                    "id": 1,
+                    "asset_id": 1,
+                    "next_maintenance": "2024-12-31",
+                    "responsible_team": "IT Support",
+                    "created_at": "2024-01-01T00:00:00.000000Z",
+                    "updated_at": "2024-01-01T00:00:00.000000Z"
+                  }
+                ]
+              }
+            ],
+            "meta": {
+              "per_page": 15,
+              "has_more": true,
+              "count": 15
+            },
+            "links": {
+              "next_cursor": "...",
+              "next_page_url": "http://127.0.0.1:8000/api/ipds/asset-it?cursor=...",
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://127.0.0.1:8000/api/ipds/asset-it"
+            },
+            "pagination_info": {
+              "total_page": 4,
+              "total_records": 55
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/ipds/assets
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created asset in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      kode_asset:
+        custom: []
+        name: kode_asset
+        description: 'Kode unik asset. Contoh: AS-001'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      type:
+        custom: []
+        name: type
+        description: 'Type asset (hardware, software, network). Contoh: hardware'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: 'Kategori asset. Contoh: Server'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      brand:
+        custom: []
+        name: brand
+        description: 'Merek asset. Contoh: Dell'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      model:
+        custom: []
+        name: model
+        description: 'Model asset. Contoh: PowerEdge R740'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      serial_number:
+        custom: []
+        name: serial_number
+        description: 'Nomor seri asset. Contoh: SN123456789'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      name:
+        custom: []
+        name: name
+        description: 'Nama asset. Contoh: Web Server'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      license_key:
+        custom: []
+        name: license_key
+        description: 'Kunci lisensi (untuk software). Contoh: ABCD-EFGH-IJKL-MNOP'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      device:
+        custom: []
+        name: device
+        description: 'Perangkat terkait. Contoh: Switch'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      ip_address:
+        custom: []
+        name: ip_address
+        description: 'Alamat IP (untuk perangkat jaringan). Contoh: 192.168.1.100'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      location:
+        custom: []
+        name: location
+        description: 'Lokasi fisik asset. Contoh: Data Center Jakarta'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status asset (active, in-use, maintenance, inactive). Contoh: active'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      assigned_to:
+        custom: []
+        name: assigned_to
+        description: 'Pihak yang ditugaskan. Contoh: Infrastructure Team'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      purchase_date:
+        custom: []
+        name: purchase_date
+        description: 'Tanggal pembelian (format: YYYY-MM-DD). Contoh: 2023-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      warranty_expiry:
+        custom: []
+        name: warranty_expiry
+        description: 'Tanggal kadaluarsa garansi (format: YYYY-MM-DD). Contoh: 2026-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      expiry_date:
+        custom: []
+        name: expiry_date
+        description: 'Tanggal kadaluarsa asset (format: YYYY-MM-DD). Contoh: 2027-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      delivery_date:
+        custom: []
+        name: delivery_date
+        description: 'Tanggal pengiriman asset (format: YYYY-MM-DD). Contoh: 2023-01-10'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      kode_asset: architecto
+      type: architecto
+      category: architecto
+      brand: architecto
+      model: architecto
+      serial_number: architecto
+      name: architecto
+      license_key: architecto
+      device: architecto
+      ip_address: architecto
+      location: architecto
+      status: architecto
+      assigned_to: architecto
+      purchase_date: architecto
+      warranty_expiry: architecto
+      expiry_date: architecto
+      delivery_date: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Asset created successfully",
+            "data": {
+              "id": 1,
+              "kode_asset": "AS-001",
+              "type": "hardware",
+              "category": "Server",
+              "brand": "Dell",
+              "model": "PowerEdge R740",
+              "serial_number": "SN123456789",
+              "name": "Web Server",
+              "license_key": null,
+              "device": null,
+              "ip_address": "192.168.1.100",
+              "location": "Data Center Jakarta",
+              "status": "active",
+              "assigned_to": "Infrastructure Team",
+              "purchase_date": "2023-01-15",
+              "warranty_expiry": "2026-01-15",
+              "expiry_date": null,
+              "delivery_date": "2023-01-10",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "kode_asset": [
+                "The kode asset field is required."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/ipds/assets/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified asset.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID asset. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": {
+              "id": 1,
+              "kode_asset": "AS-001",
+              "type": "hardware",
+              "category": "Server",
+              "brand": "Dell",
+              "model": "PowerEdge R740",
+              "serial_number": "SN123456789",
+              "name": "Web Server",
+              "license_key": null,
+              "device": null,
+              "ip_address": "192.168.1.100",
+              "location": "Data Center Jakarta",
+              "status": "active",
+              "assigned_to": "Infrastructure Team",
+              "purchase_date": "2023-01-15",
+              "warranty_expiry": "2026-01-15",
+              "expiry_date": null,
+              "delivery_date": "2023-01-10",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z",
+              "maintenance_schedules": [
+                {
+                  "id": 1,
+                  "asset_id": 1,
+                  "next_maintenance": "2024-12-31",
+                  "responsible_team": "IT Support",
+                  "created_at": "2024-01-01T00:00:00.000000Z",
+                  "updated_at": "2024-01-01T00:00:00.000000Z"
+                }
+              ]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Asset not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/ipds/assets/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified asset in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID asset. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      kode_asset:
+        custom: []
+        name: kode_asset
+        description: 'Kode unik asset. Contoh: AS-001'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      type:
+        custom: []
+        name: type
+        description: 'Type asset (hardware, software, network). Contoh: hardware'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      category:
+        custom: []
+        name: category
+        description: 'Kategori asset. Contoh: Server'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      brand:
+        custom: []
+        name: brand
+        description: 'Merek asset. Contoh: Dell'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      model:
+        custom: []
+        name: model
+        description: 'Model asset. Contoh: PowerEdge R740'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      serial_number:
+        custom: []
+        name: serial_number
+        description: 'Nomor seri asset. Contoh: SN123456789'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      name:
+        custom: []
+        name: name
+        description: 'Nama asset. Contoh: Web Server'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      license_key:
+        custom: []
+        name: license_key
+        description: 'Kunci lisensi (untuk software). Contoh: ABCD-EFGH-IJKL-MNOP'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      device:
+        custom: []
+        name: device
+        description: 'Perangkat terkait. Contoh: Switch'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      ip_address:
+        custom: []
+        name: ip_address
+        description: 'Alamat IP (untuk perangkat jaringan). Contoh: 192.168.1.100'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      location:
+        custom: []
+        name: location
+        description: 'Lokasi fisik asset. Contoh: Data Center Jakarta'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status asset (active, in-use, maintenance, inactive). Contoh: active'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      assigned_to:
+        custom: []
+        name: assigned_to
+        description: 'Pihak yang ditugaskan. Contoh: Infrastructure Team'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      purchase_date:
+        custom: []
+        name: purchase_date
+        description: 'Tanggal pembelian (format: YYYY-MM-DD). Contoh: 2023-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      warranty_expiry:
+        custom: []
+        name: warranty_expiry
+        description: 'Tanggal kadaluarsa garansi (format: YYYY-MM-DD). Contoh: 2026-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      expiry_date:
+        custom: []
+        name: expiry_date
+        description: 'Tanggal kadaluarsa asset (format: YYYY-MM-DD). Contoh: 2027-01-15'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      delivery_date:
+        custom: []
+        name: delivery_date
+        description: 'Tanggal pengiriman asset (format: YYYY-MM-DD). Contoh: 2023-01-10'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      kode_asset: architecto
+      type: architecto
+      category: architecto
+      brand: architecto
+      model: architecto
+      serial_number: architecto
+      name: architecto
+      license_key: architecto
+      device: architecto
+      ip_address: architecto
+      location: architecto
+      status: architecto
+      assigned_to: architecto
+      purchase_date: architecto
+      warranty_expiry: architecto
+      expiry_date: architecto
+      delivery_date: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Asset updated successfully",
+            "data": {
+              "id": 1,
+              "kode_asset": "AS-001",
+              "type": "hardware",
+              "category": "Server",
+              "brand": "Dell",
+              "model": "PowerEdge R740",
+              "serial_number": "SN123456789",
+              "name": "Web Server",
+              "license_key": null,
+              "device": null,
+              "ip_address": "192.168.1.100",
+              "location": "Data Center Jakarta",
+              "status": "active",
+              "assigned_to": "Infrastructure Team",
+              "purchase_date": "2023-01-15",
+              "warranty_expiry": "2026-01-15",
+              "expiry_date": null,
+              "delivery_date": "2023-01-10",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Asset not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "kode_asset": [
+                "The kode asset has already been taken."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/ipds/assets/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Asset IT'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified asset from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID asset. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Asset deleted successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Tidak terotentikasi"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Asset not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

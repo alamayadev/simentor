@@ -1,0 +1,159 @@
+{
+  "(no migration file) olah_georef": [
+    {
+      "column": "kec",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "desa",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Filename",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "FullPath",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "CreatedTime",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Jenis",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Lokasi",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Kodename",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Kode",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "(no migration file) olah_scan": [
+    {
+      "column": "kec",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "desa",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Filename",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "FullPath",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "CreatedTime",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Jenis",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Lokasi",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Kodename",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "Kode",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "(no migration file) model_has_roles": [
+    {
+      "column": "role_id",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "model_type",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "model_id",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "(no migration file) roles": [
+    {
+      "column": "name",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "guard_name",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "sls_sipw": [
+    {
+      "column": "klas",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "semester_id",
+      "type": "string",
+      "nullable": true
+    }
+  ],
+  "users": [
+    {
+      "column": "current_team_id",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "two_factor_secret",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "two_factor_recovery_codes",
+      "type": "string",
+      "nullable": true
+    },
+    {
+      "column": "two_factor_confirmed_at",
+      "type": "string",
+      "nullable": true
+    }
+  ]
+}

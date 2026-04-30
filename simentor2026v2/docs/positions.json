@@ -1,0 +1,830 @@
+{
+  "skp/dashboard": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol daftar pegawai": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol laporan skp": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol input skp": {
+      "position": "di kanan atas halaman"
+    },
+    "kartu progres skp": {
+      "position": "di kiri tengah halaman"
+    },
+    "kartu penetapan skp": {
+      "position": "di kanan tengah halaman"
+    },
+    "kartu metrik bulanan": {
+      "position": "di kiri bawah halaman"
+    },
+    "kartu metrik penilaian": {
+      "position": "di tengah bawah halaman"
+    },
+    "kartu metrik evaluasi": {
+      "position": "di tengah bawah halaman"
+    },
+    "kartu metrik penetapan": {
+      "position": "di kanan bawah halaman"
+    },
+    "kartu ringkasan penilaian": {
+      "position": "di kiri bawah halaman"
+    },
+    "kartu aktivitas terkini": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "skp/progres": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "filter dan aksi": {
+      "position": "di tengah atas halaman"
+    },
+    "tombol upload skp": {
+      "position": "di kanan atas halaman"
+    },
+    "tab kontrol progres": {
+      "position": "di kiri tengah halaman"
+    },
+    "daftar kartu progres": {
+      "position": "di tengah layar"
+    },
+    "kartu progres item": {
+      "position": "di kanan tengah halaman"
+    }
+  },
+  "skp/daftar": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol upload skp": {
+      "position": "di kanan atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah atas halaman"
+    },
+    "kartu statistik": {
+      "position": "di tengah layar"
+    },
+    "tabel skp": {
+      "position": "di tengah layar"
+    },
+    "navigasi halaman": {
+      "position": "di tengah layar"
+    }
+  },
+  "umum/pengaturan": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tab kategori": {
+      "position": "di kiri tengah halaman"
+    },
+    "tab kategori kantor": {
+      "position": "di kiri atas halaman"
+    },
+    "tab kategori pejabat": {
+      "position": "di kiri tengah halaman"
+    },
+    "tab kategori dipa": {
+      "position": "di kiri tengah halaman"
+    },
+    "tab kategori template": {
+      "position": "di kiri tengah halaman"
+    },
+    "tombol tambah": {
+      "position": "di kanan atas halaman"
+    },
+    "daftar pengaturan": {
+      "position": "di tengah layar"
+    },
+    "tombol edit pengaturan": {
+      "position": "di kanan tengah halaman"
+    },
+    "tombol hapus pengaturan": {
+      "position": "di kanan tengah halaman"
+    }
+  },
+  "umum/rkk-dipa/monitoring": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol ekspor": {
+      "position": "di kanan atas halaman"
+    },
+    "tab kontrol": {
+      "position": "di tengah atas halaman"
+    },
+    "tab ringkasan & chart": {
+      "position": "di kiri atas halaman"
+    },
+    "tab tabel detail": {
+      "position": "di kiri atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah layar"
+    },
+    "chart monitoring": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "umum/rkk-dipa/perencanaan": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah rencana": {
+      "position": "di kanan atas halaman"
+    },
+    "tab kontrol": {
+      "position": "di tengah atas halaman"
+    },
+    "form input rencana": {
+      "position": "di tengah layar"
+    },
+    "pencarian sumber budget": {
+      "position": "di kiri tengah halaman"
+    },
+    "daftar sumber budget": {
+      "position": "di kiri tengah halaman"
+    },
+    "detail budget terpilih": {
+      "position": "di kanan tengah halaman"
+    },
+    "tombol simpan rencana": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "umum/rkk-dipa/pencairan": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "tab kontrol": {
+      "position": "di kiri atas halaman"
+    },
+    "tab manual": {
+      "position": "di kiri atas halaman"
+    },
+    "tab sakti fa": {
+      "position": "di kiri atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah layar"
+    },
+    "form input manual": {
+      "position": "di tengah layar"
+    },
+    "pencarian sumber budget": {
+      "position": "di kiri tengah halaman"
+    },
+    "daftar sumber budget": {
+      "position": "di kiri tengah halaman"
+    },
+    "detail budget terpilih": {
+      "position": "di kanan tengah halaman"
+    },
+    "input jumlah pencairan": {
+      "position": "di tengah layar"
+    },
+    "tombol simpan realisasi": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol reset form": {
+      "position": "di kanan bawah halaman"
+    },
+    "transaksi terakhir": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "umum/rkk-dipa/riwayat": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "tab riwayat internal": {
+      "position": "di kiri atas halaman"
+    },
+    "tab rekonsiliasi sakti": {
+      "position": "di kiri atas halaman"
+    },
+    "filter program": {
+      "position": "di kiri tengah halaman"
+    },
+    "filter output": {
+      "position": "di kiri tengah halaman"
+    },
+    "filter tanggal mulai": {
+      "position": "di kiri tengah halaman"
+    },
+    "filter tanggal selesai": {
+      "position": "di tengah layar"
+    }
+  },
+  "umum/rkk-dipa/integritas": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol periksa integritas": {
+      "position": "di kanan atas halaman"
+    }
+  },
+  "umum/rkk-dipa/revisi-import": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "tab rkk dipa": {
+      "position": "di kiri atas halaman"
+    },
+    "tab sakti fa": {
+      "position": "di kiri atas halaman"
+    },
+    "input tahun anggaran": {
+      "position": "di kiri tengah halaman"
+    },
+    "input revisi ke": {
+      "position": "di kiri tengah halaman"
+    },
+    "input file excel": {
+      "position": "di kiri atas halaman"
+    },
+    "tombol proses ingest": {
+      "position": "di kiri bawah halaman"
+    }
+  },
+  "umum/surat/keluar": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "input cari surat": {
+      "position": "di kiri tengah halaman"
+    },
+    "filter tahun": {
+      "position": "di tengah layar"
+    },
+    "filter tanggal": {
+      "position": "di tengah layar"
+    },
+    "tombol reset filter": {
+      "position": "di tengah layar"
+    },
+    "tombol muat ulang": {
+      "position": "di tengah layar"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol halaman sebelumnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol halaman berikutnya": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "umum/surat/tugas": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    }
+  },
+  "umum/surat/keputusan": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol buat surat": {
+      "position": "di kanan atas halaman"
+    },
+    "kartu statistik": {
+      "position": "di kanan atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "menu aksi surat": {
+      "position": "di tengah bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di kiri bawah halaman"
+    },
+    "detail surat": {
+      "position": "di kanan bawah halaman"
+    },
+    "aksi detail surat": {
+      "position": "di kanan tengah halaman"
+    }
+  },
+  "umum/surat/permintaan": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    }
+  },
+  "umum/pegawai": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan aksi": {
+      "position": "di tengah layar"
+    },
+    "tombol terapkan": {
+      "position": "di kiri tengah halaman"
+    },
+    "tombol reset": {
+      "position": "di tengah layar"
+    },
+    "tombol tambah pegawai": {
+      "position": "di kanan tengah halaman"
+    },
+    "filter lanjutan": {
+      "position": "di tengah layar"
+    },
+    "tabel pegawai": {
+      "position": "di tengah bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "umum/libur": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah libur": {
+      "position": "di kanan atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "tombol reset": {
+      "position": "di tengah layar"
+    },
+    "tombol muat ulang": {
+      "position": "di tengah layar"
+    },
+    "daftar hari libur": {
+      "position": "di tengah layar"
+    }
+  },
+  "kegiatan/daftar": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah atas halaman"
+    },
+    "input pencarian": {
+      "position": "di tengah atas halaman"
+    },
+    "tombol tambah kegiatan": {
+      "position": "di kanan atas halaman"
+    },
+    "tabel kegiatan": {
+      "position": "di tengah bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "kegiatan/kalender": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "navigasi bulan": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol bulan sebelumnya": {
+      "position": "di kiri atas halaman"
+    },
+    "tombol bulan berikutnya": {
+      "position": "di kanan atas halaman"
+    },
+    "tab status kegiatan": {
+      "position": "di tengah atas halaman"
+    },
+    "tab status berjalan": {
+      "position": "di kiri atas halaman"
+    },
+    "tab status akan datang": {
+      "position": "di kiri atas halaman"
+    },
+    "tab status selesai": {
+      "position": "di kiri atas halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "kegiatan/penugasan": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "input pencarian": {
+      "position": "di tengah layar"
+    },
+    "tombol tambah penugasan": {
+      "position": "di kanan tengah halaman"
+    },
+    "tombol export": {
+      "position": "di kanan tengah halaman"
+    },
+    "tabel penugasan": {
+      "position": "di tengah bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "kegiatan/petugas": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "input pencarian": {
+      "position": "di tengah layar"
+    },
+    "tabel petugas": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol tambah penugasan": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "kegiatan/evaluasi": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol ekspor laporan": {
+      "position": "di kanan atas halaman"
+    },
+    "tabel anggaran vs penyerapan": {
+      "position": "di tengah layar"
+    },
+    "tombol halaman sebelumnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol halaman berikutnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "grafik penugasan bulanan": {
+      "position": "di kiri bawah halaman"
+    },
+    "tabel top mitra honor": {
+      "position": "di kanan bawah halaman"
+    },
+    "tabel penyerapan per kegiatan": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "kegiatan/monitoring": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "tombol konfigurasi": {
+      "position": "di kiri atas halaman"
+    },
+    "tombol tambah monitoring": {
+      "position": "di kanan atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah atas halaman"
+    },
+    "input cari monitoring": {
+      "position": "di tengah atas halaman"
+    },
+    "tombol toggle filter": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol export": {
+      "position": "di kanan atas halaman"
+    },
+    "tabel monitoring": {
+      "position": "di tengah layar"
+    },
+    "tombol edit monitoring": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol hapus monitoring": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol halaman sebelumnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol halaman berikutnya": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "kontraktual/monitoring": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol ekspor": {
+      "position": "di kanan atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "tab tipe monitoring": {
+      "position": "di tengah layar"
+    },
+    "tab tanpa spk": {
+      "position": "di kiri tengah halaman"
+    },
+    "tab tanpa bast": {
+      "position": "di kiri tengah halaman"
+    },
+    "tab diatas 4jt": {
+      "position": "di kiri tengah halaman"
+    },
+    "filter bulan": {
+      "position": "di kanan tengah halaman"
+    },
+    "tabel monitoring kontrak": {
+      "position": "di tengah bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol halaman sebelumnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol halaman berikutnya": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "kontraktual/spk-bast": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol dokumen baru": {
+      "position": "di kanan atas halaman"
+    },
+    "filter bulan bayar": {
+      "position": "di kanan atas halaman"
+    },
+    "tabel spk dan bast": {
+      "position": "di tengah layar"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol halaman sebelumnya": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol halaman berikutnya": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "ipds/tiket": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tiket baru": {
+      "position": "di kanan atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "input pencarian": {
+      "position": "di tengah layar"
+    },
+    "tabel tiket": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol edit tiket": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol hapus tiket": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "ipds/asset": {
+    "judul halaman": {
+      "position": "di tengah atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah asset": {
+      "position": "di kanan atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah layar"
+    },
+    "input cari asset": {
+      "position": "di tengah layar"
+    },
+    "tombol toggle filter": {
+      "position": "di kanan tengah halaman"
+    },
+    "tabel asset": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol edit asset": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol hapus asset": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "admin/pengguna": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah pengguna": {
+      "position": "di kanan atas halaman"
+    },
+    "ringkasan statistik": {
+      "position": "di tengah atas halaman"
+    },
+    "kartu statistik": {
+      "position": "di kanan atas halaman"
+    },
+    "tab kategori pengguna": {
+      "position": "di tengah layar"
+    },
+    "pencarian dan aksi": {
+      "position": "di tengah layar"
+    },
+    "input pencarian": {
+      "position": "di kiri tengah halaman"
+    },
+    "tombol reset": {
+      "position": "di tengah layar"
+    },
+    "tombol muat ulang": {
+      "position": "di tengah layar"
+    },
+    "tabel pengguna": {
+      "position": "di tengah bawah halaman"
+    },
+    "menu aksi pengguna": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    }
+  },
+  "admin/peran": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah peran": {
+      "position": "di kanan atas halaman"
+    },
+    "daftar peran": {
+      "position": "di tengah layar"
+    },
+    "tombol edit peran": {
+      "position": "di tengah layar"
+    },
+    "tombol hapus peran": {
+      "position": "di tengah layar"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol muat ulang": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "admin/izin": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah izin": {
+      "position": "di kanan atas halaman"
+    },
+    "pencarian dan filter": {
+      "position": "di tengah atas halaman"
+    },
+    "input pencarian": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol terapkan": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol reset": {
+      "position": "di kanan atas halaman"
+    },
+    "daftar grup izin": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol edit izin": {
+      "position": "di kanan bawah halaman"
+    },
+    "tombol hapus izin": {
+      "position": "di kanan bawah halaman"
+    },
+    "navigasi halaman": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol muat ulang": {
+      "position": "di kanan bawah halaman"
+    }
+  },
+  "admin/metadata": {
+    "judul halaman": {
+      "position": "di kiri atas halaman"
+    },
+    "aksi halaman": {
+      "position": "di kanan atas halaman"
+    },
+    "tombol tambah kategori": {
+      "position": "di kanan atas halaman"
+    },
+    "daftar kategori metadata": {
+      "position": "di tengah bawah halaman"
+    },
+    "tombol tambah sub-item": {
+      "position": "di kiri bawah halaman"
+    }
+  }
+}

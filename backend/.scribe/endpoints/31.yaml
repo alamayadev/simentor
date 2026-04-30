@@ -1,0 +1,1222 @@
+name: 'Nomor Surat Tugas'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/surat-tugas
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar surat tugas dengan pagination dan filtering.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 10). Contoh: 10'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      search:
+        custom: []
+        name: search
+        description: "Pencarian berdasarkan 'kepada', 'uraian', dan 'no_surat'. Contoh: Tim"
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[tanggal]':
+        custom: []
+        name: 'filter[tanggal]'
+        description: 'date Filter berdasarkan tanggal (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[tahun]':
+        custom: []
+        name: 'filter[tahun]'
+        description: 'Filter berdasarkan tahun (default: tahun saat ini). Contoh: 2024'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      sort:
+        custom: []
+        name: sort
+        description: 'Sort field. Default: -tahun. Contoh: -nomor'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 16
+      cursor: architecto
+      search: architecto
+      'filter[tanggal]': architecto
+      'filter[tahun]': architecto
+      sort: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data berhasil diambil",
+            "data": [
+              {
+                "id": 1,
+                "tahun": "2024",
+                "tanggal": "2024-01-15",
+                "nomor": "0001",
+                "no_sisip": null,
+                "no_mix": "0001",
+                "no_surat": "0001/ST-100/2024",
+                "tanggal_indo": "15 Januari 2024",
+                "kode_klas": "100",
+                "kepada": "Tim Survei",
+                "menimbang": "Dalam rangka pelaksanaan kegiatan",
+                "uraian": "Melaksanakan survei lapangan",
+                "file": null,
+                "created_by": 1,
+                "created_at": "2024-01-15T00:00:00.000000Z",
+                "updated_at": "2024-01-15T00:00:00.000000Z"
+              }
+            ],
+            "meta": {
+              "per_page": 10,
+              "has_more": false,
+              "count": 1
+            },
+            "links": {
+              "next_cursor": null,
+              "next_page_url": null,
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://localhost:8000/api/kantor/nomor-surat/surat-tugas"
+            },
+            "pagination_info": {
+              "total_page": 1,
+              "total_records": 1
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/surat-tugas/dates
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan daftar tanggal yang tersedia untuk filter.'
+      description: |-
+        Endpoint ini mengembalikan daftar tanggal unik dari data surat tugas
+        yang dapat digunakan untuk filtering. Tanggal dikembalikan dalam format Y-m-d
+        dan diurutkan secara descending. Hanya pengguna yang sudah login
+        yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Filter berdasarkan tahun (default: tahun saat ini). Contoh: 2024'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      tahun: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Dates retrieved successfully",
+            "data": [
+              "2024-01-15",
+              "2024-01-20",
+              "2024-02-10"
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/surat-tugas/years
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan daftar tahun yang tersedia untuk filter.'
+      description: |-
+        Endpoint ini mengembalikan daftar tahun unik dari data surat tugas
+        yang dapat digunakan untuk filtering. Tahun dikembalikan diurutkan
+        secara descending (terbaru ke terlama). Hanya pengguna yang sudah login
+        yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Years retrieved successfully",
+            "data": [
+              "2024",
+              "2023",
+              "2022"
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/surat-tugas/klasifikasi
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan daftar klasifikasi surat untuk dropdown.'
+      description: |-
+        Endpoint ini mengembalikan daftar klasifikasi surat yang dapat digunakan
+        untuk dropdown dalam form surat tugas. Data diambil dari tabel klasifikasi_surat
+        dengan parent_id 31. Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Klasifikasi retrieved successfully",
+            "data": [
+              {
+                "kode": "100",
+                "keterangan": "Organisasi"
+              },
+              {
+                "kode": "200",
+                "keterangan": "Tata Usaha"
+              }
+            ]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/surat/surat-tugas/form-options
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan opsi form (klasifikasi + nomor terbaru tahun ini).'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Form options retrieved successfully",
+            "data": {
+              "klasifikasi": [ { "kode": "100", "keterangan": "Organisasi" } ],
+              "nomor_baru": "0025"
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/surat/surat-tugas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan detail surat tugas berdasarkan ID.'
+      description: |-
+        Endpoint ini mengembalikan detail lengkap dari surat tugas tertentu
+        beserta detail surat tugas (SurtugDetil) yang terkait.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat tugas. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": {
+              "id": 1,
+              "tahun": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "no_mix": "0001",
+              "no_surat": "0001/ST-100/2024",
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "kepada": "Tim Survei",
+              "menimbang": "Dalam rangka pelaksanaan kegiatan",
+              "uraian": "Melaksanakan survei lapangan",
+              "file": null,
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z",
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Surat tugas not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/surat/surat-tugas
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Membuat surat tugas baru dengan nomor otomatis.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kepada:
+        custom: []
+        name: kepada
+        description: 'Penerima surat. Contoh: Tim Survei'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      menimbang:
+        custom: []
+        name: menimbang
+        description: 'Dasar pertimbangan (opsional). Contoh: Dalam rangka pelaksanaan kegiatan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      uraian:
+        custom: []
+        name: uraian
+        description: 'Uraian tugas. Contoh: Melaksanakan survei lapangan'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      tahun: architecto
+      tanggal: architecto
+      kode_klas: architecto
+      kepada: architecto
+      menimbang: architecto
+      uraian: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/ST-100/2024 berhasil disimpan",
+            "data": {
+              "id": 1,
+              "tahun": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "no_mix": "0001",
+              "no_surat": "0001/ST-100/2024",
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "kepada": "Tim Survei",
+              "menimbang": "Dalam rangka pelaksanaan kegiatan",
+              "uraian": "Melaksanakan survei lapangan",
+              "file": null,
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "tahun": ["Field tahun wajib diisi."],
+              "tanggal": ["Field tanggal wajib diisi."],
+              "kode_klas": ["Field kode_klas wajib diisi."],
+              "kepada": ["Field kepada wajib diisi."],
+              "uraian": ["Field uraian wajib diisi."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to create surat tugas",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/surat/surat-tugas/sisip
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menyimpan surat tugas (varian insert) dengan nomor sisip otomatis.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nomor:
+        custom: []
+        name: nomor
+        description: 'Nomor urut surat. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kepada:
+        custom: []
+        name: kepada
+        description: 'Penerima surat. Contoh: Tim Survei'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      menimbang:
+        custom: []
+        name: menimbang
+        description: 'Dasar pertimbangan (opsional). Contoh: Dalam rangka pelaksanaan kegiatan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      uraian:
+        custom: []
+        name: uraian
+        description: 'Uraian tugas. Contoh: Melaksanakan survei lapangan'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'File attachment (opsional). Contoh: document.pdf'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      no_sisip:
+        custom: []
+        name: no_sisip
+        description: 'optional Nomor sisip (auto-generated jika tidak diisi). Contoh: 1'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      tahun: architecto
+      tanggal: architecto
+      nomor: architecto
+      kode_klas: architecto
+      kepada: architecto
+      menimbang: architecto
+      uraian: architecto
+      file: architecto
+      no_sisip: 16
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/ST-100/2024 berhasil disisipkan",
+            "data": {
+              "id": 1,
+              "tahun": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": "1",
+              "no_mix": "0001.1",
+              "no_surat": "0001.1/ST-100/2024",
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "kepada": "Tim Survei",
+              "menimbang": "Dalam rangka pelaksanaan kegiatan",
+              "uraian": "Melaksanakan survei lapangan",
+              "file": null,
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "tahun": ["The tahun field is required."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to insert nomor surat",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/surat/surat-tugas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mengupdate surat tugas berdasarkan ID.'
+      description: |-
+        Endpoint ini mengupdate data surat tugas yang sudah ada.
+        Nomor surat akan diformat ulang sesuai dengan data yang diupdate.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat tugas yang akan diupdate. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Tahun surat. Contoh: 2024'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal surat (format: YYYY-MM-DD). Contoh: 2024-01-15'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nomor:
+        custom: []
+        name: nomor
+        description: 'Nomor urut surat. Contoh: 1'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kode_klas:
+        custom: []
+        name: kode_klas
+        description: 'Kode klasifikasi. Contoh: 100'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kepada:
+        custom: []
+        name: kepada
+        description: 'Penerima surat. Contoh: Tim Survei'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      menimbang:
+        custom: []
+        name: menimbang
+        description: 'Dasar pertimbangan (opsional). Contoh: Dalam rangka pelaksanaan kegiatan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      uraian:
+        custom: []
+        name: uraian
+        description: 'Uraian tugas. Contoh: Melaksanakan survei lapangan'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      no_sisip:
+        custom: []
+        name: no_sisip
+        description: 'Nomor sisip (opsional). Contoh: 1'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'Lampiran (hanya PDF, opsional).'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      tahun: architecto
+      tanggal: architecto
+      nomor: architecto
+      kode_klas: architecto
+      kepada: architecto
+      menimbang: architecto
+      uraian: architecto
+      no_sisip: architecto
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat 0001/ST-100/2024 berhasil diupdate",
+            "data": {
+              "id": 1,
+              "tahun": "2024",
+              "tanggal": "2024-01-15",
+              "nomor": "0001",
+              "no_sisip": null,
+              "no_mix": "0001",
+              "no_surat": "0001/ST-100/2024",
+              "tanggal_indo": "15 Januari 2024",
+              "kode_klas": "100",
+              "kepada": "Tim Survei",
+              "menimbang": "Dalam rangka pelaksanaan kegiatan",
+              "uraian": "Melaksanakan survei lapangan",
+              "file": null,
+              "created_by": 1,
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Surat tugas not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "tahun": ["The tahun field is required."],
+              "tanggal": ["The tanggal field is required."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to update surat tugas",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/surat/surat-tugas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Nomor Surat Tugas'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menghapus surat tugas berdasarkan ID.'
+      description: |-
+        Endpoint ini menghapus data surat tugas yang dipilih dari database.
+        Jika ada file attachment yang terkait, file tersebut juga akan dihapus dari disk.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID surat tugas yang akan dihapus. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Nomor Surat berhasil dihapus",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Surat tugas not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to delete surat tugas",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

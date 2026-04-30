@@ -1,0 +1,505 @@
+name: Links
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/links
+    metadata:
+      custom: []
+      groupName: Links
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List Links'
+      description: |-
+        Get a hierarchical list of links. Root links (without parent) are returned with their children.
+        Supports pagination and filtering by name.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Number of items per page (max 100).'
+        required: false
+        example: 15
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor for pagination.'
+        required: false
+        example: eyJpZCI6M...
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[nama]':
+        custom: []
+        name: 'filter[nama]'
+        description: 'Filter links by name.'
+        required: false
+        example: External
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 15
+      cursor: eyJpZCI6M...
+      'filter[nama]': External
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Links retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "parent_id": null,
+                "nama": "External Services",
+                "link": null,
+                "created_at": "2024-01-01T00:00:00.000000Z",
+                "updated_at": "2024-01-01T00:00:00.000000Z",
+                "children": [
+                  {
+                    "id": 2,
+                    "parent_id": 1,
+                    "nama": "Data Portal",
+                    "link": "https://data.example.com",
+                    "created_at": "2024-01-02T00:00:00.000000Z",
+                    "updated_at": "2024-01-02T00:00:00.000000Z",
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "meta": {
+              "per_page": 15,
+              "has_more": false,
+              "count": 1
+            },
+            "links": {
+              "next_cursor": null,
+              "next_page_url": null,
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://localhost:8000/api/kantor/links"
+            },
+            "pagination_info": {
+              "total_page": 1,
+              "total_records": 1
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/links
+    metadata:
+      custom: []
+      groupName: Links
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Link'
+      description: 'Create a new link. Can be a root link (parent_id=null) or a child link.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama:
+        custom: []
+        name: nama
+        description: 'The name of the link.'
+        required: true
+        example: 'Data Portal'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      link:
+        custom: []
+        name: link
+        description: 'nullable The URL of the link.'
+        required: false
+        example: 'https://data.example.com'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+      parent_id:
+        custom: []
+        name: parent_id
+        description: 'nullable The parent link ID for hierarchical organization.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      nama: 'Data Portal'
+      link: 'https://data.example.com'
+      parent_id: 1
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Link created successfully",
+            "data": {
+              "id": 3,
+              "parent_id": 1,
+              "nama": "Analytics Dashboard",
+              "link": "https://analytics.example.com",
+              "created_at": "2024-01-03T00:00:00.000000Z",
+              "updated_at": "2024-01-03T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "message": "The given data was invalid.",
+            "errors": {
+              "nama": [
+                "The nama field is required."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/links/{id}'
+    metadata:
+      custom: []
+      groupName: Links
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show Link'
+      description: 'Get details of a specific link with its children.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the link.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Link retrieved successfully",
+            "data": {
+              "id": 1,
+              "parent_id": null,
+              "nama": "External Services",
+              "link": null,
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z",
+              "children": [
+                {
+                  "id": 2,
+                  "parent_id": 1,
+                  "nama": "Data Portal",
+                  "link": "https://data.example.com",
+                  "created_at": "2024-01-02T00:00:00.000000Z",
+                  "updated_at": "2024-01-02T00:00:00.000000Z",
+                  "children": []
+                }
+              ]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Link not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/links/{id}'
+    metadata:
+      custom: []
+      groupName: Links
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Link'
+      description: "Update an existing link's information."
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the link.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama:
+        custom: []
+        name: nama
+        description: 'The name of the link.'
+        required: false
+        example: 'Updated External Services'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      link:
+        custom: []
+        name: link
+        description: 'nullable The URL of the link.'
+        required: false
+        example: 'https://updated.example.com'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+      parent_id:
+        custom: []
+        name: parent_id
+        description: 'nullable The parent link ID for hierarchical organization.'
+        required: false
+        example: null
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      nama: 'Updated External Services'
+      link: 'https://updated.example.com'
+      parent_id: null
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Link updated successfully",
+            "data": {
+              "id": 1,
+              "parent_id": null,
+              "nama": "Updated External Services",
+              "link": "https://updated.example.com",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-03T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Link not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "message": "The given data was invalid.",
+            "errors": {
+              "link": [
+                "The link must be a valid URL."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/links/{id}'
+    metadata:
+      custom: []
+      groupName: Links
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Link'
+      description: 'Delete a link and all its children recursively.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the link.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Link deleted successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Link not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

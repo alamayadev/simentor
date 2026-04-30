@@ -1,0 +1,4074 @@
+{
+  "meta": {
+    "hosts": [
+      "https://api-dev.bps3215.id",
+      "https://portal-dev.bps3215.id"
+    ],
+    "endpoints": [
+      "/api/wilkerstat-dashboard?cache=0"
+    ],
+    "concurrency": 20,
+    "requests_per_endpoint": 200,
+    "timestamp": 1758539745.3752673
+  },
+  "summary": {
+    "https://api-dev.bps3215.id": {
+      "/api/wilkerstat-dashboard?cache=0": {
+        "count": 200,
+        "success": 2,
+        "errors": 198,
+        "mean_ms": 30314.63186450041,
+        "p50_ms": 30435.929450031836,
+        "p90_ms": 30458.375279972097,
+        "p99_ms": 30515.45085102087
+      }
+    },
+    "https://portal-dev.bps3215.id": {
+      "/api/wilkerstat-dashboard?cache=0": {
+        "count": 200,
+        "success": 0,
+        "errors": 200,
+        "mean_ms": 30187.682142001577,
+        "p50_ms": 30144.597650010837,
+        "p90_ms": 30201.35040000896,
+        "p99_ms": 30771.87518201419
+      }
+    }
+  },
+  "raw": [
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 12692.648499971256,
+      "timestamp": 1758539137.6741931,
+      "error": null,
+      "headers": {
+        "date": "Mon, 22 Sep 2025 11:05:51 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "no-cache, private",
+        "host": "api-dev.bps3215.id",
+        "vary": "Origin",
+        "x-cache": "BYPASS",
+        "x-powered-by": "PHP/8.4.12",
+        "cf-cache-status": "DYNAMIC",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5jkYl15Faa8dHITvorTxTD8120B8aVbCKDWrgPUPTbGpdMbOCw%2F%2FQDx3m%2FwmOu9sD%2F4w2lmhTuJG22xTngTP05G0i2YajQJiB3R5sMUDIgmVcg%3D%3D\"}]}",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "98315414ef562517-SJC",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 23923.960900050588,
+      "timestamp": 1758539137.675359,
+      "error": null,
+      "headers": {
+        "date": "Mon, 22 Sep 2025 11:06:02 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "no-cache, private",
+        "host": "api-dev.bps3215.id",
+        "vary": "Origin",
+        "x-cache": "BYPASS",
+        "x-powered-by": "PHP/8.4.12",
+        "cf-cache-status": "DYNAMIC",
+        "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=7HU7EtzNkbwoj7pnhMLyOPuTfrShtiuM%2BRTHF5oZpDiTEFyyfOhKmau8csfzUVgtB0hcqZ8NWYJRpuWOgpmHH9utkI1R5364Vicie1Kq72NV%2BQ%3D%3D\"}]}",
+        "content-encoding": "gzip",
+        "server": "cloudflare",
+        "cf-ray": "98315414dbf0cf1b-SJC",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30504.38810000196,
+      "timestamp": 1758539137.675125,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30506.643300002906,
+      "timestamp": 1758539137.6748977,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30507.129099976737,
+      "timestamp": 1758539137.6752028,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30508.53140000254,
+      "timestamp": 1758539137.6745875,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30507.944500015583,
+      "timestamp": 1758539137.6755135,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30508.27869999921,
+      "timestamp": 1758539137.6754363,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30508.25449998956,
+      "timestamp": 1758539137.6756666,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30511.49850001093,
+      "timestamp": 1758539137.674499,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30511.476600018796,
+      "timestamp": 1758539137.6748252,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30511.28299999982,
+      "timestamp": 1758539137.6752803,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30511.753599974327,
+      "timestamp": 1758539137.675051,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30511.29769999534,
+      "timestamp": 1758539137.675744,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30512.581299990416,
+      "timestamp": 1758539137.6746728,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30514.884900010657,
+      "timestamp": 1758539137.6747506,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30515.194799983874,
+      "timestamp": 1758539137.674973,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30516.09940000344,
+      "timestamp": 1758539137.6743937,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30522.22789998632,
+      "timestamp": 1758539137.668577,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30515.444300021045,
+      "timestamp": 1758539137.6755915,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30001.76479999209,
+      "timestamp": 1758539150.366885,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30011.3925000187,
+      "timestamp": 1758539161.599363,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30410.92250001384,
+      "timestamp": 1758539168.182339,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.336799984332,
+      "timestamp": 1758539168.1831253,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30435.59780000942,
+      "timestamp": 1758539168.190174,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30446.498100005556,
+      "timestamp": 1758539168.1795266,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.231199969072,
+      "timestamp": 1758539168.1870453,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.681499963626,
+      "timestamp": 1758539168.1868095,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.438799978234,
+      "timestamp": 1758539168.187258,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30445.33599994611,
+      "timestamp": 1758539168.1815505,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30436.261100054253,
+      "timestamp": 1758539168.190808,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.53669998236,
+      "timestamp": 1758539168.1837196,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.042299985886,
+      "timestamp": 1758539168.19104,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.799599989783,
+      "timestamp": 1758539168.1904988,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30444.446399982553,
+      "timestamp": 1758539168.1860054,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.428099981043,
+      "timestamp": 1758539168.1896436,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30446.1694000056,
+      "timestamp": 1758539168.1863086,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30446.17130002007,
+      "timestamp": 1758539168.1865683,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.40549999755,
+      "timestamp": 1758539168.1834629,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.21219998086,
+      "timestamp": 1758539168.1839244,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30409.96560000349,
+      "timestamp": 1758539180.3686607,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.443800039124,
+      "timestamp": 1758539191.610766,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.57400001958,
+      "timestamp": 1758539198.5932713,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30405.492899997625,
+      "timestamp": 1758539198.632076,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30423.262299969792,
+      "timestamp": 1758539198.6304538,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30413.107300002594,
+      "timestamp": 1758539198.6408749,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.112699999474,
+      "timestamp": 1758539198.6260285,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30429.119399981573,
+      "timestamp": 1758539198.6267004,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30429.85439999029,
+      "timestamp": 1758539198.626281,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30444.057499989867,
+      "timestamp": 1758539198.6254706,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30439.776699990034,
+      "timestamp": 1758539198.6300874,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30437.360500043724,
+      "timestamp": 1758539198.632743,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.428699974902,
+      "timestamp": 1758539198.6268892,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30445.064699975774,
+      "timestamp": 1758539198.6272595,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30445.43339998927,
+      "timestamp": 1758539198.627072,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30446.87010004418,
+      "timestamp": 1758539198.6257777,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.89259998873,
+      "timestamp": 1758539198.6324832,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30432.69169999985,
+      "timestamp": 1758539198.6411405,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.781799986027,
+      "timestamp": 1758539198.630301,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30447.809599980246,
+      "timestamp": 1758539198.626495,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30417.757700022776,
+      "timestamp": 1758539210.7786367,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.031100039836,
+      "timestamp": 1758539222.0372202,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.292299994733,
+      "timestamp": 1758539229.021854,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.961300021503,
+      "timestamp": 1758539229.0375786,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30408.667300012894,
+      "timestamp": 1758539229.0561411,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.11699999543,
+      "timestamp": 1758539229.0695362,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30441.935200011358,
+      "timestamp": 1758539229.0539856,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.35770002706,
+      "timestamp": 1758539229.053724,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.074800026603,
+      "timestamp": 1758539229.0541437,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30423.841500014532,
+      "timestamp": 1758539229.0725083,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30423.826700018253,
+      "timestamp": 1758539229.0726497,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.29209998995,
+      "timestamp": 1758539229.0703223,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30423.27850003494,
+      "timestamp": 1758539229.0738368,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.455500004347,
+      "timestamp": 1758539229.055826,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.713499975856,
+      "timestamp": 1758539229.0740864,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30430.733800050803,
+      "timestamp": 1758539229.0723283,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30433.14370000735,
+      "timestamp": 1758539229.070108,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30430.015599995386,
+      "timestamp": 1758539229.0733795,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30433.650300023146,
+      "timestamp": 1758539229.06987,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30452.88120000623,
+      "timestamp": 1758539229.0743098,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30418.44779998064,
+      "timestamp": 1758539241.196404,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30411.44490003353,
+      "timestamp": 1758539252.4632618,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.097399996128,
+      "timestamp": 1758539259.4645452,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30413.17000001436,
+      "timestamp": 1758539259.4641562,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.711400028784,
+      "timestamp": 1758539259.4648132,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.442400007043,
+      "timestamp": 1758539259.4960837,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.165299992543,
+      "timestamp": 1758539259.4966164,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30444.285700039472,
+      "timestamp": 1758539259.4963522,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.849699979182,
+      "timestamp": 1758539259.4971194,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30444.823099998757,
+      "timestamp": 1758539259.4964788,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30438.690099981613,
+      "timestamp": 1758539259.5033975,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.26440003654,
+      "timestamp": 1758539259.5032558,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30441.10440002987,
+      "timestamp": 1758539259.5030663,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30445.6402999931,
+      "timestamp": 1758539259.499286,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30449.180700001307,
+      "timestamp": 1758539259.4959245,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30449.03559994418,
+      "timestamp": 1758539259.4962208,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30450.914999993984,
+      "timestamp": 1758539259.4956605,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30429.435800004285,
+      "timestamp": 1758539259.5271986,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30453.384599997662,
+      "timestamp": 1758539259.5035224,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30454.31699999608,
+      "timestamp": 1758539259.5028062,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30422.13060002541,
+      "timestamp": 1758539271.6148627,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30418.903100013267,
+      "timestamp": 1758539282.8747177,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30402.737799973693,
+      "timestamp": 1758539289.8766541,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30402.794800000265,
+      "timestamp": 1758539289.8773327,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.554799983744,
+      "timestamp": 1758539289.8925314,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30418.32970001269,
+      "timestamp": 1758539289.9245336,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30433.932100015227,
+      "timestamp": 1758539289.9247856,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30414.87330000382,
+      "timestamp": 1758539289.9441767,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30436.290899990126,
+      "timestamp": 1758539289.9465792,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.148600006476,
+      "timestamp": 1758539289.9409745,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30438.16419999348,
+      "timestamp": 1758539289.945108,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.27709999215,
+      "timestamp": 1758539289.957126,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30458.311099966522,
+      "timestamp": 1758539289.9406462,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.878399989568,
+      "timestamp": 1758539289.941307,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.416700010654,
+      "timestamp": 1758539289.9569123,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.367499999236,
+      "timestamp": 1758539289.9420927,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30454.655900015496,
+      "timestamp": 1758539289.9449298,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30454.456600011326,
+      "timestamp": 1758539289.945259,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30456.31360000698,
+      "timestamp": 1758539289.9435244,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.332000053488,
+      "timestamp": 1758539289.9566395,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.741799955256,
+      "timestamp": 1758539302.0370042,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30423.588899953756,
+      "timestamp": 1758539313.2936318,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.42130003171,
+      "timestamp": 1758539320.2793994,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.9731999957,
+      "timestamp": 1758539320.2801352,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.150400006212,
+      "timestamp": 1758539320.327094,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30411.681900033727,
+      "timestamp": 1758539320.3428702,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30411.227100004908,
+      "timestamp": 1758539320.3587253,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.240400003735,
+      "timestamp": 1758539320.3590567,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.03879995458,
+      "timestamp": 1758539320.3832746,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.288899996318,
+      "timestamp": 1758539320.3834047,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30420.276200049557,
+      "timestamp": 1758539320.3989635,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30433.393000042997,
+      "timestamp": 1758539320.3999734,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30450.560499972198,
+      "timestamp": 1758539320.3831272,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.448699990753,
+      "timestamp": 1758539320.3994625,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.33580000419,
+      "timestamp": 1758539320.3997178,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30434.591199969873,
+      "timestamp": 1758539320.3995879,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30435.119699977804,
+      "timestamp": 1758539320.3991892,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30453.66370002739,
+      "timestamp": 1758539320.3828802,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30438.855900021736,
+      "timestamp": 1758539320.3993313,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30438.86279995786,
+      "timestamp": 1758539320.3998394,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30429.283000004943,
+      "timestamp": 1758539332.449757,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30441.855099983513,
+      "timestamp": 1758539343.7172296,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30411.058700003196,
+      "timestamp": 1758539350.7071118,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.176699973643,
+      "timestamp": 1758539350.70683,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.8759000008,
+      "timestamp": 1758539350.7542522,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.851299988106,
+      "timestamp": 1758539350.7545567,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.607199978083,
+      "timestamp": 1758539350.7699604,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30425.693799974397,
+      "timestamp": 1758539350.7853038,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30408.93400000641,
+      "timestamp": 1758539350.8177009,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30407.77320001507,
+      "timestamp": 1758539350.8192446,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30425.393200013787,
+      "timestamp": 1758539350.8173268,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30404.334099963307,
+      "timestamp": 1758539350.8387074,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.237099995837,
+      "timestamp": 1758539350.8341813,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30455.12920001056,
+      "timestamp": 1758539350.8365505,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30458.1434999709,
+      "timestamp": 1758539350.8336935,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30458.055399998557,
+      "timestamp": 1758539350.833914,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30457.780800003093,
+      "timestamp": 1758539350.8343112,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30454.018099990208,
+      "timestamp": 1758539350.838194,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30458.95290002227,
+      "timestamp": 1758539350.833376,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30459.14900000207,
+      "timestamp": 1758539350.834056,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30414.694800041616,
+      "timestamp": 1758539362.879051,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30403.9361999603,
+      "timestamp": 1758539374.1590989,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.923399990425,
+      "timestamp": 1758539381.1181793,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30426.7401000252,
+      "timestamp": 1758539381.1340144,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30424.074899987318,
+      "timestamp": 1758539381.1825697,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.63389999792,
+      "timestamp": 1758539381.1821365,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.625999995973,
+      "timestamp": 1758539381.1824117,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.193100026343,
+      "timestamp": 1758539381.2110088,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30396.711600013077,
+      "timestamp": 1758539381.226648,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30411.803400027566,
+      "timestamp": 1758539381.242729,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.772599970922,
+      "timestamp": 1758539381.2270253,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30427.27939999895,
+      "timestamp": 1758539381.2430475,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30425.02710002009,
+      "timestamp": 1758539381.2922134,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30424.42769999616,
+      "timestamp": 1758539381.293212,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.13260000106,
+      "timestamp": 1758539381.2919717,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.63820000924,
+      "timestamp": 1758539381.2916827,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.378299951088,
+      "timestamp": 1758539381.2920942,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30442.339900007937,
+      "timestamp": 1758539381.2923298,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.395100010093,
+      "timestamp": 1758539381.2914271,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30443.123599980026,
+      "timestamp": 1758539381.2918391,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30420.142400020268,
+      "timestamp": 1758539393.2937582,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30406.714399985503,
+      "timestamp": 1758539404.5630445,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.553299975116,
+      "timestamp": 1758539411.5591114,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30410.949199984316,
+      "timestamp": 1758539411.560763,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.925200016238,
+      "timestamp": 1758539411.606653,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.417999992613,
+      "timestamp": 1758539411.623203,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.02340001799,
+      "timestamp": 1758539411.6233618,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.40580001939,
+      "timestamp": 1758539411.6230416,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.714999987278,
+      "timestamp": 1758539411.6227775,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.77930001123,
+      "timestamp": 1758539411.6545393,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.557500010356,
+      "timestamp": 1758539411.6548014,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30428.99149999721,
+      "timestamp": 1758539411.670333,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30413.77189999912,
+      "timestamp": 1758539411.7176461,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30430.23830000311,
+      "timestamp": 1758539411.7172546,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30412.89500001585,
+      "timestamp": 1758539411.7346742,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.29960001353,
+      "timestamp": 1758539411.7349653,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30441.2108999677,
+      "timestamp": 1758539411.7341113,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.537800022867,
+      "timestamp": 1758539411.734824,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30440.924599999562,
+      "timestamp": 1758539411.7344759,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://api-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30441.110999963712,
+      "timestamp": 1758539411.7343242,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30195.267400005832,
+      "timestamp": 1758539442.4096074,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30198.71199998306,
+      "timestamp": 1758539442.4065952,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30198.78370000515,
+      "timestamp": 1758539442.406802,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30196.320499991998,
+      "timestamp": 1758539442.409528,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30199.600799998734,
+      "timestamp": 1758539442.406475,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30201.218399975915,
+      "timestamp": 1758539442.4059627,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30198.738600010984,
+      "timestamp": 1758539442.4089105,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30199.03230003547,
+      "timestamp": 1758539442.4093757,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30200.25270001497,
+      "timestamp": 1758539442.4090421,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30201.284000009764,
+      "timestamp": 1758539442.4094536,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30201.94800000172,
+      "timestamp": 1758539442.4091322,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30737.07370000193,
+      "timestamp": 1758539442.409743,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30739.561300026253,
+      "timestamp": 1758539442.4092996,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30752.767899946775,
+      "timestamp": 1758539442.409832,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30756.266199983656,
+      "timestamp": 1758539442.406711,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30754.014700010885,
+      "timestamp": 1758539442.409216,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30753.544400038663,
+      "timestamp": 1758539442.4099336,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30771.872300014365,
+      "timestamp": 1758539442.406289,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30772.16049999697,
+      "timestamp": 1758539442.4063935,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30800.54760002531,
+      "timestamp": 1758539442.4061813,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30154.421299987007,
+      "timestamp": 1758539472.60608,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30167.308899981435,
+      "timestamp": 1758539472.6093016,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30169.358199986164,
+      "timestamp": 1758539472.6076548,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30168.891499983147,
+      "timestamp": 1758539472.6084137,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30166.801000013947,
+      "timestamp": 1758539472.6107438,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30166.696900036186,
+      "timestamp": 1758539472.6110861,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30172.141499991994,
+      "timestamp": 1758539472.6058538,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30216.047100024298,
+      "timestamp": 1758539472.6071875,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30218.771600048058,
+      "timestamp": 1758539472.6048884,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30218.336099991575,
+      "timestamp": 1758539472.6055903,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30397.812700015493,
+      "timestamp": 1758539472.6053147,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.415400013793,
+      "timestamp": 1758539473.146832,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.245100000873,
+      "timestamp": 1758539473.1626105,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.705399951898,
+      "timestamp": 1758539473.1785617,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.31520001078,
+      "timestamp": 1758539473.1632357,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.791100025643,
+      "timestamp": 1758539473.1629846,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30383.638700004667,
+      "timestamp": 1758539473.148871,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30384.156199987046,
+      "timestamp": 1758539473.163483,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30385.196199989878,
+      "timestamp": 1758539473.1781714,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30526.678700000048,
+      "timestamp": 1758539473.2067401,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.284100008197,
+      "timestamp": 1758539502.7605135,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.272400035523,
+      "timestamp": 1758539502.777787,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.449100031517,
+      "timestamp": 1758539502.777021,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30150.44279996073,
+      "timestamp": 1758539502.777999,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30151.30389999831,
+      "timestamp": 1758539502.7775495,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30152.52010000404,
+      "timestamp": 1758539502.7766213,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30152.087399968877,
+      "timestamp": 1758539502.7773104,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.63229998201,
+      "timestamp": 1758539502.823245,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.41269999789,
+      "timestamp": 1758539502.8239307,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.979599948972,
+      "timestamp": 1758539502.823666,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.702800001018,
+      "timestamp": 1758539503.0031414,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30133.896499988623,
+      "timestamp": 1758539503.2782574,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30149.138100037817,
+      "timestamp": 1758539503.3107793,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30150.080700055696,
+      "timestamp": 1758539503.3102741,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30150.078999984544,
+      "timestamp": 1758539503.3105557,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30151.041999983136,
+      "timestamp": 1758539503.3098655,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.10970001435,
+      "timestamp": 1758539503.5325215,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.50579997152,
+      "timestamp": 1758539503.5476506,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.245700002182,
+      "timestamp": 1758539503.563377,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30128.224299987778,
+      "timestamp": 1758539503.7334292,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.49830001872,
+      "timestamp": 1758539532.896809,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.646999994293,
+      "timestamp": 1758539532.9140706,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.890999989584,
+      "timestamp": 1758539532.914477,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.39419999346,
+      "timestamp": 1758539532.929402,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.766799967736,
+      "timestamp": 1758539532.9284525,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.637200028636,
+      "timestamp": 1758539532.9288619,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.601899992675,
+      "timestamp": 1758539532.9291449,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.391799961217,
+      "timestamp": 1758539532.9598887,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.82060001418,
+      "timestamp": 1758539532.9603517,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30132.19279999612,
+      "timestamp": 1758539532.96065,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.2905999613,
+      "timestamp": 1758539533.133856,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.919700038154,
+      "timestamp": 1758539533.4121673,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.8688999624,
+      "timestamp": 1758539533.4609113,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.076100005303,
+      "timestamp": 1758539533.4606395,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.09360001143,
+      "timestamp": 1758539533.459928,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.892599994317,
+      "timestamp": 1758539533.460362,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.37270000577,
+      "timestamp": 1758539533.6636424,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30131.6784999799,
+      "timestamp": 1758539533.6821659,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.929799998645,
+      "timestamp": 1758539533.6946344,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30140.718700014986,
+      "timestamp": 1758539533.8616648,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.515400027856,
+      "timestamp": 1758539563.0443735,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30142.60279998416,
+      "timestamp": 1758539563.0437233,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.299899995327,
+      "timestamp": 1758539563.0433185,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30158.192300004885,
+      "timestamp": 1758539563.0752285,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30159.068499982823,
+      "timestamp": 1758539563.074809,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30158.419299987145,
+      "timestamp": 1758539563.075751,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30158.910700003617,
+      "timestamp": 1758539563.0755026,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.78710000124,
+      "timestamp": 1758539563.0928507,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30144.578800012823,
+      "timestamp": 1758539563.0902913,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30142.89799996186,
+      "timestamp": 1758539563.092181,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30142.338400008157,
+      "timestamp": 1758539563.279157,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.189000008628,
+      "timestamp": 1758539563.5471003,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30126.400500012096,
+      "timestamp": 1758539563.6072586,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30144.830800010823,
+      "timestamp": 1758539563.6047907,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.008800048847,
+      "timestamp": 1758539563.607026,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.593000015244,
+      "timestamp": 1758539563.6067245,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.753099996597,
+      "timestamp": 1758539563.79803,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.07759997528,
+      "timestamp": 1758539563.8138547,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.41750000231,
+      "timestamp": 1758539563.8295739,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.754400006495,
+      "timestamp": 1758539564.0023954,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30127.029400027823,
+      "timestamp": 1758539593.1866212,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.10819999082,
+      "timestamp": 1758539593.1863341,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.985000031535,
+      "timestamp": 1758539593.1859019,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30158.84879999794,
+      "timestamp": 1758539593.2344182,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30159.052400034852,
+      "timestamp": 1758539593.234642,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30160.196600016207,
+      "timestamp": 1758539593.234175,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30159.617899975274,
+      "timestamp": 1758539593.235082,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30160.093599988613,
+      "timestamp": 1758539593.2348726,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30161.77669999888,
+      "timestamp": 1758539593.2334306,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30161.568800045643,
+      "timestamp": 1758539593.2338839,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.662099992856,
+      "timestamp": 1758539593.421508,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.500699986238,
+      "timestamp": 1758539593.6863031,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.096499993466,
+      "timestamp": 1758539593.7336755,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30144.587100017816,
+      "timestamp": 1758539593.7500415,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.455399993807,
+      "timestamp": 1758539593.7496312,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.058699999936,
+      "timestamp": 1758539593.7503324,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.2844999698,
+      "timestamp": 1758539593.9377937,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.840400011744,
+      "timestamp": 1758539593.9529455,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.226299995556,
+      "timestamp": 1758539593.9690025,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30129.169299965724,
+      "timestamp": 1758539594.1421604,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30132.500900013838,
+      "timestamp": 1758539623.3136668,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.884500038344,
+      "timestamp": 1758539623.3294547,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.907199978363,
+      "timestamp": 1758539623.3298955,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30161.536799976602,
+      "timestamp": 1758539623.3952122,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30162.815499992575,
+      "timestamp": 1758539623.394378,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30162.035499990452,
+      "timestamp": 1758539623.3954563,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30162.765199958812,
+      "timestamp": 1758539623.394971,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30164.26799999317,
+      "timestamp": 1758539623.3937027,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30164.923000033014,
+      "timestamp": 1758539623.3932781,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30163.715500035323,
+      "timestamp": 1758539623.3947067,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.18909998797,
+      "timestamp": 1758539623.55118,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.032299974933,
+      "timestamp": 1758539623.815816,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.096099995077,
+      "timestamp": 1758539623.8627827,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30133.69829999283,
+      "timestamp": 1758539623.8946404,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30133.79170000553,
+      "timestamp": 1758539623.895395,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.87670000177,
+      "timestamp": 1758539623.8950937,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30135.40909998119,
+      "timestamp": 1758539624.0670893,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.936200047377,
+      "timestamp": 1758539624.0827956,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30135.512200009543,
+      "timestamp": 1758539624.1142447,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30702.48099998571,
+      "timestamp": 1758539624.27134,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.04329998372,
+      "timestamp": 1758539653.4461775,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.58330002101,
+      "timestamp": 1758539653.4773505,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.596900008153,
+      "timestamp": 1758539653.4778101,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.37980000628,
+      "timestamp": 1758539653.557497,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.506899984553,
+      "timestamp": 1758539653.5582056,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30171.163999999408,
+      "timestamp": 1758539653.5577404,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30172.10409999825,
+      "timestamp": 1758539653.557201,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30172.82300000079,
+      "timestamp": 1758539653.5567622,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30171.882700000424,
+      "timestamp": 1758539653.5579753,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30171.68730002595,
+      "timestamp": 1758539653.5584252,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30143.171600007918,
+      "timestamp": 1758539653.6923811,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30140.176399960183,
+      "timestamp": 1758539653.9498582,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30124.576800037175,
+      "timestamp": 1758539653.9968882,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30122.261799988337,
+      "timestamp": 1758539654.0299776,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30138.905200001318,
+      "timestamp": 1758539654.0291955,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30140.130900021177,
+      "timestamp": 1758539654.0283465,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30138.454200001433,
+      "timestamp": 1758539654.2177446,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30154.135399963707,
+      "timestamp": 1758539654.2025108,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.970599986147,
+      "timestamp": 1758539654.2497675,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30134.140500042122,
+      "timestamp": 1758539654.9738326,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.44209999498,
+      "timestamp": 1758539683.587233,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30146.912799973506,
+      "timestamp": 1758539683.6194146,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30147.856399999,
+      "timestamp": 1758539683.6189435,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30153.702999989036,
+      "timestamp": 1758539683.6977248,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30154.994999989867,
+      "timestamp": 1758539683.6968887,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30123.985600017477,
+      "timestamp": 1758539683.7301166,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.41210004082,
+      "timestamp": 1758539683.7289166,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30156.339100038167,
+      "timestamp": 1758539683.729588,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30156.472800008487,
+      "timestamp": 1758539683.7298636,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30157.308899972122,
+      "timestamp": 1758539683.7293127,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30149.55319999717,
+      "timestamp": 1758539683.8355634,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30126.018500013743,
+      "timestamp": 1758539684.0900447,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.950299978722,
+      "timestamp": 1758539684.1214738,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.79809996998,
+      "timestamp": 1758539684.15225,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30132.255200005602,
+      "timestamp": 1758539684.168485,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30133.491299988236,
+      "timestamp": 1758539684.1681106,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30144.60820000386,
+      "timestamp": 1758539684.3562095,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30144.62810003897,
+      "timestamp": 1758539684.3566527,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.693699989934,
+      "timestamp": 1758539684.3877473,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30126.313999993727,
+      "timestamp": 1758539685.1079865,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30138.57429998461,
+      "timestamp": 1758539713.7176895,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.07299997704,
+      "timestamp": 1758539713.7668083,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30141.64270000765,
+      "timestamp": 1758539713.7663393,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30136.025000014342,
+      "timestamp": 1758539713.8541098,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.656100008637,
+      "timestamp": 1758539713.8514407,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30145.29489999404,
+      "timestamp": 1758539713.8518903,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30130.90150000062,
+      "timestamp": 1758539713.8663394,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.856999994256,
+      "timestamp": 1758539713.8863437,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.664400041103,
+      "timestamp": 1758539713.8866255,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30138.40519997757,
+      "timestamp": 1758539713.8859375,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30123.51960001979,
+      "timestamp": 1758539714.2160752,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30123.45469999127,
+      "timestamp": 1758539714.2674396,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30125.558400002774,
+      "timestamp": 1758539714.2830596,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.291000028607,
+      "timestamp": 1758539714.301631,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30140.248200041242,
+      "timestamp": 1758539714.300752,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30124.15080005303,
+      "timestamp": 1758539714.5012906,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30124.697800027207,
+      "timestamp": 1758539714.5008273,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30137.942700006533,
+      "timestamp": 1758539714.5184536,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30688.959099992644,
+      "timestamp": 1758539713.9851325,
+      "error": "",
+      "headers": null
+    },
+    {
+      "host": "https://portal-dev.bps3215.id",
+      "endpoint": "/api/wilkerstat-dashboard?cache=0",
+      "status_code": 0,
+      "ok": false,
+      "elapsed_ms": 30139.12220002385,
+      "timestamp": 1758539715.2343152,
+      "error": "",
+      "headers": null
+    }
+  ]
+}

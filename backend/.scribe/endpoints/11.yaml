@@ -1,0 +1,566 @@
+name: 'Docx Generator'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-tugas/generate-docx/gab/mitra/{id}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for Surat Tugas Gabungan (Mitra)'
+      description: |-
+        Menghasilkan dokumen DOCX untuk surat tugas gabungan mitra berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID dari surat tugas. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-tugas/generate-docx/gab/organik/{id}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for Organik Surat Tugas Gabungan'
+      description: |-
+        Menghasilkan dokumen DOCX untuk surat tugas gabungan organik berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID dari surat tugas. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-tugas/generate-docx/organik/{id}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for Surat Tugas Organik'
+      description: |-
+        Menghasilkan dokumen DOCX untuk surat tugas organik berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID dari surat tugas. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-keluar/generate-docx/{id}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate and download a Word document for an outgoing letter'
+      description: |-
+        Menghasilkan dan mengunduh dokumen Word untuk surat keluar berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID dari surat keluar. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Surat keluar not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-keputusan/kpa/generate-docx/mitra/{sk}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for SK KPA Mitra'
+      description: |-
+        Menghasilkan dokumen DOCX untuk Surat Keputusan KPA untuk mitra berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      sk:
+        custom: []
+        name: sk
+        description: 'ID dari surat keputusan. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      sk: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-keputusan/kpa/generate-docx/mitra/manual/{sk}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for SK KPA Mitra Manual'
+      description: |-
+        Menghasilkan dokumen DOCX untuk Surat Keputusan KPA untuk mitra manual berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      sk:
+        custom: []
+        name: sk
+        description: 'ID dari surat keputusan. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      sk: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/surat/surat-keputusan/kepala/generate-docx/organik/{sk}'
+    metadata:
+      custom: []
+      groupName: 'Docx Generator'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Generate DOCX for SK Kepala Organik'
+      description: |-
+        Menghasilkan dokumen DOCX untuk Surat Keputusan Kepala untuk organik berdasarkan ID.
+        Endpoint ini menyediakan paritas dengan rute web untuk menghasilkan dokumen DOCX.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      sk:
+        custom: []
+        name: sk
+        description: 'ID dari surat keputusan. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      sk: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "DOCX generated successfully"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to generate DOCX",
+            "error": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

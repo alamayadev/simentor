@@ -1,0 +1,68 @@
+{
+  "laporan_perjalanan_dinas": [
+    {
+      "id": 1,
+      "nama_traveler": "Budi Santoso",
+      "tujuan": "Kota Bandung - Jawa Barat",
+      "lama_tanggal": "2 Hari (15-16 Januari 2024)",
+      "dalam_rangka": "Monitoring Pelaksanaan Program Pelatihan Vokasi",
+      "pembebanan": "DIPA Tahun Anggaran 2024",
+      "kode_keg": 1,
+      "user_id": 1,
+      "status": "draft",
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    }
+  ],
+  "laporan_perjalanan_dinas_detail": [
+    {
+      "id": 1,
+      "laporan_perjalanan_dinas_id": 1,
+      "tanggal": "2024-01-15",
+      "uraian_lhp": "Kedatangan di Kota Bandung pukul 08.00 WIB. Meeting dengan kepala sekolah SMK Negeri 4 Bandung untuk koordinasi program pelatihan. Sesi presentasi mengenai kurikulum vokasi yang akan diimplementasikan.",
+      "kendala": "Waktu meeting terbatas karena kegiatan sekolah yang padat.",
+      "solusi": "Menyusun jadwal meeting yang lebih fleksibel di hari berikutnya.",
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    },
+    {
+      "id": 2,
+      "laporan_perjalanan_dinas_id": 1,
+      "tanggal": "2024-01-16",
+      "uraian_lhp": "Observasi langsung di workshop pelatihan. Melihat langsung proses pembelajaran dan peralatan yang digunakan. Wawancara dengan guru dan siswa mengenai efektivitas program.",
+      "kendala": "Beberapa alat kerja sedang dalam perawatan.",
+      "solusi": "Menyarankan sekolah untuk membuat jadwal perawatan berkala.",
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    }
+  ],
+  "laporan_perjalanan_dinas_dokumentasi": [
+    {
+      "id": 1,
+      "laporan_perjalanan_dinas_id": 1,
+      "file_path": "uploads/laperdin/foto_1.jpg",
+      "deskripsi": "Meeting dengan Kepala Sekolah",
+      "urutan": 1,
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    },
+    {
+      "id": 2,
+      "laporan_perjalanan_dinas_id": 1,
+      "file_path": "uploads/laperdin/foto_2.jpg",
+      "deskripsi": "Observasi Workshop",
+      "urutan": 2,
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    },
+    {
+      "id": 3,
+      "laporan_perjalanan_dinas_id": 1,
+      "file_path": "uploads/laperdin/foto_3.jpg",
+      "deskripsi": "Wawancara dengan Siswa",
+      "urutan": 3,
+      "created_at": "2024-01-17 10:00:00",
+      "updated_at": "2024-01-17 10:00:00"
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+name: 'IPDS - Raw Data'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/ipds/raw-datas
+    metadata:
+      custom: []
+      groupName: 'IPDS - Raw Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of raw data records.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      type:
+        custom: []
+        name: type
+        description: 'Filter berdasarkan tipe. Contoh: Survei'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 15). Contoh: 15'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      fungsi:
+        custom: []
+        name: fungsi
+        description: 'Filter berdasarkan fungsi. Contoh: Survei'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nama:
+        custom: []
+        name: nama
+        description: 'Filter berdasarkan nama. Contoh: Data Pencacahan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      type: architecto
+      per_page: 16
+      cursor: architecto
+      fungsi: architecto
+      nama: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "type": "Survei",
+                "fungsi": "Survei",
+                "nama": "Data Pencacahan",
+                "keterangan": "Data hasil pencacahan lapangan",
+                "file": "raw_data/survei_data_1234567890.zip",
+                "created_at": "2026-01-09T00:00:00.000000Z",
+                "updated_at": "2026-01-09T00:00:00.000000Z"
+              }
+            ],
+            "meta": {
+              "per_page": 15,
+              "has_more": true,
+              "count": 15
+            },
+            "links": {
+              "next_cursor": "...",
+              "next_page_url": "http://127.0.0.1:8000/api/ipds/raw-datas?cursor=...",
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://127.0.0.1:8000/api/ipds/raw-datas"
+            },
+            "pagination_info": {
+              "total_page": 2,
+              "total_records": 20
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+            }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/ipds/raw-datas
+    metadata:
+      custom: []
+      groupName: 'IPDS - Raw Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created raw data record in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      type:
+        custom: []
+        name: type
+        description: 'Tipe data. Contoh: Survei'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      fungsi:
+        custom: []
+        name: fungsi
+        description: 'Fungsi data. Contoh: Survei'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama data. Contoh: Data Pencacahan'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      keterangan:
+        custom: []
+        name: keterangan
+        description: 'Keterangan data. Contoh: Data hasil pencacahan lapangan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'File data (zip, rar, csv, xlsx). Maksimum 50MB. Contoh: data.zip'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      type: architecto
+      fungsi: architecto
+      nama: architecto
+      keterangan: architecto
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Raw Data created successfully",
+            "data": {
+              "id": 1,
+              "type": "Survei",
+              "fungsi": "Survei",
+              "nama": "Data Pencacahan",
+              "keterangan": "Data hasil pencacahan lapangan",
+              "file": "raw_data/survei_data_1234567890.zip",
+              "created_at": "2026-01-09T00:00:00.000000Z",
+              "updated_at": "2026-01-09T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+            }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "fungsi": ["The fungsi field is required."],
+              "nama": ["The nama field is required."],
+              "file": ["The file field is required.", "The file must be a file of type: zip, rar, csv, xlsx."]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/ipds/raw-datas/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Raw Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display specified raw data record.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID raw data. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": {
+              "id": 1,
+              "type": "Survei",
+              "fungsi": "Survei",
+              "nama": "Data Pencacahan",
+              "keterangan": "Data hasil pencacahan lapangan",
+              "file": "raw_data/survei_data_1234567890.zip",
+              "created_at": "2026-01-09T00:00:00.000000Z",
+              "updated_at": "2026-01-09T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+            }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Raw Data not found"
+            }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/ipds/raw-datas/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Raw Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update specified raw data record in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID raw data. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      type:
+        custom: []
+        name: type
+        description: 'Tipe data. Contoh: Survei'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      fungsi:
+        custom: []
+        name: fungsi
+        description: 'Fungsi data. Contoh: Survei'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama data. Contoh: Data Pencacahan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      keterangan:
+        custom: []
+        name: keterangan
+        description: 'Keterangan data. Contoh: Data hasil pencacahan lapangan'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'File data (zip, rar, csv, xlsx). Maksimum 50MB. Contoh: data.zip'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      type: architecto
+      fungsi: architecto
+      nama: architecto
+      keterangan: architecto
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Raw Data updated successfully",
+            "data": {
+              "id": 1,
+              "type": "Survei",
+              "fungsi": "Survei",
+              "nama": "Data Pencacahan",
+              "keterangan": "Data hasil pencacahan lapangan",
+              "file": "raw_data/survei_data_1234567890.zip",
+              "created_at": "2026-01-09T00:00:00.000000Z",
+              "updated_at": "2026-01-09T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+            }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Raw Data not found"
+            }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "fungsi": ["The fungsi must be a string."],
+              "nama": ["The nama must be a string."],
+              "file": ["The file must be a file of type: zip, rar, csv, xlsx."]
+            }
+            }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/ipds/raw-datas/{id}'
+    metadata:
+      custom: []
+      groupName: 'IPDS - Raw Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove specified raw data record from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID raw data. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Raw Data deleted successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+            }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Raw Data not found"
+            }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

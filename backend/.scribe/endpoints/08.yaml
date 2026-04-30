@@ -1,0 +1,463 @@
+name: Profile
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/profile
+    metadata:
+      custom: []
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get User Profile'
+      description: |-
+        Returns authenticated user's data with roles and permissions.
+        Includes user's assigned roles and all permissions from those roles.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "User profile retrieved",
+            "data": {
+              "id": 1,
+              "name": "John Doe",
+              "email": "john@example.com",
+              "email_verified_at": "2023-01-01T00:00:00.000000Z",
+              "created_at": "2023-01-01T00:00:00.000000Z",
+              "updated_at": "2023-01-01T00:00:00.000000Z",
+              "profile_photo_url": "...",
+              "roles": [
+                {
+                  "id": 1,
+                  "name": "super-admin",
+                  "guard_name": "web",
+                  "created_at": "2024-01-01T00:00:00.000000Z",
+                  "updated_at": "2024-01-01T00:00:00.000000Z"
+                }
+              ],
+              "permissions": [
+                {
+                  "id": 1,
+                  "name": "view users",
+                  "guard_name": "web",
+                  "created_at": "2024-01-01T00:00:00.000000Z",
+                  "updated_at": "2024-01-01T00:00:00.000000Z"
+                }
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: api/profile
+    metadata:
+      custom: []
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update User Profile'
+      description: "Updates the authenticated user's name and email."
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        custom: []
+        name: name
+        description: "The user's name."
+        required: true
+        example: 'John Doe'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      email:
+        custom: []
+        name: email
+        description: "The user's email."
+        required: true
+        example: john@example.com
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      name: 'John Doe'
+      email: john@example.com
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "User profile updated",
+            "data": {
+              "id": 1,
+              "name": "John Doe",
+              "email": "john@example.com",
+              "email_verified_at": "2023-01-01T00:00:00.000000Z",
+              "created_at": "2023-01-01T00:00:00.000000Z",
+              "updated_at": "2023-01-01T00:00:00.000000Z",
+              "profile_photo_url": "..."
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: api/profile/password
+    metadata:
+      custom: []
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Password'
+      description: "Updates the authenticated user's password."
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      current_password:
+        custom: []
+        name: current_password
+        description: 'The current password.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      password:
+        custom: []
+        name: password
+        description: 'The new password (min 8 chars, confirmed).'
+        required: true
+        example: '|]|{+-'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      password_confirmation:
+        custom: []
+        name: password_confirmation
+        description: 'The new password confirmation.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      current_password: architecto
+      password: '|]|{+-'
+      password_confirmation: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Password updated successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "message": "The given data was invalid.",
+            "errors": {
+              "current_password": [
+                "The provided password does not match your current password."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/profile/pegawai
+    metadata:
+      custom: []
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Linked Pegawai Profile'
+      description: 'Returns the Pegawai data linked to the authenticated user.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai profile retrieved",
+            "data": {
+              "id": 1,
+              "user_id": 1,
+              "nip": "1234567890",
+              "gelar_depan": "Dr.",
+              "gelar_belakang": "S.Kom",
+              "tempat_lahir": "Jakarta",
+              "tanggal_lahir": "1990-01-01",
+              "alamat": "Jl. Sudirman No. 1",
+              "no_hp": "081234567890",
+              "created_at": "2023-01-01T00:00:00.000000Z",
+              "updated_at": "2023-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Pegawai profile not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: api/profile/pegawai
+    metadata:
+      custom: []
+      groupName: Profile
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Linked Pegawai Profile'
+      description: |-
+        Updates the Pegawai data linked to the authenticated user.
+        Can update any field in the pegawai table except id and user_id.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nip:
+        custom: []
+        name: nip
+        description: 'NIP pegawai.'
+        required: false
+        example: '199001012020121001'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      gelar_depan:
+        custom: []
+        name: gelar_depan
+        description: 'Gelar depan.'
+        required: false
+        example: Dr.
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      gelar_belakang:
+        custom: []
+        name: gelar_belakang
+        description: 'Gelar belakang.'
+        required: false
+        example: S.Kom
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      tempat_lahir:
+        custom: []
+        name: tempat_lahir
+        description: 'Tempat lahir.'
+        required: false
+        example: Jakarta
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      tanggal_lahir:
+        custom: []
+        name: tanggal_lahir
+        description: 'Tanggal lahir (YYYY-MM-DD).'
+        required: false
+        example: '1990-01-01'
+        type: date
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      alamat:
+        custom: []
+        name: alamat
+        description: 'Alamat lengkap.'
+        required: false
+        example: 'Jl. Jend. Sudirman Kav 1'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      no_hp:
+        custom: []
+        name: no_hp
+        description: 'Nomor HP.'
+        required: false
+        example: '08123456789'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      nip: '199001012020121001'
+      gelar_depan: Dr.
+      gelar_belakang: S.Kom
+      tempat_lahir: Jakarta
+      tanggal_lahir: '1990-01-01'
+      alamat: 'Jl. Jend. Sudirman Kav 1'
+      no_hp: '08123456789'
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai profile updated",
+            "data": {
+              "id": 1,
+              "user_id": 1,
+              "nip": "199001012020121001",
+              "gelar_depan": "Dr.",
+              "gelar_belakang": "S.Kom",
+              "tempat_lahir": "Jakarta",
+              "tanggal_lahir": "1990-01-01",
+              "alamat": "Jl. Jend. Sudirman Kav 1",
+              "no_hp": "08123456789",
+              "created_at": "2023-01-01T00:00:00.000000Z",
+              "updated_at": "2023-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

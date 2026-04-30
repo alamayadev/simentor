@@ -1,0 +1,452 @@
+[
+    {
+        "key": "0c9bd9d474ddc8317876f5824672525bc7ca800e",
+        "value": "i:1;",
+        "expiration": 1763104282
+    },
+    {
+        "key": "0c9bd9d474ddc8317876f5824672525bc7ca800e:timer",
+        "value": "i:1763104282;",
+        "expiration": 1763104282
+    },
+    {
+        "key": "10669dbe616b84353cb6092c81203f95",
+        "value": "i:1;",
+        "expiration": 1763104250
+    },
+    {
+        "key": "10669dbe616b84353cb6092c81203f95:timer",
+        "value": "i:1763104250;",
+        "expiration": 1763104250
+    },
+    {
+        "key": "1254eeb164e57bcef7dbe3ba8084034e",
+        "value": "i:1;",
+        "expiration": 1760404581
+    },
+    {
+        "key": "1254eeb164e57bcef7dbe3ba8084034e:timer",
+        "value": "i:1760404581;",
+        "expiration": 1760404581
+    },
+    {
+        "key": "1574bddb75c78a6fd2251d61e2993b5146201319",
+        "value": "i:1;",
+        "expiration": 1760406004
+    },
+    {
+        "key": "1574bddb75c78a6fd2251d61e2993b5146201319:timer",
+        "value": "i:1760406004;",
+        "expiration": 1760406004
+    },
+    {
+        "key": "197d5010759577e94fcb61610aaa96a6",
+        "value": "i:1;",
+        "expiration": 1759473218
+    },
+    {
+        "key": "197d5010759577e94fcb61610aaa96a6:timer",
+        "value": "i:1759473218;",
+        "expiration": 1759473218
+    },
+    {
+        "key": "1d3366e11875b5495863a273b3421ca8",
+        "value": "i:1;",
+        "expiration": 1763081402
+    },
+    {
+        "key": "1d3366e11875b5495863a273b3421ca8:timer",
+        "value": "i:1763081402;",
+        "expiration": 1763081402
+    },
+    {
+        "key": "22f34f69b7defc19707979c8d7dd8562",
+        "value": "i:1;",
+        "expiration": 1759196375
+    },
+    {
+        "key": "22f34f69b7defc19707979c8d7dd8562:timer",
+        "value": "i:1759196375;",
+        "expiration": 1759196375
+    },
+    {
+        "key": "3c0a67ff67c2a04c8e577ec9e19a1474",
+        "value": "i:1;",
+        "expiration": 1759295867
+    },
+    {
+        "key": "3c0a67ff67c2a04c8e577ec9e19a1474:timer",
+        "value": "i:1759295867;",
+        "expiration": 1759295867
+    },
+    {
+        "key": "472b07b9fcf2c2451e8781e944bf5f77cd8457c8",
+        "value": "i:2;",
+        "expiration": 1762393596
+    },
+    {
+        "key": "472b07b9fcf2c2451e8781e944bf5f77cd8457c8:timer",
+        "value": "i:1762393596;",
+        "expiration": 1762393596
+    },
+    {
+        "key": "57fa281d987c516b31b53701dd5a9b46",
+        "value": "i:1;",
+        "expiration": 1763080414
+    },
+    {
+        "key": "57fa281d987c516b31b53701dd5a9b46:timer",
+        "value": "i:1763080414;",
+        "expiration": 1763080414
+    },
+    {
+        "key": "5aceebef3d870d6b826797390bcfa558",
+        "value": "i:1;",
+        "expiration": 1762393535
+    },
+    {
+        "key": "5aceebef3d870d6b826797390bcfa558:timer",
+        "value": "i:1762393535;",
+        "expiration": 1762393535
+    },
+    {
+        "key": "5fba5730c8440d9cf99913c55ab6a7b8",
+        "value": "i:1;",
+        "expiration": 1760209727
+    },
+    {
+        "key": "5fba5730c8440d9cf99913c55ab6a7b8:timer",
+        "value": "i:1760209727;",
+        "expiration": 1760209727
+    },
+    {
+        "key": "601a02b7882ef4dca000be75ca07b9a0",
+        "value": "i:1;",
+        "expiration": 1762823745
+    },
+    {
+        "key": "601a02b7882ef4dca000be75ca07b9a0:timer",
+        "value": "i:1762823745;",
+        "expiration": 1762823745
+    },
+    {
+        "key": "6698704f709165d1ee18b1d337d3fea3",
+        "value": "i:1;",
+        "expiration": 1763013839
+    },
+    {
+        "key": "6698704f709165d1ee18b1d337d3fea3:timer",
+        "value": "i:1763013839;",
+        "expiration": 1763013839
+    },
+    {
+        "key": "702786a2636b7007502915d7f438035a",
+        "value": "i:1;",
+        "expiration": 1763018192
+    },
+    {
+        "key": "702786a2636b7007502915d7f438035a:timer",
+        "value": "i:1763018192;",
+        "expiration": 1763018192
+    },
+    {
+        "key": "77de68daecd823babbb58edb1c8e14d7106e83bb",
+        "value": "i:1;",
+        "expiration": 1760332047
+    },
+    {
+        "key": "77de68daecd823babbb58edb1c8e14d7106e83bb:timer",
+        "value": "i:1760332047;",
+        "expiration": 1760332047
+    },
+    {
+        "key": "7847a0901eb352fe7dba00462debf106",
+        "value": "i:1;",
+        "expiration": 1762996898
+    },
+    {
+        "key": "7847a0901eb352fe7dba00462debf106:timer",
+        "value": "i:1762996898;",
+        "expiration": 1762996898
+    },
+    {
+        "key": "8242dea43f286592e398be7ec1239de0",
+        "value": "i:1;",
+        "expiration": 1762309638
+    },
+    {
+        "key": "8242dea43f286592e398be7ec1239de0:timer",
+        "value": "i:1762309638;",
+        "expiration": 1762309638
+    },
+    {
+        "key": "85431262fae4cfd9edd25d790f7ccaa3",
+        "value": "i:1;",
+        "expiration": 1762772388
+    },
+    {
+        "key": "85431262fae4cfd9edd25d790f7ccaa3:timer",
+        "value": "i:1762772388;",
+        "expiration": 1762772388
+    },
+    {
+        "key": "887309d048beef83ad3eabf2a79a64a389ab1c9f",
+        "value": "i:2;",
+        "expiration": 1760404895
+    },
+    {
+        "key": "887309d048beef83ad3eabf2a79a64a389ab1c9f:timer",
+        "value": "i:1760404895;",
+        "expiration": 1760404895
+    },
+    {
+        "key": "8975bff97a81eab03c457b2f695fcbd1",
+        "value": "i:1;",
+        "expiration": 1759816526
+    },
+    {
+        "key": "8975bff97a81eab03c457b2f695fcbd1:timer",
+        "value": "i:1759816526;",
+        "expiration": 1759816526
+    },
+    {
+        "key": "8ed72e0f05148590b103d41baa1d05c3",
+        "value": "i:1;",
+        "expiration": 1763081561
+    },
+    {
+        "key": "8ed72e0f05148590b103d41baa1d05c3:timer",
+        "value": "i:1763081561;",
+        "expiration": 1763081561
+    },
+    {
+        "key": "902ba3cda1883801594b6e1b452790cc53948fda",
+        "value": "i:1;",
+        "expiration": 1763084532
+    },
+    {
+        "key": "902ba3cda1883801594b6e1b452790cc53948fda:timer",
+        "value": "i:1763084532;",
+        "expiration": 1763084532
+    },
+    {
+        "key": "91032ad7bbcb6cf72875e8e8207dcfba80173f7c",
+        "value": "i:1;",
+        "expiration": 1763018371
+    },
+    {
+        "key": "91032ad7bbcb6cf72875e8e8207dcfba80173f7c:timer",
+        "value": "i:1763018371;",
+        "expiration": 1763018371
+    },
+    {
+        "key": "92c0a035426347500637a8987b04e124",
+        "value": "i:1;",
+        "expiration": 1760404144
+    },
+    {
+        "key": "92c0a035426347500637a8987b04e124:timer",
+        "value": "i:1760404144;",
+        "expiration": 1760404144
+    },
+    {
+        "key": "9878437e7eb848b8bd39b3ea8f4e6631",
+        "value": "i:1;",
+        "expiration": 1762910665
+    },
+    {
+        "key": "9878437e7eb848b8bd39b3ea8f4e6631:timer",
+        "value": "i:1762910665;",
+        "expiration": 1762910665
+    },
+    {
+        "key": "98fbc42faedc02492397cb5962ea3a3ffc0a9243",
+        "value": "i:1;",
+        "expiration": 1763106967
+    },
+    {
+        "key": "98fbc42faedc02492397cb5962ea3a3ffc0a9243:timer",
+        "value": "i:1763106967;",
+        "expiration": 1763106967
+    },
+    {
+        "key": "99120f8591d74f1e17bacd0d71d2a25b",
+        "value": "i:1;",
+        "expiration": 1759285346
+    },
+    {
+        "key": "99120f8591d74f1e17bacd0d71d2a25b:timer",
+        "value": "i:1759285346;",
+        "expiration": 1759285346
+    },
+    {
+        "key": "9990727dcc513279c877a10a16a1da5d",
+        "value": "i:1;",
+        "expiration": 1762758297
+    },
+    {
+        "key": "9990727dcc513279c877a10a16a1da5d:timer",
+        "value": "i:1762758297;",
+        "expiration": 1762758297
+    },
+    {
+        "key": "a6cf3449fbccdc26d9aeadb6f26b8c25",
+        "value": "i:1;",
+        "expiration": 1763103094
+    },
+    {
+        "key": "a6cf3449fbccdc26d9aeadb6f26b8c25:timer",
+        "value": "i:1763103094;",
+        "expiration": 1763103094
+    },
+    {
+        "key": "af3e133428b9e25c55bc59fe534248e6a0c0f17b",
+        "value": "i:2;",
+        "expiration": 1763106288
+    },
+    {
+        "key": "af3e133428b9e25c55bc59fe534248e6a0c0f17b:timer",
+        "value": "i:1763106288;",
+        "expiration": 1763106288
+    },
+    {
+        "key": "b6692ea5df920cad691c20319a6fffd7a4a766b8",
+        "value": "i:1;",
+        "expiration": 1760404998
+    },
+    {
+        "key": "b6692ea5df920cad691c20319a6fffd7a4a766b8:timer",
+        "value": "i:1760404998;",
+        "expiration": 1760404998
+    },
+    {
+        "key": "bb2e971dff1099323338f558d2f0bcee",
+        "value": "i:1;",
+        "expiration": 1761702872
+    },
+    {
+        "key": "bb2e971dff1099323338f558d2f0bcee:timer",
+        "value": "i:1761702872;",
+        "expiration": 1761702872
+    },
+    {
+        "key": "c1dfd96eea8cc2b62785275bca38ac261256e278",
+        "value": "i:1;",
+        "expiration": 1763017505
+    },
+    {
+        "key": "c1dfd96eea8cc2b62785275bca38ac261256e278:timer",
+        "value": "i:1763017505;",
+        "expiration": 1763017505
+    },
+    {
+        "key": "c705c6abd5f746eececd78459e9a19f7",
+        "value": "i:1;",
+        "expiration": 1760411520
+    },
+    {
+        "key": "c705c6abd5f746eececd78459e9a19f7:timer",
+        "value": "i:1760411520;",
+        "expiration": 1760411520
+    },
+    {
+        "key": "cb7a1d775e800fd1ee4049f7dca9e041eb9ba083",
+        "value": "i:2;",
+        "expiration": 1760403957
+    },
+    {
+        "key": "cb7a1d775e800fd1ee4049f7dca9e041eb9ba083:timer",
+        "value": "i:1760403957;",
+        "expiration": 1760403957
+    },
+    {
+        "key": "d2b2c0c044c3e4e5d2545757e8bce945",
+        "value": "i:1;",
+        "expiration": 1762156706
+    },
+    {
+        "key": "d2b2c0c044c3e4e5d2545757e8bce945:timer",
+        "value": "i:1762156706;",
+        "expiration": 1762156706
+    },
+    {
+        "key": "d435a6cdd786300dff204ee7c2ef942d3e9034e2",
+        "value": "i:1;",
+        "expiration": 1760404655
+    },
+    {
+        "key": "d435a6cdd786300dff204ee7c2ef942d3e9034e2:timer",
+        "value": "i:1760404655;",
+        "expiration": 1760404655
+    },
+    {
+        "key": "da4b9237bacccdf19c0760cab7aec4a8359010b0",
+        "value": "i:1;",
+        "expiration": 1760411786
+    },
+    {
+        "key": "da4b9237bacccdf19c0760cab7aec4a8359010b0:timer",
+        "value": "i:1760411786;",
+        "expiration": 1760411786
+    },
+    {
+        "key": "dodysyafrudin8@gmail.com|127.0.0.1",
+        "value": "i:1;",
+        "expiration": 1759196376
+    },
+    {
+        "key": "dodysyafrudin8@gmail.com|127.0.0.1:timer",
+        "value": "i:1759196376;",
+        "expiration": 1759196376
+    },
+    {
+        "key": "e35cf41c708fb078a608e70d16fd7892",
+        "value": "i:1;",
+        "expiration": 1763008737
+    },
+    {
+        "key": "e35cf41c708fb078a608e70d16fd7892:timer",
+        "value": "i:1763008737;",
+        "expiration": 1763008737
+    },
+    {
+        "key": "f1abd670358e036c31296e66b3b66c382ac00812",
+        "value": "i:1;",
+        "expiration": 1760404843
+    },
+    {
+        "key": "f1abd670358e036c31296e66b3b66c382ac00812:timer",
+        "value": "i:1760404843;",
+        "expiration": 1760404843
+    },
+    {
+        "key": "f80124d2c9e25a03f764078a2de6c77c",
+        "value": "i:1;",
+        "expiration": 1763107071
+    },
+    {
+        "key": "f80124d2c9e25a03f764078a2de6c77c:timer",
+        "value": "i:1763107071;",
+        "expiration": 1763107071
+    },
+    {
+        "key": "face07b6500f0f0e4cde23338213f440",
+        "value": "i:1;",
+        "expiration": 1763104901
+    },
+    {
+        "key": "face07b6500f0f0e4cde23338213f440:timer",
+        "value": "i:1763104901;",
+        "expiration": 1763104901
+    },
+    {
+        "key": "fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f",
+        "value": "i:1;",
+        "expiration": 1759286792
+    },
+    {
+        "key": "fe5dbbcea5ce7e2988b8c69bcfdfde8904aabc1f:timer",
+        "value": "i:1759286792;",
+        "expiration": 1759286792
+    }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "super-admin",
+    "guard_name": "web",
+    "created_at": "2024-12-14T08:07:15",
+    "updated_at": "2024-12-14T08:07:15"
+  },
+  {
+    "id": 2,
+    "name": "katim",
+    "guard_name": "web",
+    "created_at": "2024-12-14T12:02:50",
+    "updated_at": "2024-12-14T12:02:50"
+  },
+  {
+    "id": 3,
+    "name": "kepala",
+    "guard_name": "web",
+    "created_at": "2024-12-14T12:03:07",
+    "updated_at": "2024-12-14T12:03:07"
+  },
+  {
+    "id": 4,
+    "name": "madya",
+    "guard_name": "web",
+    "created_at": "2024-12-14T12:03:17",
+    "updated_at": "2024-12-14T12:03:17"
+  },
+  {
+    "id": 5,
+    "name": "staf",
+    "guard_name": "web",
+    "created_at": "2024-12-14T12:03:26",
+    "updated_at": "2024-12-14T12:03:26"
+  },
+  {
+    "id": 6,
+    "name": "Kasub Umum",
+    "guard_name": "web",
+    "created_at": "2024-12-27T17:51:07",
+    "updated_at": "2024-12-27T17:51:07"
+  }
+]

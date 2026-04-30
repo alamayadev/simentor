@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "parent_id": 31,
+    "kode": "SS.210",
+    "keterangan": "Pelatihan Instruktur SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "parent_id": 31,
+    "kode": "SS.220",
+    "keterangan": "Pelatihan petugas SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "parent_id": 31,
+    "kode": "SS.230",
+    "keterangan": "Pelatihan petugas pengolahan SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "parent_id": 31,
+    "kode": "SS.300",
+    "keterangan": "Pelaksanaan Lapangan SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "parent_id": 31,
+    "kode": "SS.330",
+    "keterangan": "Pengumpulan data SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "parent_id": 31,
+    "kode": "SS.340",
+    "keterangan": "Pemeriksaan data SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "parent_id": 31,
+    "kode": "SS.350",
+    "keterangan": "Pengawasan lapangan SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "parent_id": 31,
+    "kode": "SS.400",
+    "keterangan": "PENGOLAHAN SENSUS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "parent_id": 31,
+    "kode": "VS.210",
+    "keterangan": "Pelatihan Instruktur SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "parent_id": 31,
+    "kode": "VS.220",
+    "keterangan": "Pelatihan petugas SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "parent_id": 31,
+    "kode": "VS.230",
+    "keterangan": "Pelatihan petugas pengolahan SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "parent_id": 31,
+    "kode": "VS.300",
+    "keterangan": "Pelaksanaan Lapangan SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "parent_id": 31,
+    "kode": "VS.310",
+    "keterangan": "Listing SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "parent_id": 31,
+    "kode": "VS.330",
+    "keterangan": "Pengumpulan data SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 15,
+    "parent_id": 31,
+    "kode": "VS.340",
+    "keterangan": "Pemeriksaan data SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 16,
+    "parent_id": 31,
+    "kode": "VS.350",
+    "keterangan": "Pengawasan lapangan SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 17,
+    "parent_id": 31,
+    "kode": "VS.400",
+    "keterangan": "PENGOLAHAN SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 18,
+    "parent_id": 31,
+    "kode": "VS.430",
+    "keterangan": "Entri data SURVEI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 19,
+    "parent_id": 31,
+    "kode": "KU.000",
+    "keterangan": "Pelaksanaan Anggaran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 20,
+    "parent_id": 31,
+    "kode": "KU.300",
+    "keterangan": "Pengeluaran Anggaran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 21,
+    "parent_id": 31,
+    "kode": "KP.300",
+    "keterangan": "PEMBINAAN KARIR PEGAWAI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 22,
+    "parent_id": 31,
+    "kode": "KP.310",
+    "keterangan": "Diklat kursus/ TB/ Ujian dinas/ Izin Belajar Pegawai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 23,
+    "parent_id": 31,
+    "kode": "KP.311",
+    "keterangan": "Surat Perintah/ Surat Tugas/ SK/ Surat Izin untuk Diklat/Pelatihan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 24,
+    "parent_id": 31,
+    "kode": "KP.320",
+    "keterangan": "Ujian Kompetensi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 25,
+    "parent_id": 31,
+    "kode": "KP.360",
+    "keterangan": "Daftar usul penetapan angka kredit fungsional",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 26,
+    "parent_id": 31,
+    "kode": "KP.550",
+    "keterangan": "Usul pengangkatan dan pemberhentian dalam jabatan struktural/Fungsional",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 27,
+    "parent_id": 31,
+    "kode": "KP.600",
+    "keterangan": "ADMINISTRASI PEGAWAI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 28,
+    "parent_id": 31,
+    "kode": "KP.630",
+    "keterangan": "Berkas perorangan PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 29,
+    "parent_id": 31,
+    "kode": "KP.650",
+    "keterangan": "Surat perintah dinas/ surat tugas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 30,
+    "parent_id": 31,
+    "kode": "KP.900",
+    "keterangan": "Usul pemberhentian dan penetapan pensiun pegawai/ janda/ duda & PNS yang tewas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 31,
+    "parent_id": null,
+    "kode": null,
+    "keterangan": "Surat Tugas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 32,
+    "parent_id": null,
+    "kode": null,
+    "keterangan": "Form Permintaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 33,
+    "parent_id": 32,
+    "kode": "KU.300",
+    "keterangan": "Belanja Honor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 34,
+    "parent_id": 32,
+    "kode": "KU.310",
+    "keterangan": "Belanja Bahan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 35,
+    "parent_id": 32,
+    "kode": "KU.320",
+    "keterangan": "Belanja Barang",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 36,
+    "parent_id": 32,
+    "kode": "KU.330",
+    "keterangan": "Belanja Jasa (Konsultan, Profesi)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 37,
+    "parent_id": 32,
+    "kode": "KU.340",
+    "keterangan": "Belanja Perjalanan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 38,
+    "parent_id": 32,
+    "kode": "KU.350",
+    "keterangan": "Belanja Pegawai",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "parent_id": 32,
+    "kode": "KU.360",
+    "keterangan": "Belanja Paket Meeting Dalam Kota",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "parent_id": 32,
+    "kode": "KU.370",
+    "keterangan": "Belanja Paket Meeting Luar Kota",
+    "created_at": null,
+    "updated_at": null
+  }
+]

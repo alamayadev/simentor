@@ -1,0 +1,935 @@
+name: 'Kantor - Direktori Usaha'
+description: |-
+
+  APIs for managing business directory (Direktori Usaha).
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List businesses ready for geocoding'
+      description: 'Get paginated list of businesses from region 3215 that have no gcs_result and missing coordinates.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Number of records per page. Default: 15.'
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[kdkec]':
+        custom: []
+        name: 'filter[kdkec]'
+        description: 'Filter by district code (exact match).'
+        required: false
+        example: '051'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[kddesa]':
+        custom: []
+        name: 'filter[kddesa]'
+        description: 'Filter by village code (exact match).'
+        required: false
+        example: '008'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[nama_usaha]':
+        custom: []
+        name: 'filter[nama_usaha]'
+        description: 'Search by business name (partial).'
+        required: false
+        example: CELL
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[search]':
+        custom: []
+        name: 'filter[search]'
+        description: 'Alias for nama_usaha filter.'
+        required: false
+        example: TOKO
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      sort:
+        custom: []
+        name: sort
+        description: "Sort field. Only 'nama_usaha' is allowed."
+        required: false
+        example: '-nama_usaha'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 20
+      'filter[kdkec]': '051'
+      'filter[kddesa]': '008'
+      'filter[nama_usaha]': CELL
+      'filter[search]': TOKO
+      sort: '-nama_usaha'
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": [{
+              "id": 1,
+              "kode_wilayah": "3215",
+              "nama_usaha": "KARTIKA CELL",
+              "alamat_usaha": "JL. RAYA CENGKONG",
+              "kdkec": "051",
+              "kddesa": "008",
+              "nmkec": "PURWASARI",
+              "nmdesa": "CENGKONG",
+              "latitude": null,
+              "longitude": null,
+              "latlong_status": "invalid",
+              "latitude_gc": null,
+              "longitude_gc": null,
+              "gcs_result": "1",
+              "hasilgc": "1",
+              "name_similarity": "100.00",
+            }],
+            "meta": {
+              "current_page": 1,
+              "from": 1,
+              "last_page": 100,
+              "per_page": 15,
+              "to": 15,
+              "total": 1500
+            },
+            "links": {
+              "first": "http://localhost:9001/api/direktori-usaha?page=1",
+              "last": "http://localhost:9001/api/direktori-usaha?page=100",
+              "prev": null,
+              "next": "http://localhost:9001/api/direktori-usaha?page=2"
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/rekap-user
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get recap of users who updated businesses.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/progres
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get progress of geocoding by kecamatan.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/filters
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get filter options for dropdown selectors.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/desa-options
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get unique desa options based on kecamatan code.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      kdkec:
+        custom: []
+        name: kdkec
+        description: ''
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      kdkec: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/no-gc-no-loc
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display businesses without geocoding data.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/invalid
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display businesses with invalid geocoding status.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/siap-kirim
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display businesses ready to send for geocoding.'
+      description: '(No RT/RW in address or placeholder RT 0/RW 0, and no gcs_result)'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/siap-kirim/csv
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Export siap kirim data to CSV.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/ganda
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display businesses with potential duplicates.'
+      description: '(RT/RW in address but not placeholder, no gcs_result, name_similarity >= 85)'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/export/csv
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Export businesses data as CSV based on flag.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/csv-update
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Export updated data to CSV'
+      description: "Exports records where hasilgc is set, gcs_result is set, and gc_username matches the logged-in user's email prefix."
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: 'CSV file download'
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/direktori-usaha/map-desa
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get unique desa mapping'
+      description: 'Returns a list of unique 10-digit kode_wilayah with concatenated nama_wilayah (KECAMATAN - DESA).'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": [
+              {
+                "kode_wilayah": "3215010001",
+                "nama_wilayah": "KARAWANG BARAT - TANJUNGPURA"
+              }
+            ]
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/direktori-usaha/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified direktori usaha.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the direktori usaha.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          content-security-policy: "default-src 'none'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://ui-avatars.com https://webapps.bps.go.id; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; block-all-mixed-content; base-uri 'self'; worker-src 'self'"
+          x-content-type-options: nosniff
+          x-frame-options: DENY
+          x-xss-protection: '1; mode=block'
+          referrer-policy: strict-origin-when-cross-origin
+          permissions-policy: 'geolocation=(), microphone=(), camera=()'
+          vary: Origin
+        description: null
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/direktori-usaha/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Direktori Usaha'
+      groupDescription: |-
+
+        APIs for managing business directory (Direktori Usaha).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update geocoding fields of the specified direktori usaha.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the direktori usaha.'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      hasilgc:
+        custom: []
+        name: hasilgc
+        description: ''
+        required: true
+        example: 1
+        type: integer
+        enumValues:
+          - 1
+          - 3
+          - 4
+          - 99
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      latitude:
+        custom: []
+        name: latitude
+        description: 'This field is required when <code>hasilgc</code> is <code>1</code>. Must match the regex /^-6\.\d+$/.'
+        required: false
+        example: '-6.564'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      longitude:
+        custom: []
+        name: longitude
+        description: 'This field is required when <code>hasilgc</code> is <code>1</code>. Must match the regex /^107\.\d+$/.'
+        required: false
+        example: '107.564'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      hasilgc: 1
+      latitude: '-6.564'
+      longitude: '107.564'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

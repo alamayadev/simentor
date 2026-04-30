@@ -1,0 +1,70 @@
+{
+    "metrics": [
+        {
+            "label": "Permintaan",
+            "value": "128",
+            "note": "+12 hari ini"
+        },
+        {
+            "label": "Tugas Aktif",
+            "value": "56",
+            "note": "98% selesai"
+        },
+        {
+            "label": "Aset Terhubung",
+            "value": "342",
+            "note": "Sinkron"
+        },
+        {
+            "label": "Akurasi SLA",
+            "value": "99.2%",
+            "note": "Stabil"
+        }
+    ],
+    "features": [
+        {
+            "title": "Pengelolaan SPK dan BAST",
+            "desc": "Manajemen Dokumen SPK dan BAST untuk Mitra setiap bulan."
+        },
+        {
+            "title": "Laporan Kinerja Pegawai",
+            "desc": "Manajemen Laporan Kinerja Pegawai."
+        },
+        {
+            "title": "Pengelolaan Kegiatan dan Penugasan",
+            "desc": "Manajemen Kegiatan dan Penugasan."
+        }
+    ],
+    "integrations": [
+        {
+            "title": "Tiket Keluhan Layanan IT",
+            "status": "Terhubung"
+        },
+        {
+            "title": "Manajemen Aset",
+            "status": "Terhubung"
+        },
+        {
+            "title": "Manajemen Surat",
+            "status": "Terhubung"
+        },
+        {
+            "title": "Manajemen Data and Link External",
+            "status": "Belum lengkap"
+        }
+    ],
+    "statistics": [
+        [
+            "89%",
+            "Efisiensi operasional meningkat"
+        ],
+        [
+            "42%",
+            "Waktu respon lebih cepat"
+        ],
+        [
+            "24/7",
+            "Visibilitas laporan real-time"
+        ]
+    ]
+}

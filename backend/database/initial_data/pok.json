@@ -1,0 +1,947 @@
+[
+  {
+    "id": 1,
+    "kode": "001",
+    "komponen": "Gaji dan Tunjangan",
+    "v": "3",
+    "nama": "(001) Gaji dan Tunjangan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "kode": "002",
+    "komponen": "Operasional dan Pemeliharaan Kantor",
+    "v": "3",
+    "nama": "(002) Operasional dan Pemeliharaan Kantor",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "kode": "005",
+    "komponen": "Dukungan Penyelenggaraan Tugas dan Fungsi Unit",
+    "v": "3",
+    "nama": "(005) Dukungan Penyelenggaraan Tugas dan Fungsi Unit",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "kode": "051",
+    "komponen": "PERSIAPAN",
+    "v": "3",
+    "nama": "(051) PERSIAPAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "kode": "051",
+    "komponen": "Tanpa Komponen",
+    "v": "3",
+    "nama": "(051) Tanpa Komponen",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "kode": "052",
+    "komponen": "PENGUMPULAN DATA",
+    "v": "3",
+    "nama": "(052) PENGUMPULAN DATA",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "kode": "053",
+    "komponen": "PENGOLAHAN DAN ANALISIS",
+    "v": "3",
+    "nama": "(053) PENGOLAHAN DAN ANALISIS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "kode": "054",
+    "komponen": "DISEMINASI DAN EVALUASI",
+    "v": "3",
+    "nama": "(054) DISEMINASI DAN EVALUASI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "kode": "054.01.GG",
+    "komponen": "Program Penyediaan dan Pelayanan Informasi Statistik",
+    "v": "9",
+    "nama": "(054.01.GG) Program Penyediaan dan Pelayanan Informasi Statistik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "kode": "054.01.WA",
+    "komponen": "Program Dukungan Manajemen",
+    "v": "9",
+    "nama": "(054.01.WA) Program Dukungan Manajemen",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "kode": "056",
+    "komponen": "Pengembangan Infrastruktur dan Layanan Teknologi Informasi dan Komunikasi",
+    "v": "3",
+    "nama": "(056)  Pengembangan Infrastruktur dan Layanan Teknologi Informasi dan Komunikasi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "kode": "2886",
+    "komponen": "Dukungan Manajemen dan Pelaksanaan Tugas Teknis Lainnya BPS Provinsi",
+    "v": "4",
+    "nama": "(2886) Dukungan Manajemen dan Pelaksanaan Tugas Teknis Lainnya BPS Provinsi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "kode": "2886.EBA",
+    "komponen": "Layanan Dukungan Manajemen Internal[Base Line]",
+    "v": "8",
+    "nama": "(EBA) Layanan Dukungan Manajemen Internal[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "kode": "2886.EBA.956",
+    "komponen": "Layanan BMN",
+    "v": "12",
+    "nama": "(2886.EBA.956) Layanan BMN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 15,
+    "kode": "2886.EBA.962",
+    "komponen": "Layanan Umum",
+    "v": "12",
+    "nama": "(2886.EBA.962) Layanan Umum",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 16,
+    "kode": "2886.EBA.994",
+    "komponen": "Layanan Perkantoran",
+    "v": "12",
+    "nama": "(2886.EBA.994) Layanan Perkantoran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 17,
+    "kode": "2886.EBD",
+    "komponen": "Layanan Manajemen Kinerja Internal[Base Line]",
+    "v": "8",
+    "nama": "(EBD) Layanan Manajemen Kinerja Internal[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 18,
+    "kode": "2886.EBD.955",
+    "komponen": "Layanan Manajemen Keuangan",
+    "v": "12",
+    "nama": "(2886.EBD.955) Layanan Manajemen Keuangan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 19,
+    "kode": "2896",
+    "komponen": "Pengembangan dan Analisis Statistik",
+    "v": "4",
+    "nama": "(2896) Pengembangan dan Analisis Statistik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 20,
+    "kode": "2896.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 21,
+    "kode": "2896.BMA.004",
+    "komponen": "PUBLIKASI/LAPORAN ANALISIS DAN PENGEMBANGAN STATISTIK",
+    "v": "12",
+    "nama": "(2896.BMA.004) PUBLIKASI/LAPORAN ANALISIS DAN PENGEMBANGAN STATISTIK",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 22,
+    "kode": "2897",
+    "komponen": "Pelayanan dan Pengembangan Diseminasi Informasi Statistik",
+    "v": "4",
+    "nama": "(2897) Pelayanan dan Pengembangan Diseminasi Informasi Statistik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 23,
+    "kode": "2897.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 24,
+    "kode": "2897.BMA.004",
+    "komponen": "LAPORAN DISEMINASI DAN METADATA STATISTIK",
+    "v": "12",
+    "nama": "(2897.BMA.004) LAPORAN DISEMINASI DAN METADATA STATISTIK",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 25,
+    "kode": "2897.QDB",
+    "komponen": "Fasilitasi dan Pembinaan Lembaga[Base Line]",
+    "v": "8",
+    "nama": "(QDB) Fasilitasi dan Pembinaan Lembaga[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 26,
+    "kode": "2897.QDB.003",
+    "komponen": "PENGUATAN PENYELENGGARAAN PEMBINAAN STATISTIK SEKTORAL",
+    "v": "12",
+    "nama": "(2897.QDB.003) PENGUATAN PENYELENGGARAAN PEMBINAAN STATISTIK SEKTORAL",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 27,
+    "kode": "2898",
+    "komponen": "Penyediaan dan Pengembangan Statistik Neraca Pengeluaran",
+    "v": "4",
+    "nama": "(2898) Penyediaan dan Pengembangan Statistik Neraca Pengeluaran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 28,
+    "kode": "2898.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 29,
+    "kode": "2898.BMA.007",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK NERACA PENGELUARAN",
+    "v": "12",
+    "nama": "(2898.BMA.007) PUBLIKASI/LAPORAN STATISTIK NERACA PENGELUARAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 30,
+    "kode": "2899",
+    "komponen": "Penyediaan dan Pengembangan Statistik Neraca Produksi",
+    "v": "4",
+    "nama": "(2899) Penyediaan dan Pengembangan Statistik Neraca Produksi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 31,
+    "kode": "2899.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 32,
+    "kode": "2899.BMA.006",
+    "komponen": "PUBLIKASI/LAPORAN NERACA PRODUKSI",
+    "v": "12",
+    "nama": "(2899.BMA.006) PUBLIKASI/LAPORAN NERACA PRODUKSI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 33,
+    "kode": "2900",
+    "komponen": "Pengembangan Metodologi Sensus dan Survei",
+    "v": "4",
+    "nama": "(2900) Pengembangan Metodologi Sensus dan Survei",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 34,
+    "kode": "2900.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 35,
+    "kode": "2900.BMA.005",
+    "komponen": "DOKUMEN/LAPORAN PENGEMBANGAN METODOLOGI KEGIATAN STATISTIK",
+    "v": "12",
+    "nama": "(2900.BMA.005) DOKUMEN/LAPORAN PENGEMBANGAN METODOLOGI KEGIATAN STATISTIK",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 36,
+    "kode": "2901",
+    "komponen": "Pengembangan Sistem Informasi Statistik",
+    "v": "4",
+    "nama": "(2901) Pengembangan Sistem Informasi Statistik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 37,
+    "kode": "2901.CAN",
+    "komponen": "Sarana Bidang Teknologi Informasi dan Komunikasi[Base Line]",
+    "v": "8",
+    "nama": "(CAN) Sarana Bidang Teknologi Informasi dan Komunikasi[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 38,
+    "kode": "2901.CAN.004",
+    "komponen": "Pengembangan Infrastruktur dan Layanan Teknologi Informasi dan Komunikasi",
+    "v": "12",
+    "nama": "(2901.CAN.004) Pengembangan Infrastruktur dan Layanan Teknologi Informasi dan Komunikasi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 39,
+    "kode": "2902",
+    "komponen": "Penyediaan dan Pengembangan Statistik Distribusi",
+    "v": "4",
+    "nama": "(2902) Penyediaan dan Pengembangan Statistik Distribusi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 40,
+    "kode": "2902.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 41,
+    "kode": "2902.BMA.004",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK DISTRIBUSI",
+    "v": "12",
+    "nama": "(2902.BMA.004) PUBLIKASI/LAPORAN STATISTIK DISTRIBUSI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 42,
+    "kode": "2902.BMA.006",
+    "komponen": "PUBLIKASI/LAPORAN SENSUS EKONOMI",
+    "v": "12",
+    "nama": "(2902.BMA.006) PUBLIKASI/LAPORAN SENSUS EKONOMI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 43,
+    "kode": "2903",
+    "komponen": "Penyediaan dan Pengembangan Statistik Harga",
+    "v": "4",
+    "nama": "(2903) Penyediaan dan Pengembangan Statistik Harga",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 44,
+    "kode": "2903.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 45,
+    "kode": "2903.BMA.009",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK HARGA",
+    "v": "12",
+    "nama": "(2903.BMA.009) PUBLIKASI/LAPORAN STATISTIK HARGA",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 46,
+    "kode": "2904",
+    "komponen": "Penyediaan dan Pengembangan Statistik Industri, Pertambangan dan Penggalian, Energi, dan Konstruksi",
+    "v": "4",
+    "nama": "(2904) Penyediaan dan Pengembangan Statistik Industri, Pertambangan dan Penggalian, Energi, dan Konstruksi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 47,
+    "kode": "2904.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 48,
+    "kode": "2904.BMA.006",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK INDUSTRI, PERTAMBANGAN DAN PENGGALIAN, ENERGI, DAN KONSTRUKSI",
+    "v": "12",
+    "nama": "(2904.BMA.006) PUBLIKASI/LAPORAN STATISTIK INDUSTRI, PERTAMBANGAN DAN PENGGALIAN, ENERGI, DAN KONSTRUKSI",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 49,
+    "kode": "2905",
+    "komponen": "Penyediaan dan Pengembangan Statistik Kependudukan dan Ketenagakerjaan",
+    "v": "4",
+    "nama": "(2905) Penyediaan dan Pengembangan Statistik Kependudukan dan Ketenagakerjaan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 50,
+    "kode": "2905.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 51,
+    "kode": "2905.BMA.004",
+    "komponen": "PUBLIKASI/LAPORAN SAKERNAS",
+    "v": "12",
+    "nama": "(2905.BMA.004) PUBLIKASI/LAPORAN SAKERNAS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 52,
+    "kode": "2905.BMA.005",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK KEPENDUDUKAN DAN KETENAGAKERJAAN",
+    "v": "12",
+    "nama": "(2905.BMA.005) PUBLIKASI/LAPORAN STATISTIK KEPENDUDUKAN DAN KETENAGAKERJAAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 53,
+    "kode": "2906",
+    "komponen": "Penyediaan dan Pengembangan Statistik Kesejahteraan Rakyat",
+    "v": "4",
+    "nama": "(2906) Penyediaan dan Pengembangan Statistik Kesejahteraan Rakyat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 54,
+    "kode": "2906.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 55,
+    "kode": "2906.BMA.003",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK KESEJAHTERAAN RAKYAT",
+    "v": "12",
+    "nama": "(2906.BMA.003) PUBLIKASI/LAPORAN STATISTIK KESEJAHTERAAN RAKYAT",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 56,
+    "kode": "2906.BMA.006",
+    "komponen": "PUBLIKASI/LAPORAN SUSENAS",
+    "v": "12",
+    "nama": "(2906.BMA.006) PUBLIKASI/LAPORAN SUSENAS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 57,
+    "kode": "2907",
+    "komponen": "Penyediaan dan Pengembangan Statistik Ketahanan Sosial",
+    "v": "4",
+    "nama": "(2907) Penyediaan dan Pengembangan Statistik Ketahanan Sosial",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 58,
+    "kode": "2907.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 59,
+    "kode": "2907.BMA.006",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK KETAHANAN SOSIAL",
+    "v": "12",
+    "nama": "(2907.BMA.006) PUBLIKASI/LAPORAN STATISTIK KETAHANAN SOSIAL",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 60,
+    "kode": "2907.BMA.008",
+    "komponen": "PUBLIKASI/LAPORAN PENDATAAN PODES",
+    "v": "12",
+    "nama": "(2907.BMA.008) PUBLIKASI/LAPORAN PENDATAAN PODES",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 61,
+    "kode": "2908",
+    "komponen": "Penyediaan dan Pengembangan Statistik Keuangan, Teknologi Informasi, dan Pariwisata",
+    "v": "4",
+    "nama": "(2908) Penyediaan dan Pengembangan Statistik Keuangan, Teknologi Informasi, dan Pariwisata",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 62,
+    "kode": "2908.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 63,
+    "kode": "2908.BMA.004",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK KEUANGAN, TEKNOLOGI INFORMASI, DAN PARIWISATA",
+    "v": "12",
+    "nama": "(2908.BMA.004) PUBLIKASI/LAPORAN STATISTIK KEUANGAN, TEKNOLOGI INFORMASI, DAN PARIWISATA",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 64,
+    "kode": "2908.BMA.009",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK E-COMMERCE",
+    "v": "12",
+    "nama": "(2908.BMA.009) PUBLIKASI/LAPORAN STATISTIK E-COMMERCE",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 65,
+    "kode": "2909",
+    "komponen": "Penyediaan dan Pengembangan Statistik Peternakan, Perikanan, dan Kehutanan",
+    "v": "4",
+    "nama": "(2909) Penyediaan dan Pengembangan Statistik Peternakan, Perikanan, dan Kehutanan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 66,
+    "kode": "2909.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 67,
+    "kode": "2909.BMA.005",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK PETERNAKAN, PERIKANAN, DAN KEHUTANAN",
+    "v": "12",
+    "nama": "(2909.BMA.005) PUBLIKASI/LAPORAN STATISTIK PETERNAKAN, PERIKANAN, DAN KEHUTANAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 68,
+    "kode": "2910",
+    "komponen": "Penyediaan dan Pengembangan Statistik Tanaman Pangan, Hortikultura, dan Perkebunan",
+    "v": "4",
+    "nama": "(2910) Penyediaan dan Pengembangan Statistik Tanaman Pangan, Hortikultura, dan Perkebunan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 69,
+    "kode": "2910.BMA",
+    "komponen": "Data dan Informasi Publik[Base Line]",
+    "v": "8",
+    "nama": "(BMA) Data dan Informasi Publik[Base Line]",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 70,
+    "kode": "2910.BMA.007",
+    "komponen": "PUBLIKASI/ LAPORAN STATISTIK TANAMAN PANGAN",
+    "v": "12",
+    "nama": "(2910.BMA.007) PUBLIKASI/ LAPORAN STATISTIK TANAMAN PANGAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 71,
+    "kode": "2910.BMA.008",
+    "komponen": "PUBLIKASI/LAPORAN STATISTIK HORTIKULTURA DAN PERKEBUNAN",
+    "v": "12",
+    "nama": "(2910.BMA.008) PUBLIKASI/LAPORAN STATISTIK HORTIKULTURA DAN PERKEBUNAN",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 72,
+    "kode": "506",
+    "komponen": "Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat",
+    "v": "3",
+    "nama": "(506) Pemutakhiran Kerangka Geospasial dan Muatan Wilkerstat",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 73,
+    "kode": "511111",
+    "komponen": "Belanja Gaji Pokok PNS",
+    "v": "6",
+    "nama": "(511111) Belanja Gaji Pokok PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 74,
+    "kode": "511119",
+    "komponen": "Belanja Pembulatan Gaji PNS",
+    "v": "6",
+    "nama": "(511119) Belanja Pembulatan Gaji PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 75,
+    "kode": "511121",
+    "komponen": "Belanja Tunj. Suami/Istri PNS",
+    "v": "6",
+    "nama": "(511121) Belanja Tunj. Suami/Istri PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 76,
+    "kode": "511122",
+    "komponen": "Belanja Tunj. Anak PNS",
+    "v": "6",
+    "nama": "(511122) Belanja Tunj. Anak PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 77,
+    "kode": "511123",
+    "komponen": "Belanja Tunj. Struktural PNS",
+    "v": "6",
+    "nama": "(511123) Belanja Tunj. Struktural PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 78,
+    "kode": "511124",
+    "komponen": "Belanja Tunj. Fungsional PNS",
+    "v": "6",
+    "nama": "(511124) Belanja Tunj. Fungsional PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 79,
+    "kode": "511125",
+    "komponen": "Belanja Tunj. PPh PNS",
+    "v": "6",
+    "nama": "(511125) Belanja Tunj. PPh PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 80,
+    "kode": "511126",
+    "komponen": "Belanja Tunj. Beras PNS",
+    "v": "6",
+    "nama": "(511126) Belanja Tunj. Beras PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 81,
+    "kode": "511129",
+    "komponen": "Belanja Uang Makan PNS",
+    "v": "6",
+    "nama": "(511129) Belanja Uang Makan PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 82,
+    "kode": "511151",
+    "komponen": "Belanja Tunjangan Umum PNS",
+    "v": "6",
+    "nama": "(511151) Belanja Tunjangan Umum PNS",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 83,
+    "kode": "512211",
+    "komponen": "Belanja Uang Lembur",
+    "v": "6",
+    "nama": "(512211) Belanja Uang Lembur",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 84,
+    "kode": "512411",
+    "komponen": "Belanja Pegawai (Tunjangan Khusus/Kegiatan/Kinerja)",
+    "v": "6",
+    "nama": "(512411) Belanja Pegawai (Tunjangan Khusus/Kegiatan/Kinerja)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 85,
+    "kode": "516",
+    "komponen": "Updating Direktori Usaha/Perusahaan Ekonomi Lanjutan",
+    "v": "3",
+    "nama": "(516) Updating Direktori Usaha/Perusahaan Ekonomi Lanjutan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 86,
+    "kode": "519",
+    "komponen": "Penyusunan Bahan Publisitas",
+    "v": "3",
+    "nama": "(519) Penyusunan Bahan Publisitas",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 87,
+    "kode": "521111",
+    "komponen": "Belanja Keperluan Perkantoran",
+    "v": "6",
+    "nama": "(521111) Belanja Keperluan Perkantoran",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 88,
+    "kode": "521115",
+    "komponen": "Belanja Honor Operasional Satuan Kerja",
+    "v": "6",
+    "nama": "(521115) Belanja Honor Operasional Satuan Kerja",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 89,
+    "kode": "521119",
+    "komponen": "Belanja Barang Operasional Lainnya",
+    "v": "6",
+    "nama": "(521119) Belanja Barang Operasional Lainnya",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 90,
+    "kode": "521211",
+    "komponen": "Belanja Bahan",
+    "v": "6",
+    "nama": "(521211) Belanja Bahan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 91,
+    "kode": "521213",
+    "komponen": "Belanja Honor Output Kegiatan",
+    "v": "6",
+    "nama": "(521213) Belanja Honor Output Kegiatan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 92,
+    "kode": "521219",
+    "komponen": "Belanja Barang Non Operasional Lainnya",
+    "v": "6",
+    "nama": "(521219) Belanja Barang Non Operasional Lainnya",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 93,
+    "kode": "521811",
+    "komponen": "Belanja Barang Persediaan Barang Konsumsi",
+    "v": "6",
+    "nama": "(521811) Belanja Barang Persediaan Barang Konsumsi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 94,
+    "kode": "522111",
+    "komponen": "Belanja Langganan Listrik",
+    "v": "6",
+    "nama": "(522111) Belanja Langganan Listrik",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 95,
+    "kode": "522112",
+    "komponen": "Belanja Langganan Telepon",
+    "v": "6",
+    "nama": "(522112) Belanja Langganan Telepon",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 96,
+    "kode": "522113",
+    "komponen": "Belanja Langganan Air",
+    "v": "6",
+    "nama": "(522113) Belanja Langganan Air",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 97,
+    "kode": "522119",
+    "komponen": "Belanja Langganan Daya dan Jasa Lainnya",
+    "v": "6",
+    "nama": "(522119) Belanja Langganan Daya dan Jasa Lainnya",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 98,
+    "kode": "522151",
+    "komponen": "Belanja Jasa Profesi",
+    "v": "6",
+    "nama": "(522151) Belanja Jasa Profesi",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 99,
+    "kode": "522191",
+    "komponen": "Belanja Jasa Lainnya",
+    "v": "6",
+    "nama": "(522191) Belanja Jasa Lainnya",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 100,
+    "kode": "523111",
+    "komponen": "Belanja Pemeliharaan Gedung dan Bangunan",
+    "v": "6",
+    "nama": "(523111) Belanja Pemeliharaan Gedung dan Bangunan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 101,
+    "kode": "523121",
+    "komponen": "Belanja Pemeliharaan Peralatan dan Mesin",
+    "v": "6",
+    "nama": "(523121) Belanja Pemeliharaan Peralatan dan Mesin",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 102,
+    "kode": "524111",
+    "komponen": "Belanja Perjalanan Dinas Biasa",
+    "v": "6",
+    "nama": "(524111) Belanja Perjalanan Dinas Biasa",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 103,
+    "kode": "524113",
+    "komponen": "Belanja Perjalanan Dinas Dalam Kota",
+    "v": "6",
+    "nama": "(524113) Belanja Perjalanan Dinas Dalam Kota",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 104,
+    "kode": "524114",
+    "komponen": "Belanja Perjalanan Dinas Paket Meeting Dalam Kota",
+    "v": "6",
+    "nama": "(524114) Belanja Perjalanan Dinas Paket Meeting Dalam Kota",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 105,
+    "kode": "A",
+    "komponen": "TANPA SUB KOMPONEN",
+    "v": "1",
+    "nama": "(A) TANPA SUB KOMPONEN",
+    "created_at": null,
+    "updated_at": null
+  }
+]

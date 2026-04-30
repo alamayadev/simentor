@@ -1,0 +1,910 @@
+name: 'Kantor - SKP'
+description: |-
+
+  APIs for managing Employee Performance Targets (SKP).
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/skp/dashboard
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'SKP Dashboard'
+      description: 'Retrieve SKP dashboard summary.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Data retrieved successfully",
+           "data": {
+               "total_pegawai": 50,
+               "skp_bulanan_by_role": {
+                   "Kepala": 1,
+                   "Kasub Umum": 1,
+                   "Katim": 3
+               },
+               "activities": [
+                   {
+                       "id": 1,
+                       "nama": "SKP Name",
+                       "user_name": "John Doe",
+                       "created_at": "2024-01-01T00:00:00.000000Z"
+                   }
+               ],
+               "skp_bulan_by_month": {
+                   "tahun": 2025,
+                   "data": {
+                       "01": 30,
+                       "02": 31,
+                       "03": 29,
+                       "04": 29,
+                       "05": 28,
+                       "06": 20,
+                       "07": 19,
+                       "08": 20,
+                       "09": 21,
+                       "10": 20,
+                       "11": 19,
+                       "12": 30
+                   }
+               },
+               "skp_penilaian": {
+                   "tahun": 2025,
+                   "data": {
+                       "2024-01": 10,
+                       "2024-02": 15,
+                       "2024-03": 12
+                   }
+               },
+               "skp_evaluasi": {
+                   "tahun": 2025,
+                   "data": {
+                       "2024-01": 8,
+                       "2024-02": 12,
+                       "2024-03": 10
+                   }
+               },
+               "skp_penetapan": {
+                   "tahun": 2025,
+                   "data": {
+                       "2024-01": 5,
+                       "2024-02": 8,
+                       "2024-03": 6
+                   }
+               },
+               "skp_nilai_by_role": {
+                   "Kepala": 1,
+                   "Kasub Umum": 1,
+                   "Katim": 3
+               }
+           }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/skp/stats
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get SKP Stats'
+      description: 'Retrieve statistics for SKP based on year and month.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: 'The year to filter.'
+        required: false
+        example: 2023
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      tahun2:
+        custom: []
+        name: tahun2
+        description: 'The second year to filter.'
+        required: false
+        example: 2023
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      bulan:
+        custom: []
+        name: bulan
+        description: 'The month to filter.'
+        required: false
+        example: '01'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      tahun: 2023
+      tahun2: 2023
+      bulan: '01'
+    bodyParameters:
+      tahun:
+        custom: []
+        name: tahun
+        description: ':Attribute minimal bernilai 2000. :Attribute maksimal bernilai 2027.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      tahun2:
+        custom: []
+        name: tahun2
+        description: ':Attribute minimal bernilai 2000. :Attribute maksimal bernilai 2027.'
+        required: false
+        example: 22
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      bulan:
+        custom: []
+        name: bulan
+        description: ':Attribute maksimal berisi 2 karakter.'
+        required: false
+        example: gz
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      tahun: 1
+      tahun2: 22
+      bulan: gz
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Data retrieved successfully",
+           "data": {
+               "selected_tahun": "2023",
+               "selected_tahun2": "2023",
+               "selected_bulan": "01",
+               "tahun_options": ["2022", "2023", "2024"],
+               "bulan_options": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+               "total_target": 100,
+               "total_realisasi": 80
+           }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/skp/stats2
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Get Alternative Stats'
+      description: 'Retrieve alternative statistics for SKP.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Statistics retrieved successfully",
+           "data": {
+               "total_active_users": 50,
+               "average_performance": 85.5
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+           "success": false,
+           "message": "Failed to retrieve statistics",
+           "data": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/skp/list
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List SKP'
+      description: 'Retrieve a list of SKP records with pagination and filtering.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      page:
+        custom: []
+        name: page
+        description: 'The page number.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      per_page:
+        custom: []
+        name: per_page
+        description: 'The number of items per page.'
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      tahun:
+        custom: []
+        name: tahun
+        description: 'Filter by year.'
+        required: false
+        example: 2023
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      user_id:
+        custom: []
+        name: user_id
+        description: 'Filter by user ID.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      page: 1
+      per_page: 20
+      tahun: 2023
+      user_id: 1
+    bodyParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: ':Attribute minimal bernilai 1. :Attribute maksimal bernilai 100.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      search:
+        custom: []
+        name: search
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      user_id:
+        custom: []
+        name: user_id
+        description: 'The <code>id</code> of an existing record in the users table.'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      tahun:
+        custom: []
+        name: tahun
+        description: ':Attribute minimal berisi 4 karakter. :Attribute maksimal berisi 4 karakter.'
+        required: false
+        example: ngzm
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      sort_by:
+        custom: []
+        name: sort_by
+        description: ''
+        required: false
+        example: jenis
+        type: string
+        enumValues:
+          - nama
+          - jenis
+          - bulan
+          - tahun
+          - created_at
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      sort_dir:
+        custom: []
+        name: sort_dir
+        description: ''
+        required: false
+        example: DESC
+        type: string
+        enumValues:
+          - ASC
+          - DESC
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      per_page: 1
+      cursor: architecto
+      search: architecto
+      user_id: 16
+      tahun: ngzm
+      sort_by: jenis
+      sort_dir: DESC
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Data retrieved successfully",
+           "data": [
+               {
+                   "id": 1,
+                   "user_id": 1,
+                   "tahun": "2023",
+                   "target": 100,
+                   "realisasi": 90,
+                   "kualitas": 95,
+                   "file_url": "http://example.com/file.pdf"
+               }
+           ],
+           "meta": {
+                "pagination_info": {
+                    "total": 50,
+                    "per_page": 20,
+                    "current_page": 1,
+                    "last_page": 3
+                }
+           }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/skp/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show SKP'
+      description: 'Retrieve details of a specific SKP record.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the SKP record.'
+        required: true
+        example: '1'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: '1'
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Data retrieved successfully",
+           "data": {
+               "id": 1,
+               "user_id": 1,
+               "tahun": "2023",
+               "target": 100,
+               "realisasi": 90,
+               "kualitas": 95,
+               "user": {
+                   "id": 1,
+                   "name": "John Doe"
+               }
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "SKP record not found",
+           "data": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/skp
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create SKP'
+      description: 'Create a new SKP record.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      jenis:
+        custom: []
+        name: jenis
+        description: 'The type of SKP.'
+        required: true
+        example: 'SKP Bulanan'
+        type: string
+        enumValues:
+          - 'SKP Bulanan'
+          - 'SKP Triwulanan'
+          - 'SKP Tahunan (Penetapan)'
+          - 'SKP Tahunan (Penilaian)'
+          - 'SKP Evaluasi Tahunan'
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      bulan:
+        custom: []
+        name: bulan
+        description: 'The month of SKP (01-12). :Attribute maksimal berisi 3 karakter.'
+        required: false
+        example: '01'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      tahun:
+        custom: []
+        name: tahun
+        description: 'The year of SKP. :Attribute minimal berisi 4 karakter. :Attribute maksimal berisi 4 karakter.'
+        required: true
+        example: '2023'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'The SKP file (PDF). Must be a file. :Attribute maksimal berukuran 7168 kilobita.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      jenis: 'SKP Bulanan'
+      bulan: '01'
+      tahun: '2023'
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+           "success": true,
+           "message": "SKP record created successfully",
+           "data": {
+               "id": 1,
+               "user_id": 1,
+               "tahun": "2023",
+               "target": 100,
+               "realisasi": 90,
+               "kualitas": 95
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+           "success": false,
+           "message": "Failed to create SKP record",
+           "data": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/skp/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update SKP'
+      description: 'Update an existing SKP record.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the SKP record.'
+        required: true
+        example: '1'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: '1'
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      jenis:
+        custom: []
+        name: jenis
+        description: 'The type of SKP.'
+        required: false
+        example: 'SKP Bulanan'
+        type: string
+        enumValues:
+          - 'SKP Bulanan'
+          - 'SKP Triwulanan'
+          - 'SKP Tahunan (Penetapan)'
+          - 'SKP Tahunan (Penilaian)'
+          - 'SKP Evaluasi Tahunan'
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      bulan:
+        custom: []
+        name: bulan
+        description: 'The month of SKP (01-12). :Attribute maksimal berisi 3 karakter.'
+        required: false
+        example: '01'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      tahun:
+        custom: []
+        name: tahun
+        description: 'The year of SKP. :Attribute minimal berisi 4 karakter. :Attribute maksimal berisi 4 karakter.'
+        required: false
+        example: '2023'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      file:
+        custom: []
+        name: file
+        description: 'The SKP file (PDF). Must be a file. :Attribute maksimal berukuran 7168 kilobita.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      jenis: 'SKP Bulanan'
+      bulan: '01'
+      tahun: '2023'
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "SKP record updated successfully",
+           "data": {
+               "id": 1,
+               "tahun": "2023",
+               "target": 110,
+               "realisasi": 95
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+           "success": false,
+           "message": "Failed to update SKP record",
+           "data": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/skp/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - SKP'
+      groupDescription: |-
+
+        APIs for managing Employee Performance Targets (SKP).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete SKP'
+      description: 'Delete an SKP record.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the SKP record.'
+        required: true
+        example: '1'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: '1'
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "SKP record deleted successfully",
+           "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+           "success": false,
+           "message": "Failed to delete SKP record",
+           "data": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

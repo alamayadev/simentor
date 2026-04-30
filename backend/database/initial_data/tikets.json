@@ -1,0 +1,57 @@
+[
+  {
+    "id": 3,
+    "user_id": 29,
+    "jenis_keluhan": "Printer",
+    "deskripsi": "tidak bisa print pada printer yang terhubung dari PC sebelah (Pak Suwirno)",
+    "status": "Selesai Ditangani",
+    "keterangan": "printer sudah bisa di jalankan dengan normal",
+    "ditangani_oleh": 5,
+    "created_at": "2025-04-29T06:50:01",
+    "updated_at": "2025-07-28T15:23:18"
+  },
+  {
+    "id": 4,
+    "user_id": 21,
+    "jenis_keluhan": "Software",
+    "deskripsi": "pvn ngadat boz",
+    "status": "Selesai Ditangani",
+    "keterangan": "Pengguna Sudah bisa terkoneksi dengan VPN",
+    "ditangani_oleh": 5,
+    "created_at": "2025-04-29T09:44:05",
+    "updated_at": "2025-05-26T10:30:42"
+  },
+  {
+    "id": 5,
+    "user_id": 3,
+    "jenis_keluhan": "Hardware PC/Laptop",
+    "deskripsi": "Memori tidak terbaca",
+    "status": null,
+    "keterangan": null,
+    "ditangani_oleh": null,
+    "created_at": "2025-09-12T13:39:49",
+    "updated_at": "2025-09-12T13:39:49"
+  },
+  {
+    "id": 6,
+    "user_id": 33,
+    "jenis_keluhan": "Jaringan",
+    "deskripsi": "Tidak bisa akses jaringan lokal IPDS-1 untuk mengambil template KCDA",
+    "status": null,
+    "keterangan": null,
+    "ditangani_oleh": null,
+    "created_at": "2025-09-12T13:44:21",
+    "updated_at": "2025-09-12T13:44:21"
+  },
+  {
+    "id": 7,
+    "user_id": 29,
+    "jenis_keluhan": "Hardware PC/Laptop",
+    "deskripsi": "PC sering freeze atau heng berkali. minta dicek karena menghambat pekerjaan..",
+    "status": null,
+    "keterangan": null,
+    "ditangani_oleh": null,
+    "created_at": "2025-12-11T07:22:06",
+    "updated_at": "2025-12-11T07:22:06"
+  }
+]

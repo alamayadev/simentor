@@ -1,0 +1,120 @@
+{
+  "title": "Form Laporan Pengawasan Survei Sosial Ekonomi Nasional (SUSENAS)",
+  "description": "Form ini digunakan untuk melaporkan hasil pengawasan terhadap pelaksanaan Survei Sosial Ekonomi Nasional (SUSENAS) di lapangan, mencakup identitas pengawas, aspek kepatuhan, kualitas pelaksanaan, dan capaian responden.",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "SINGLE_INPUT",
+      "title": "Nama Lengkap Petugas Pengawas",
+      "required": true,
+      "inputType": "text"
+    },
+    {
+      "id": "q2",
+      "type": "SINGLE_INPUT",
+      "title": "Tanggal Pelaksanaan Pengawasan",
+      "required": true,
+      "inputType": "date"
+    },
+    {
+      "id": "q3",
+      "type": "MATRIX",
+      "title": "Mohon nilai kepatuhan pelaksanaan Susenas pada aspek-aspek berikut:",
+      "required": true,
+      "rows": [
+        {
+          "id": "r1",
+          "label": "Ketersediaan dan Kelengkapan Dokumen Lapangan"
+        },
+        {
+          "id": "r2",
+          "label": "Pemahaman Petugas Terhadap Konsep dan Definisi"
+        },
+        {
+          "id": "r3",
+          "label": "Kualitas Wawancara dan Pengisian Kuesioner"
+        },
+        {
+          "id": "r4",
+          "label": "Manajemen Waktu dan Target Pencacahan"
+        },
+        {
+          "id": "r5",
+          "label": "Koordinasi dengan Mitra Lokal"
+        }
+      ],
+      "columns": [
+        {
+          "id": "col_1764389534134",
+          "label": "kurang"
+        },
+        {
+          "id": "col_1764389549142",
+          "label": "cukup"
+        },
+        {
+          "id": "col_1764389553886",
+          "label": "bagus"
+        }
+      ]
+    },
+    {
+      "id": "c1",
+      "type": "MULTIPLE_CHOICE",
+      "title": "Pilih salah satu kondisi",
+      "required": true,
+      "options": [
+        {
+          "id": "opt1",
+          "label": "Sesuai Prosedur"
+        },
+        {
+          "id": "opt2",
+          "label": "Sesuai dengan Sedikit Koreksi"
+        },
+        {
+          "id": "opt3",
+          "label": "Kurang Sesuai, Perlu Perbaikan"
+        },
+        {
+          "id": "opt4",
+          "label": "Tidak Sesuai"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "RATING",
+      "title": "Secara keseluruhan, bagaimana Anda menilai kualitas pengumpulan data Susenas di lokasi yang diawasi?",
+      "required": true,
+      "maxRating": 5,
+      "rows": [
+        {
+          "id": "rating1",
+          "label": "Sangat Buruk"
+        },
+        {
+          "id": "rating2",
+          "label": "Buruk"
+        },
+        {
+          "id": "rating3",
+          "label": "Cukup"
+        },
+        {
+          "id": "rating4",
+          "label": "Baik"
+        },
+        {
+          "id": "rating5",
+          "label": "Sangat Baik"
+        }
+      ]
+    }
+  ],
+  "id": "775f0739-8b4a-4650-a2ae-a21bd04be484",
+  "createdAt": 1764389522159,
+  "serverId": 1,
+  "owner_id": 5,
+  "language": "en"
+}

@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "migration": "0001_01_01_000000_create_users_table",
+        "batch": 1
+    },
+    {
+        "id": 2,
+        "migration": "0001_01_01_000001_create_cache_table",
+        "batch": 1
+    },
+    {
+        "id": 3,
+        "migration": "0001_01_01_000002_create_jobs_table",
+        "batch": 1
+    },
+    {
+        "id": 4,
+        "migration": "2024_04_24_000001_add_user_social_provider_table",
+        "batch": 1
+    },
+    {
+        "id": 5,
+        "migration": "2024_04_24_000002_update_passwords_field_to_be_nullable",
+        "batch": 1
+    },
+    {
+        "id": 6,
+        "migration": "2024_12_11_061526_add_two_factor_columns_to_users_table",
+        "batch": 1
+    },
+    {
+        "id": 7,
+        "migration": "2024_12_11_061554_create_personal_access_tokens_table",
+        "batch": 1
+    },
+    {
+        "id": 8,
+        "migration": "2024_12_12_112447_create_permission_tables",
+        "batch": 1
+    },
+    {
+        "id": 9,
+        "migration": "2024_12_14_081114_create_tamus_table",
+        "batch": 1
+    },
+    {
+        "id": 10,
+        "migration": "2024_12_14_081454_create_pengaduans_table",
+        "batch": 1
+    },
+    {
+        "id": 11,
+        "migration": "2024_12_15_114230_create_links_table",
+        "batch": 1
+    },
+    {
+        "id": 12,
+        "migration": "2024_12_18_220324_create_kegiatan_table",
+        "batch": 1
+    },
+    {
+        "id": 13,
+        "migration": "2024_12_18_220324_create_mitra_kepka_table",
+        "batch": 1
+    },
+    {
+        "id": 14,
+        "migration": "2024_12_18_220324_create_penugasan_table",
+        "batch": 1
+    },
+    {
+        "id": 15,
+        "migration": "2024_12_18_220324_create_settings_table",
+        "batch": 1
+    },
+    {
+        "id": 16,
+        "migration": "2024_12_18_220324_create_skps_table",
+        "batch": 1
+    },
+    {
+        "id": 17,
+        "migration": "2024_12_18_221943_create_data_surtug_table",
+        "batch": 1
+    },
+    {
+        "id": 18,
+        "migration": "2024_12_18_222351_create_data_surat_spk_bast_table",
+        "batch": 1
+    },
+    {
+        "id": 19,
+        "migration": "2024_12_18_222704_create_data_surat_keluar_table",
+        "batch": 1
+    },
+    {
+        "id": 20,
+        "migration": "2024_12_18_222855_create_data_form_permintaan_table",
+        "batch": 1
+    },
+    {
+        "id": 21,
+        "migration": "2024_12_20_092655_create_surtug_detils_table",
+        "batch": 1
+    },
+    {
+        "id": 22,
+        "migration": "2024_12_26_162552_create_uu_tambahans_table",
+        "batch": 1
+    },
+    {
+        "id": 23,
+        "migration": "2024_12_27_203151_create_uus_table",
+        "batch": 1
+    },
+    {
+        "id": 24,
+        "migration": "2024_12_28_174448_create_sk_detils_table",
+        "batch": 1
+    },
+    {
+        "id": 25,
+        "migration": "2025_01_01_183109_create_klasifikasi_surats_table",
+        "batch": 1
+    },
+    {
+        "id": 26,
+        "migration": "2025_01_01_185535_create_profil_pegawais_table",
+        "batch": 1
+    },
+    {
+        "id": 27,
+        "migration": "2025_01_01_190051_create_poks_table",
+        "batch": 1
+    },
+    {
+        "id": 28,
+        "migration": "2025_01_05_200231_create_bast_detils_table",
+        "batch": 1
+    },
+    {
+        "id": 29,
+        "migration": "2025_01_06_113813_create_sls_kecs_table",
+        "batch": 1
+    },
+    {
+        "id": 30,
+        "migration": "2025_01_06_113919_create_sls2024s_table",
+        "batch": 1
+    },
+    {
+        "id": 31,
+        "migration": "2025_01_14_074833_create_hardware_table",
+        "batch": 2
+    },
+    {
+        "id": 32,
+        "migration": "2025_01_14_075225_create_tikets_table",
+        "batch": 2
+    }
+]

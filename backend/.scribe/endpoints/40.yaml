@@ -1,0 +1,467 @@
+name: Enums
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar enum yang tersedia.'
+      description: |-
+        Endpoint ini mengembalikan daftar enum yang dapat digunakan sebagai opsi (dropdown) di sisi klien.
+        Akses terbatas untuk pengguna terotentikasi.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": {
+              "fungsi_types": ["..."],
+              "jabatan_tugas_types": ["..."],
+              "jenis_kegiatan_types": ["..."],
+              "satuan_types": ["..."],
+              "pangkat_types": ["..."],
+              "golongan_types": ["..."],
+              "jabatan_types": ["..."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/fungsi-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum FungsiType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum FungsiType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["...", "...", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/jabatan-tugas-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum JabatanTugasType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum JabatanTugasType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["PCL", "PML", "OPERATOR", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/jenis-kegiatan-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum JenisKegiatanType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum JenisKegiatanType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["Rutin", "Proyek", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/satuan-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum SatuanType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum SatuanType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["Dokumen", "Kegiatan", "Responden", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/pangkat-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum PangkatType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum PangkatType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["Pembina", "Penata", "Pengatur", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/golongan-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum GolonganType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum GolonganType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["IV", "III", "II", "I"]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/enums/jabatan-types
+    metadata:
+      custom: []
+      groupName: Enums
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Enum JabatanType.'
+      description: |-
+        Endpoint ini mengembalikan daftar nilai dari enum JabatanType.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "data": ["Kepala BPS", "Kepala Bagian", "..."]
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

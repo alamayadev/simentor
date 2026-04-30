@@ -1,0 +1,23 @@
+version: "3"
+
+rpc:
+  listen: tcp://127.0.0.1:6002
+
+server:
+  command: "php custom-worker.php"
+  relay: "pipes"
+
+http:
+  address: 0.0.0.0:9001
+  middleware: ["static", "gzip"]
+  static:
+    dir: "public"
+    forbid: [".php", ".htaccess"]
+
+logs:
+  mode: development
+  level: debug
+
+# Laravel Queue Worker - Multiple services
+# HTTP server will be the main service
+# Additional services can be configured here if needed

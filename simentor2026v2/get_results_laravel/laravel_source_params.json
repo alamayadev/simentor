@@ -1,0 +1,1470 @@
+[
+  {
+    "method": "GET",
+    "uri": "/landing",
+    "name": "LandingIndex",
+    "controller": "App\\Http\\Controllers\\Api\\LandingApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/meta/wilayah/kecamatan",
+    "name": "WilayahKecamatanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Meta\\WilayahApiController",
+    "action": "kecamatan",
+    "params": [
+      "kdprov",
+      "kdkab"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/file/{path}",
+    "name": "SurveycraftFileShow",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "file",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/share/{surveycraft}",
+    "name": "SurveycraftShareShow",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "share",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/profile",
+    "name": "ProfileIndex",
+    "controller": "App\\Http\\Controllers\\Api\\ProfileApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/profile/pegawai",
+    "name": "ProfilePegawaiIndex",
+    "controller": "App\\Http\\Controllers\\Api\\ProfileApiController",
+    "action": "showPegawai",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/pdf/spk/{id}",
+    "name": "PdfSPKShow",
+    "controller": "App\\Http\\Controllers\\Api\\PdfApiController",
+    "action": "generateSPK",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/pdf/bast/{id}",
+    "name": "PdfBASTShow",
+    "controller": "App\\Http\\Controllers\\Api\\PdfApiController",
+    "action": "generateBAST",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-tugas/generate-docx/satu/organik/{id}",
+    "name": "SuratTugasGenerateDocxSatuOrganikShow",
+    "controller": "App\\Http\\Controllers\\SuratTugasOrganikController",
+    "action": "satu",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-tugas/generate-docx/gab/mitra/{id}",
+    "name": "SuratTugasGenerateDocxGabMitraShow",
+    "controller": "App\\Http\\Controllers\\SuratTugasMitraController",
+    "action": "generateDocx",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-tugas/generate-docx/gab/organik/{id}",
+    "name": "SuratTugasGenerateDocxGabOrganikShow",
+    "controller": "App\\Http\\Controllers\\SuratTugasMitraController",
+    "action": "generateOrganikDocx",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-tugas/generate-docx/organik/{id}",
+    "name": "SuratTugasGenerateDocxOrganikShow",
+    "controller": "App\\Http\\Controllers\\SuratTugasOrganikController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-keluar/generate-docx/{id}",
+    "name": "SuratKeluarGenerateDocxShow",
+    "controller": "App\\Http\\Controllers\\SuratKeluarController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-keputusan/kpa/generate-docx/mitra/{sk}",
+    "name": "SuratKeputusanKpaGenerateDocxMitraShow",
+    "controller": "App\\Http\\Controllers\\SuratKeputusanController",
+    "action": "generateSkKpaMitra",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-keputusan/kpa/generate-docx/mitra/manual/{sk}",
+    "name": "SuratKeputusanKpaGenerateDocxMitraManualShow",
+    "controller": "App\\Http\\Controllers\\SuratKeputusanController",
+    "action": "generateSkKpaMitraManual",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/surat/surat-keputusan/kepala/generate-docx/organik/{sk}",
+    "name": "SuratKeputusanKepalaGenerateDocxOrganikShow",
+    "controller": "App\\Http\\Controllers\\SuratKeputusanController",
+    "action": "generateSkKepalaOrganik",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/roles/permission-options",
+    "name": "RolesPermissionOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\RolesApiController",
+    "action": "permissionOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/roles",
+    "name": "RolesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\RolesApiController",
+    "action": "index",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/roles/{id}",
+    "name": "RolesShow",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\RolesApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/permissions",
+    "name": "PermissionsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\PermissionsApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[name]",
+      "sort"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/permissions/form-options",
+    "name": "PermissionsFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\PermissionsApiController",
+    "action": "listApiControllers",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/permissions/list-api-controllers",
+    "name": "PermissionsListApiControllersIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\PermissionsApiController",
+    "action": "listApiControllers",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/permissions/{id}",
+    "name": "PermissionsShow",
+    "controller": "App\\Http\\Controllers\\Api\\Admin\\PermissionsApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/users/organik",
+    "name": "UsersOrganikIndex",
+    "controller": "AdminUserApiController",
+    "action": "organik",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/users/mitra",
+    "name": "UsersMitraIndex",
+    "controller": "AdminUserApiController",
+    "action": "mitra",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/users",
+    "name": "UsersIndex",
+    "controller": "AdminUserApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/admin/users/{id}",
+    "name": "UsersShow",
+    "controller": "AdminUserApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/pegawai",
+    "name": "PegawaiIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PegawaiApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "cursor",
+      "search",
+      "filter",
+      "filter[pangkat]",
+      "filter[jabatan]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/pegawai/jabatan-pangkat-list",
+    "name": "PegawaiJabatanPangkatList",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PegawaiApiController",
+    "action": "getJabatanPangkatList",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/pegawai/{id}",
+    "name": "PegawaiShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PegawaiApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/settings",
+    "name": "SettingsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SettingApiController",
+    "action": "index",
+    "params": [
+      "search",
+      "filter[grup]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/settings/grup-list",
+    "name": "SettingsGrupList",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SettingApiController",
+    "action": "getGrupList",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/settings/officers",
+    "name": "SettingsOfficersIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SettingApiController",
+    "action": "officers",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/settings/key/{key}",
+    "name": "SettingsKeyShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SettingApiController",
+    "action": "getByKey",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/settings/{id}",
+    "name": "SettingsShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SettingApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/mitra",
+    "name": "MitraIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MitraApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "cursor",
+      "search",
+      "filter",
+      "filter[email]",
+      "filter[sobat_id]",
+      "filter[nama_lengkap]",
+      "filter[kab]",
+      "filter[keca]",
+      "filter[desa]",
+      "filter[nik]",
+      "filter[tgl_lahir]",
+      "filter[posisi]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/mitra/filters",
+    "name": "MitraFiltersIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MitraApiController",
+    "action": "filters",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/mitra/penugasan-options",
+    "name": "MitraPenugasanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MitraApiController",
+    "action": "penugasanOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha",
+    "name": "DirektoriUsahaIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "index",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/rekap-user",
+    "name": "DirektoriUsahaRekapUserIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "rekapUser",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/progres",
+    "name": "DirektoriUsahaProgresIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "progres",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/filters",
+    "name": "DirektoriUsahaFiltersIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "filters",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/desa-options",
+    "name": "DirektoriUsahaDesaOptions",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "desaOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/no-gc-no-loc",
+    "name": "DirektoriUsahaNoGcNoLocIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "noGcNoLoc",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/invalid",
+    "name": "DirektoriUsahaInvalidIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "invalid",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/siap-kirim",
+    "name": "DirektoriUsahaSiapKirimIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "siapKirim",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/siap-kirim/csv",
+    "name": "DirektoriUsahaSiapKirimCsvIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "csvSiapKirim",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/ganda",
+    "name": "DirektoriUsahaGandaIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "ganda",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/export/csv",
+    "name": "DirektoriUsahaExportCsvIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "csvExport",
+    "params": [
+      "flag"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/csv-update",
+    "name": "DirektoriUsahaCsvUpdateIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "csvUpdate",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/map-desa",
+    "name": "DirektoriUsahaMapDesaIndex",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "mapDesa",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/direktori-usaha/{id}",
+    "name": "DirektoriUsahaShow",
+    "controller": "App\\Http\\Controllers\\Api\\DirektoriUsahaController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/monitoring-kegiatan-config/kegiatan-options",
+    "name": "KegiatanMonitoringMonitoringKegiatanConfigKegiatanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanConfigApiController",
+    "action": "kegiatanOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/detil-configurations/available-fields",
+    "name": "KegiatanMonitoringDetilConfigurationsAvailableFieldsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\DetilConfigurationApiController",
+    "action": "getAvailableFields",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/detil-configurations",
+    "name": "KegiatanMonitoringDetilConfigurationsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\DetilConfigurationApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/detil-configurations/{id}",
+    "name": "KegiatanMonitoringDetilConfigurationsShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\DetilConfigurationApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/kegiatan-options",
+    "name": "KegiatanMonitoringKegiatanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "kegiatanOptions",
+    "params": [
+      "fungsi"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/all-kegiatan-options",
+    "name": "KegiatanMonitoringAllKegiatanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "allKegiatanOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/filters-options",
+    "name": "KegiatanMonitoringFiltersOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "filtersOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/petugas-options",
+    "name": "KegiatanMonitoringPetugasOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "petugasOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/pengawas-options",
+    "name": "KegiatanMonitoringPengawasOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "pengawasOptions",
+    "params": [
+      "search"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/supervisor-options",
+    "name": "KegiatanMonitoringSupervisorOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "supervisorOptions",
+    "params": [
+      "search"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/sls-options",
+    "name": "KegiatanMonitoringSlsOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "slsOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/blok-options",
+    "name": "KegiatanMonitoringBlokOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "blokOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/kec-options",
+    "name": "KegiatanMonitoringKecOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "kecOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/desa-options",
+    "name": "KegiatanMonitoringDesaOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "desaOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/detil-configuration",
+    "name": "KegiatanMonitoringDetilConfigurationIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "getDetilConfiguration",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/monitoring-kegiatan-config/{id}/available-detil-configs",
+    "name": "KegiatanMonitoringMonitoringKegiatanConfigAvailableDetilConfigsShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanConfigApiController",
+    "action": "getAvailableDetilConfigurations",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring",
+    "name": "KegiatanMonitoringIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "index",
+    "params": [
+      "kegiatan_id",
+      "per_page",
+      "cursor"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/download",
+    "name": "KegiatanMonitoringDownloadIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "download",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/monitoring/{id}",
+    "name": "KegiatanMonitoringShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\MonitoringKegiatanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/filter-list",
+    "name": "KegiatanFilterList",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "getFilterList",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/calendar",
+    "name": "KegiatanCalendarIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "calendar",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/form-options",
+    "name": "KegiatanFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/by-year",
+    "name": "KegiatanByYearIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "kegiatanByYear",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/statistics",
+    "name": "KegiatanStatistics",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "statistics",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan",
+    "name": "KegiatanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "cursor",
+      "search",
+      "fungsi",
+      "sort_by",
+      "sort_dir",
+      "filter",
+      "filter[tahun]",
+      "filter[jenis_kegiatan]",
+      "filter[status]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/kegiatan/{id}",
+    "name": "KegiatanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\KegiatanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/mitra-dropdown",
+    "name": "PenugasanMitraDropdownIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "mitraDropdown",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/mitra-options",
+    "name": "PenugasanMitraOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "mitraOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/filters",
+    "name": "PenugasanFiltersIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "filters",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/form-options",
+    "name": "PenugasanFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/kegiatan-options",
+    "name": "PenugasanKegiatanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "kegiatanOptions",
+    "params": [
+      "fungsi"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/export",
+    "name": "PenugasanExportIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "export",
+    "params": [
+      "filter[bln_bayar]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan",
+    "name": "PenugasanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "cursor",
+      "filter",
+      "filter[kegiatan_id]",
+      "filter[jabatan_tugas]",
+      "filter[mitra_id]",
+      "filter[bln_bayar]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/penugasan/{id}",
+    "name": "PenugasanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PenugasanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/uu",
+    "name": "UUIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\UuApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[nama]",
+      "filter[jenis]",
+      "filter[detil]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/uu/{id}",
+    "name": "UUShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\UuApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/uu-tambahan",
+    "name": "UuTambahanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\UuTambahApiController",
+    "action": "index",
+    "params": [
+      "sort",
+      "order",
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/uu-tambahan/{id}",
+    "name": "UuTambahanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\UuTambahApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/bast",
+    "name": "BASTIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\BastApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "page",
+      "sort_by",
+      "sort_dir",
+      "selected_bln"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/bast/available-months",
+    "name": "BASTAvailableMonthsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\BastApiController",
+    "action": "getAvailableMonths",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/bast/{id}",
+    "name": "BASTShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\BastApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan",
+    "name": "PermintaanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "search",
+      "tanggal",
+      "tahun",
+      "sort_by",
+      "sort_dir"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan/dates",
+    "name": "PermintaanDatesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "getDates",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan/years",
+    "name": "PermintaanYearsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "getYears",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan/klasifikasi",
+    "name": "PermintaanKlasifikasiIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "getKlasifikasi",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan/form-options",
+    "name": "PermintaanFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/permintaan/{id}",
+    "name": "PermintaanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\PermintaanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keluar",
+    "name": "SuratKeluarIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeluarApiController",
+    "action": "index",
+    "params": [
+      "tahun",
+      "filter",
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keluar/dates",
+    "name": "SuratKeluarDatesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeluarApiController",
+    "action": "getDates",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keluar/years",
+    "name": "SuratKeluarYearsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeluarApiController",
+    "action": "getYears",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keluar/form-options",
+    "name": "SuratKeluarFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeluarApiController",
+    "action": "formOptions",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keluar/{id}",
+    "name": "SuratKeluarShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeluarApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keputusan",
+    "name": "SuratKeputusanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeputusanApiController",
+    "action": "index",
+    "params": [
+      "tahun",
+      "filter",
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keputusan/dates",
+    "name": "SuratKeputusanDatesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeputusanApiController",
+    "action": "getDates",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keputusan/years",
+    "name": "SuratKeputusanYearsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeputusanApiController",
+    "action": "getYears",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keputusan/form-options",
+    "name": "SuratKeputusanFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeputusanApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-keputusan/{id}",
+    "name": "SuratKeputusanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratKeputusanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas",
+    "name": "SuratTugasIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas/dates",
+    "name": "SuratTugasDatesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "getDates",
+    "params": [
+      "tahun"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas/years",
+    "name": "SuratTugasYearsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "getYears",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas/klasifikasi",
+    "name": "SuratTugasKlasifikasiIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "getKlasifikasi",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas/form-options",
+    "name": "SuratTugasFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surat-tugas/{id}",
+    "name": "SuratTugasShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SuratTugasApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil",
+    "name": "SurtugDetilIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "surtug_id",
+      "pegawai_id",
+      "mitra_id"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/kegiatan-options",
+    "name": "SurtugDetilKegiatanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "kegiatanOptions",
+    "params": [
+      "tahun",
+      "nama"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/mitra-penugasan-options",
+    "name": "SurtugDetilMitraPenugasanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "mitraPenugasanOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/pegawai-options",
+    "name": "SurtugDetilPegawaiOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "pegawaiOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/mitra-options",
+    "name": "SurtugDetilMitraOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "mitraOptions",
+    "params": [
+      "search"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/surtug/{surtug_id}",
+    "name": "SurtugDetilSurtugShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "getBySurtugId",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/surat/surtug-detil/{id}",
+    "name": "SurtugDetilShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NomorSurat\\SurtugDetilApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/skp/stats",
+    "name": "SKPStatsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SkpApiController",
+    "action": "index",
+    "params": [
+      "tahun",
+      "tahun2",
+      "bulan"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/skp/stats2",
+    "name": "SKPStats2Index",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SkpApiController",
+    "action": "stat2",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/skp/list",
+    "name": "SKPList",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SkpApiController",
+    "action": "list",
+    "params": [
+      "per_page",
+      "cursor",
+      "search",
+      "user_id",
+      "tahun",
+      "sort_by",
+      "sort_dir"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/skp/{id}",
+    "name": "SKPShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SkpApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/spk",
+    "name": "SPKIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SpkApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "page",
+      "selectedbln",
+      "sort_by",
+      "sort_dir"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/spk/{mitra_id}/{bln_bayar}",
+    "name": "SPKShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SpkApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/spk/monitoring",
+    "name": "SPKMonitoringIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\SpkApiController",
+    "action": "monitoring",
+    "params": [
+      "type",
+      "per_page",
+      "page",
+      "selectedbln"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/links",
+    "name": "LinksIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\LinkApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[nama]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/links/{id}",
+    "name": "LinksShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\LinkApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/laporan-perjalanan-dinas",
+    "name": "LaporanPerjalananDinasIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\LaporanPerjalananDinasApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/laporan-perjalanan-dinas/{id}",
+    "name": "LaporanPerjalananDinasShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\LaporanPerjalananDinasApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/laporan-perjalanan-dinas/{id}/pdf",
+    "name": "LaporanPerjalananDinasPdfShow",
+    "controller": "App\\Http\\Controllers\\Pdf\\LaporanPerjalananDinasPdfController",
+    "action": "generate",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/notulensi/form-options",
+    "name": "NotulensiFormOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NotulensiApiController",
+    "action": "formOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/notulensi/{id}/pdf",
+    "name": "NotulensiPdfShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NotulensiApiController",
+    "action": "generatePdf",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/notulensi/{id}/docx",
+    "name": "NotulensiDocxShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\NotulensiApiController",
+    "action": "generateDocx",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/tamu",
+    "name": "TamuIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\TamuApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[nama]",
+      "filter[email]",
+      "filter[asal_instansi]",
+      "filter[tujuan_kunjungan]",
+      "filter[jenis_layanan]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/tamu/{id}",
+    "name": "TamuShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\TamuApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/pengaduan",
+    "name": "PengaduanIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PengaduanApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[jenis_pelangaran]",
+      "filter[pelaku]",
+      "filter[lainnya]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/pengaduan/{id}",
+    "name": "PengaduanShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\PengaduanApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/holidays",
+    "name": "HolidaysIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\HolidayApiController",
+    "action": "index",
+    "params": [
+      "per_page",
+      "filter[deskripsi]",
+      "filter[year]",
+      "filter[search]"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/kantor/holidays/{id}",
+    "name": "HolidaysShow",
+    "controller": "App\\Http\\Controllers\\Api\\Kantor\\HolidayApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums",
+    "name": "EnumsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/fungsi-types",
+    "name": "EnumsFungsiTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "fungsiTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/jabatan-tugas-types",
+    "name": "EnumsJabatanTugasTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "jabatanTugasTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/jenis-kegiatan-types",
+    "name": "EnumsJenisKegiatanTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "jenisKegiatanTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/satuan-types",
+    "name": "EnumsSatuanTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "satuanTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/pangkat-types",
+    "name": "EnumsPangkatTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "pangkatTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/golongan-types",
+    "name": "EnumsGolonganTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "golonganTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/enums/jabatan-types",
+    "name": "EnumsJabatanTypesIndex",
+    "controller": "App\\Http\\Controllers\\Api\\EnumsApiController",
+    "action": "jabatanTypes",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/ipds/tikets/keluhan-options",
+    "name": "TiketsKeluhanOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Ipds\\TiketApiController",
+    "action": "keluhanOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/ipds/tikets",
+    "name": "TiketsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Ipds\\TiketApiController",
+    "action": "index",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/ipds/tikets/{id}",
+    "name": "TiketsShow",
+    "controller": "App\\Http\\Controllers\\Api\\Ipds\\TiketApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/ipds/raw-datas",
+    "name": "RawDatasIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Ipds\\RawDataApiController",
+    "action": "index",
+    "params": [
+      "per_page"
+    ]
+  },
+  {
+    "method": "GET",
+    "uri": "/ipds/raw-datas/{id}",
+    "name": "RawDatasShow",
+    "controller": "App\\Http\\Controllers\\Api\\Ipds\\RawDataApiController",
+    "action": "show",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft",
+    "name": "SurveycraftIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "index",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/options",
+    "name": "SurveycraftOptions",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "surveyOptions",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/respond",
+    "name": "SurveycraftRespondIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "respond",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/responds",
+    "name": "SurveycraftRespondsIndex",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "responds",
+    "params": []
+  },
+  {
+    "method": "GET",
+    "uri": "/miniapp/surveycraft/{surveycraft}",
+    "name": "SurveycraftShow",
+    "controller": "App\\Http\\Controllers\\Api\\Miniapp\\SurveycraftApiController",
+    "action": "show",
+    "params": []
+  }
+]

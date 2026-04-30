@@ -1,0 +1,1215 @@
+name: 'Kantor - Laperdin'
+description: |-
+
+  APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/laporan-perjalanan-dinas
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'List Laporan'
+      description: 'Retrieve a list of travel reports with pagination.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      page:
+        custom: []
+        name: page
+        description: 'The page number.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      per_page:
+        custom: []
+        name: per_page
+        description: 'The number of items per page.'
+        required: false
+        example: 20
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      page: 1
+      per_page: 20
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Laporan perjalanan dinas list retrieved successfully",
+           "data": [
+               {
+                   "id": 1,
+                   "nama_traveler": "John Doe",
+                   "tujuan": "Jakarta",
+                   "lama_tanggal": "3 days",
+                   "dalam_rangka": "Meeting",
+                   "pembebanan": "DIPA",
+                   "kode_keg": 1,
+                   "status": "draft",
+                   "created_at": "2023-01-01T00:00:00.000000Z",
+                   "updated_at": "2023-01-01T00:00:00.000000Z"
+               }
+           ],
+           "meta": {
+                "pagination_info": {
+                    "total": 50,
+                    "per_page": 20,
+                    "current_page": 1,
+                    "last_page": 3
+                }
+           }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/laporan-perjalanan-dinas
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Laporan'
+      description: 'Create a new travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama_traveler:
+        custom: []
+        name: nama_traveler
+        description: 'Name of the traveler. :Attribute maksimal berisi 255 karakter.'
+        required: true
+        example: 'John Doe'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tujuan:
+        custom: []
+        name: tujuan
+        description: 'Destination of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: true
+        example: Jakarta
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      lama_tanggal:
+        custom: []
+        name: lama_tanggal
+        description: 'Duration of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: true
+        example: '3 days'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      dalam_rangka:
+        custom: []
+        name: dalam_rangka
+        description: 'Purpose of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: true
+        example: Meeting
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      pembebanan:
+        custom: []
+        name: pembebanan
+        description: 'Budget source. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: DIPA
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      kode_keg:
+        custom: []
+        name: kode_keg
+        description: 'Activity code. The <code>id</code> of an existing record in the kegiatans table.'
+        required: false
+        example: 1
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status of the report.'
+        required: false
+        example: draft
+        type: string
+        enumValues:
+          - draft
+          - submitted
+          - final
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      nama_traveler: 'John Doe'
+      tujuan: Jakarta
+      lama_tanggal: '3 days'
+      dalam_rangka: Meeting
+      pembebanan: DIPA
+      kode_keg: 1
+      status: draft
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+           "success": true,
+           "message": "Laporan perjalanan dinas created successfully",
+           "data": {
+               "id": 1,
+               "nama_traveler": "John Doe",
+               "tujuan": "Jakarta",
+               "lama_tanggal": "3 days",
+               "dalam_rangka": "Meeting",
+               "pembebanan": "DIPA",
+               "kode_keg": 1,
+               "status": "draft",
+               "created_at": "2023-01-01T00:00:00.000000Z",
+               "updated_at": "2023-01-01T00:00:00.000000Z"
+           }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Show Laporan'
+      description: 'Retrieve details of a specific travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Laporan perjalanan dinas details retrieved successfully",
+           "data": {
+               "id": 1,
+               "nama_traveler": "John Doe",
+               "tujuan": "Jakarta",
+               "lama_tanggal": "3 days",
+               "dalam_rangka": "Meeting",
+               "pembebanan": "DIPA",
+               "kode_keg": 1,
+               "status": "draft",
+               "details": [
+                   {
+                       "id": 1,
+                       "laporan_perjalanan_dinas_id": 1,
+                       "tanggal": "2023-01-01",
+                       "uraian_lhp": "Meeting with client",
+                       "kendala": "None",
+                       "solusi": "N/A"
+                   }
+               ],
+               "dokumentasi": [
+                   {
+                       "id": 1,
+                       "laporan_perjalanan_dinas_id": 1,
+                       "file_path": "path/to/file.jpg",
+                       "deskripsi": "Meeting photo"
+                   }
+               ]
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Laporan'
+      description: 'Update an existing travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama_traveler:
+        custom: []
+        name: nama_traveler
+        description: 'Name of the traveler. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: 'John Doe'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      tujuan:
+        custom: []
+        name: tujuan
+        description: 'Destination of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: Jakarta
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      lama_tanggal:
+        custom: []
+        name: lama_tanggal
+        description: 'Duration of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: '3 days'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      dalam_rangka:
+        custom: []
+        name: dalam_rangka
+        description: 'Purpose of the trip. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: Meeting
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      pembebanan:
+        custom: []
+        name: pembebanan
+        description: 'Budget source. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: DIPA
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      kode_keg:
+        custom: []
+        name: kode_keg
+        description: 'Activity code. The <code>id</code> of an existing record in the kegiatans table.'
+        required: false
+        example: 1
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status of the report.'
+        required: false
+        example: draft
+        type: string
+        enumValues:
+          - draft
+          - submitted
+          - final
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      nama_traveler: 'John Doe'
+      tujuan: Jakarta
+      lama_tanggal: '3 days'
+      dalam_rangka: Meeting
+      pembebanan: DIPA
+      kode_keg: 1
+      status: draft
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Laporan perjalanan dinas updated successfully",
+           "data": {
+               "id": 1,
+               "nama_traveler": "John Doe",
+               "tujuan": "Bandung",
+               "lama_tanggal": "2 days",
+               "status": "submitted"
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Laporan'
+      description: 'Delete a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Laporan perjalanan dinas deleted successfully",
+           "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/details'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Create Detail'
+      description: 'Add a detail entry to a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report involved.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Date of the activity. :Attribute bukan tanggal yang valid.'
+        required: true
+        example: '2023-01-01'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      uraian_lhp:
+        custom: []
+        name: uraian_lhp
+        description: 'Description of the activity.'
+        required: true
+        example: 'Meeting with client'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kendala:
+        custom: []
+        name: kendala
+        description: 'Obstacles encountered.'
+        required: false
+        example: None
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      solusi:
+        custom: []
+        name: solusi
+        description: 'Solutions implemented.'
+        required: false
+        example: N/A
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      tanggal: '2023-01-01'
+      uraian_lhp: 'Meeting with client'
+      kendala: None
+      solusi: N/A
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+           "success": true,
+           "message": "Detail laporan perjalanan dinas created successfully",
+           "data": {
+               "id": 1,
+               "laporan_perjalanan_dinas_id": 1,
+               "tanggal": "2023-01-01",
+               "uraian_lhp": "Meeting with client",
+               "kendala": "None",
+               "solusi": "N/A"
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/details/{detailId}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Detail'
+      description: 'Update a detail entry of a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report involved.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      detailId:
+        custom: []
+        name: detailId
+        description: 'The ID of the detail entry.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+      detailId: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Date of the activity. :Attribute bukan tanggal yang valid.'
+        required: false
+        example: '2023-01-01'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      uraian_lhp:
+        custom: []
+        name: uraian_lhp
+        description: 'Description of the activity.'
+        required: false
+        example: 'Meeting with client'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      kendala:
+        custom: []
+        name: kendala
+        description: 'Obstacles encountered.'
+        required: false
+        example: None
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      solusi:
+        custom: []
+        name: solusi
+        description: 'Solutions implemented.'
+        required: false
+        example: N/A
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      tanggal: '2023-01-01'
+      uraian_lhp: 'Meeting with client'
+      kendala: None
+      solusi: N/A
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Detail laporan perjalanan dinas updated successfully",
+           "data": {
+               "id": 1,
+               "uraian_lhp": "Updated description",
+               "kendala": "Traffic",
+               "solusi": "Depart earlier"
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Detail laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/details/{detailId}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Detail'
+      description: 'Delete a detail entry from a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report involved.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      detailId:
+        custom: []
+        name: detailId
+        description: 'The ID of the detail entry.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+      detailId: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Detail laporan perjalanan dinas deleted successfully",
+           "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Detail laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/dokumentasi'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Upload Dokumentasi'
+      description: 'Upload documentation (photo/file) for a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      file:
+        custom: []
+        name: file
+        description: 'Documentation file (image). Must be a file. :Attribute harus berupa gambar. :Attribute maksimal berukuran 10240 kilobita.'
+        required: true
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      deskripsi:
+        custom: []
+        name: deskripsi
+        description: 'Description of the documentation. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: 'Photo of the meeting'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      deskripsi: 'Photo of the meeting'
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+           "success": true,
+           "message": "Dokumentasi uploaded successfully",
+           "data": {
+               "id": 1,
+               "laporan_perjalanan_dinas_id": 1,
+               "file_path": "uploads/laperdin/doc1.jpg",
+               "deskripsi": "Meeting photo"
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Laporan perjalanan dinas not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/dokumentasi/{docId}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update Dokumentasi'
+      description: 'Update documentation for a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: multipart/form-data
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      docId:
+        custom: []
+        name: docId
+        description: 'The ID of the documentation.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+      docId: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      file:
+        custom: []
+        name: file
+        description: 'Documentation file (image). Must be a file. :Attribute harus berupa gambar. :Attribute maksimal berukuran 10240 kilobita.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      deskripsi:
+        custom: []
+        name: deskripsi
+        description: 'Description of the documentation. :Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: 'Updated photo description'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      deskripsi: 'Updated photo description'
+    fileParameters:
+      file: null
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Dokumentasi updated successfully",
+           "data": {
+               "id": 1,
+               "deskripsi": "Updated description"
+           }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Dokumentasi not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/laporan-perjalanan-dinas/{id}/dokumentasi/{docId}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Laperdin'
+      groupDescription: |-
+
+        APIs for managing Official Travel Reports (Laporan Perjalanan Dinas).
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Delete Dokumentasi'
+      description: 'Delete documentation from a travel report.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the report.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      docId:
+        custom: []
+        name: docId
+        description: 'The ID of the documentation.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+      docId: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+           "success": true,
+           "message": "Dokumentasi deleted successfully",
+           "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+           "success": false,
+           "message": "Dokumentasi not found",
+           "data": null
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

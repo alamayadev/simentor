@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+>
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+        </testsuite>
+        
+        <!-- Phase-Based API Test Suites (Based on api-testing-implementation-roadmap.md) -->
+        
+        <!-- Phase 1: Core Infrastructure (5 controllers) -->
+        <testsuite name="Phase1-CoreInfrastructure">
+            <file>./tests/Feature/Api/AuthApiTest.php</file>
+            <file>./tests/Feature/Api/ProfileApiTest.php</file>
+            <file>./tests/Feature/Api/Admin/UserApiTest.php</file>
+            <file>./tests/Feature/Api/Admin/RolesApiTest.php</file>
+            <file>./tests/Feature/Api/Admin/PermissionsApiTest.php</file>
+        </testsuite>
+        
+        <!-- Phase 2: Kantor Core (5 controllers) -->
+        <testsuite name="Phase2-KantorCore">
+            <file>./tests/Feature/Kantor/KegiatanApiTest.php</file>
+            <file>./tests/Feature/Kantor/PenugasanApiTest.php</file>
+            <file>./tests/Feature/Kantor/PegawaiApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/SkpApiTest.php</file>
+        </testsuite>
+        
+        <!-- Phase 3A: Kantor Supporting Part 1 (3 controllers) -->
+        <testsuite name="Phase3A-KantorSupporting">
+            <file>./tests/Feature/Api/Kantor/SettingApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/DetilConfigurationApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/LinkApiTest.php</file>
+        </testsuite>
+        
+        <!-- Phase 3B: Kantor Supporting Part 2 (3 controllers) -->
+        <testsuite name="Phase3B-KantorSupporting">
+            <file>./tests/Feature/Api/Kantor/TamuApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/PengaduanApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/SpkApiTest.php</file>
+        </testsuite>
+        
+        <!-- Phase 4: Nomor Surat (4 controllers) -->
+        <testsuite name="Phase4-NomorSurat">
+            <file>./tests/Feature/Api/Kantor/NomorSurat/PermintaanApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/NomorSurat/SuratKeluarApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/NomorSurat/SuratKeputusanApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/NomorSurat/SuratTugasApiTest.php</file>
+        </testsuite>
+        
+        <!-- Phase 5: IPDS & Adhock (8 controllers) -->
+        <testsuite name="Phase5-IpdsAdhock">
+            <file>./tests/Feature/Api/Ipds/TiketApiTest.php</file>
+            <file>./tests/Feature/Api/Ipds/AssetITApiTest.php</file>
+            <file>./tests/Feature/Api/Ipds/AssetITMaintenanceScheduleApiTest.php</file>
+            <!-- Adhock tests (to be created) -->
+            <!-- <file>./tests/Feature/Api/Adhock/AlokasiApiTest.php</file> -->
+            <!-- <file>./tests/Feature/Api/Adhock/CekGeorefApiTest.php</file> -->
+            <!-- <file>./tests/Feature/Api/Adhock/CekScanApiTest.php</file> -->
+            <!-- <file>./tests/Feature/Api/Adhock/PetaSlsApiTest.php</file> -->
+            <!-- <file>./tests/Feature/Api/Adhock/SlsSipwApiTest.php</file> -->
+        </testsuite>
+        
+        <!-- Phase 6: Remaining (9 controllers) -->
+        <testsuite name="Phase6-Remaining">
+            <file>./tests/Feature/Api/EnumsApiTest.php</file>
+            <file>./tests/Feature/Api/PdfApiTest.php</file>
+            <file>./tests/Feature/Api/TestApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/UuApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/UuTambahApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/MonitoringKegiatanApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/MonitoringKegiatanConfigApiTest.php</file>
+            <file>./tests/Feature/Api/Miniapp/SurveycraftApiTest.php</file>
+            <file>./tests/Feature/Api/Kantor/BastApiTest.php</file>
+        </testsuite>
+        
+        <!-- All API Tests Combined -->
+        <testsuite name="AllApiTests">
+            <directory>./tests/Feature/Api</directory>
+            <directory>./tests/Feature/Kantor</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>app</directory>
+        </include>
+    </source>
+    <php>
+        <ini name="memory_limit" value="512M"/>
+        <env name="APP_ENV" value="testing"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <!-- <env name="DB_CONNECTION" value="sqlite"/> -->
+        <!-- <env name="DB_DATABASE" value=":memory:"/> -->
+        <env name="MAIL_MAILER" value="array"/>
+        <env name="PULSE_ENABLED" value="false"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="TELESCOPE_ENABLED" value="false"/>
+    </php>
+</phpunit>

@@ -1,0 +1,817 @@
+name: 'Kantor - Pegawai'
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/pegawai
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar pegawai.'
+      description: 'Endpoint ini mengembalikan daftar pegawai dengan fitur pagination, pencarian, dan filtering.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 10).'
+        required: false
+        example: 10
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination.'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      search:
+        custom: []
+        name: search
+        description: 'Kata kunci pencarian (nama/NIP).'
+        required: false
+        example: Budi
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[pangkat]':
+        custom: []
+        name: 'filter[pangkat]'
+        description: 'Filter berdasarkan pangkat.'
+        required: false
+        example: Pembina
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[jabatan]':
+        custom: []
+        name: 'filter[jabatan]'
+        description: 'Filter berdasarkan jabatan.'
+        required: false
+        example: 'Statistisi Ahli Muda'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      per_page: 10
+      cursor: architecto
+      search: Budi
+      'filter[pangkat]': Pembina
+      'filter[jabatan]': 'Statistisi Ahli Muda'
+    bodyParameters:
+      per_page:
+        custom: []
+        name: per_page
+        description: ':Attribute minimal bernilai 1. :Attribute maksimal bernilai 100.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      search:
+        custom: []
+        name: search
+        description: ':Attribute maksimal berisi 255 karakter.'
+        required: false
+        example: 'n'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      filter:
+        custom: []
+        name: filter
+        description: ''
+        required: false
+        example: null
+        type: object
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      filter.pangkat:
+        custom: []
+        name: filter.pangkat
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+      filter.jabatan:
+        custom: []
+        name: filter.jabatan
+        description: ''
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      per_page: 1
+      cursor: architecto
+      search: 'n'
+      filter:
+        pangkat: architecto
+        jabatan: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "nama": "Budi Santoso",
+                "nip": "198001012000011001",
+                "pangkat": "Pembina",
+                "gol": "IV/a",
+                "jabatan": "Statistisi Ahli Madya",
+                "kelas": "11",
+                "status": "Aktif"
+              }
+            ],
+            "meta": {
+              "pagination_info": {
+                "total_page": 5,
+                "total_records": 50
+              }
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/pegawai
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Membuat data pegawai baru.'
+      description: 'Endpoint ini digunakan untuk menambahkan data pegawai baru.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama lengkap pegawai.'
+        required: true
+        example: 'Andi Wijaya'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      pangkat:
+        custom: []
+        name: pangkat
+        description: 'Pangkat pegawai.'
+        required: true
+        example: 'Penata Muda'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      gol:
+        custom: []
+        name: gol
+        description: 'Golongan pegawai.'
+        required: true
+        example: III/a
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      nip:
+        custom: []
+        name: nip
+        description: 'NIP pegawai (18 digit, unik).'
+        required: true
+        example: '199001012015011001'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      jabatan:
+        custom: []
+        name: jabatan
+        description: 'Jabatan pegawai.'
+        required: true
+        example: 'Statistisi Ahli Pertama'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      kelas:
+        custom: []
+        name: kelas
+        description: 'Kelas jabatan.'
+        required: true
+        example: '8'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      user_id:
+        custom: []
+        name: user_id
+        description: 'ID User terkait.'
+        required: true
+        example: 5
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status pegawai using (default: Aktif).'
+        required: false
+        example: Aktif
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      nama: 'Andi Wijaya'
+      pangkat: 'Penata Muda'
+      gol: III/a
+      nip: '199001012015011001'
+      jabatan: 'Statistisi Ahli Pertama'
+      kelas: '8'
+      user_id: 5
+      status: Aktif
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai created successfully",
+            "data": {
+              "id": 10,
+              "nama": "Andi Wijaya",
+              "nip": "199001012015011001"
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/pegawai/filters
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan data filter pegawai.'
+      description: |-
+        Endpoint ini mengembalikan daftar nama pegawai dan daftar jabatan
+        dari pegawai dengan status NULL.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai filters retrieved successfully",
+            "data": {
+              "pegawaiList": [
+                "Ahmad",
+                "Budi"
+              ],
+              "jabatanList": [
+                "Statistisi Ahli Muda",
+                "Pranata Komputer Ahli Muda"
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/pegawai/form-options
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan opsi form pegawai.'
+      description: |-
+        Endpoint ini mengembalikan opsi pangkat, golongan, jabatan,
+        dan daftar user yang belum terhubung ke profil pegawai.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai form options retrieved successfully",
+            "data": {
+              "pangkat": [
+                "Juru Muda",
+                "Penata Muda",
+                "Pembina"
+              ],
+              "golongan": [
+                "Ia",
+                "IIIa",
+                "IVa"
+              ],
+              "jabatan": [
+                "Kepala",
+                "Statistisi Ahli Muda",
+                "Pranata Komputer Ahli Madya"
+              ],
+              "userNoPegawai": [
+                {
+                  "id": 1,
+                  "name": "Budi Santoso"
+                },
+                {
+                  "id": 2,
+                  "name": "Andi Wijaya"
+                }
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/pegawai/jabatan-pangkat-list
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Mendapatkan daftar jabatan dan pangkat.'
+      description: 'Endpoint ini mengembalikan daftar kombinasi jabatan dan pangkat yang unik.'
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Jabatan and Pangkat list retrieved successfully",
+            "data": [
+              {
+                "jabatan": "Statistisi Ahli Pertama",
+                "pangkat": "Penata Muda"
+              }
+            ]
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/pegawai/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan detail pegawai.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID Pegawai.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Data retrieved successfully",
+            "data": {
+              "id": 1,
+              "nama": "Budi Santoso",
+              "nip": "198001012000011001",
+              "user": {
+                "id": 1,
+                "name": "Budi Santoso",
+                "email": "budi@bps.go.id"
+              }
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Pegawai not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/pegawai/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Memperbarui data pegawai.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID Pegawai.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama lengkap pegawai.'
+        required: false
+        example: 'Budi Santoso Gelar'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      pangkat:
+        custom: []
+        name: pangkat
+        description: 'Pangkat pegawai.'
+        required: false
+        example: 'Pembina Tk I'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      gol:
+        custom: []
+        name: gol
+        description: 'Golongan pegawai.'
+        required: false
+        example: IV/b
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      nip:
+        custom: []
+        name: nip
+        description: 'NIP pegawai.'
+        required: false
+        example: '198001012000011001'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      jabatan:
+        custom: []
+        name: jabatan
+        description: 'Jabatan pegawai.'
+        required: false
+        example: 'Statistisi Ahli Madya'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      kelas:
+        custom: []
+        name: kelas
+        description: 'Kelas jabatan.'
+        required: false
+        example: '12'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      user_id:
+        custom: []
+        name: user_id
+        description: 'ID User terkait.'
+        required: false
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      status:
+        custom: []
+        name: status
+        description: 'Status pegawai.'
+        required: false
+        example: Cuti
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: true
+        deprecated: false
+    cleanBodyParameters:
+      nama: 'Budi Santoso Gelar'
+      pangkat: 'Pembina Tk I'
+      gol: IV/b
+      nip: '198001012000011001'
+      jabatan: 'Statistisi Ahli Madya'
+      kelas: '12'
+      user_id: 1
+      status: Cuti
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai updated successfully",
+            "data": {
+              "id": 1,
+              "nama": "Budi Santoso Gelar"
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/pegawai/{id}'
+    metadata:
+      custom: []
+      groupName: 'Kantor - Pegawai'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menghapus data pegawai.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID Pegawai.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Pegawai deleted successfully"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

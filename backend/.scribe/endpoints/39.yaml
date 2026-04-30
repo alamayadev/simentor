@@ -1,0 +1,552 @@
+name: Holidays
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/holidays
+    metadata:
+      custom: []
+      groupName: Holidays
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan daftar hari libur dengan pagination dan filtering.'
+      description: |-
+        Endpoint ini mengembalikan daftar hari libur dengan kemampuan filtering
+        berdasarkan deskripsi, tahun, dan tanggal. Mendukung pagination dan sorting.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      'filter[deskripsi]':
+        custom: []
+        name: 'filter[deskripsi]'
+        description: 'Filter berdasarkan deskripsi. Contoh: tahun baru'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[year]':
+        custom: []
+        name: 'filter[year]'
+        description: 'Filter berdasarkan tahun. Contoh: 2024'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[search]':
+        custom: []
+        name: 'filter[search]'
+        description: 'Pencarian global di deskripsi. Contoh: tahun'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      sort:
+        custom: []
+        name: sort
+        description: 'Kolom untuk sorting (default: -tanggal). Contoh: -tanggal,deskripsi'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Jumlah item per halaman (default: 15). Contoh: 10'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      'filter[deskripsi]': architecto
+      'filter[year]': 16
+      'filter[search]': architecto
+      sort: architecto
+      per_page: 16
+      cursor: architecto
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Holidays retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "tanggal": "2024-01-01",
+                "deskripsi": "Tahun Baru Masehi",
+                "created_at": "2024-01-01T00:00:00.000000Z",
+                "updated_at": "2024-01-01T00:00:00.000000Z"
+              }
+            ],
+            "meta": {
+              "per_page": 15,
+              "has_more": false,
+              "count": 1
+            },
+            "links": {
+              "next_cursor": null,
+              "next_page_url": null,
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://localhost:8000/api/kantor/holidays"
+            },
+            "pagination_info": {
+              "total_page": 1,
+              "total_records": 1
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/holidays/{id}'
+    metadata:
+      custom: []
+      groupName: Holidays
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menampilkan detail hari libur.'
+      description: |-
+        Endpoint ini mengembalikan detail hari libur tertentu.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID hari libur. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Holiday retrieved successfully",
+            "data": {
+              "id": 1,
+              "tanggal": "2024-01-01",
+              "deskripsi": "Tahun Baru Masehi",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Holiday not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/holidays
+    metadata:
+      custom: []
+      groupName: Holidays
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menyimpan hari libur baru.'
+      description: |-
+        Endpoint ini membuat hari libur baru.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal hari libur. Contoh: 2024-01-01'
+        required: true
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      deskripsi:
+        custom: []
+        name: deskripsi
+        description: 'Deskripsi hari libur. Contoh: Tahun Baru Masehi'
+        required: true
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      tanggal: architecto
+      deskripsi: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "Holiday created successfully",
+            "data": {
+              "id": 1,
+              "tanggal": "2024-01-01",
+              "deskripsi": "Tahun Baru Masehi",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "tanggal": [
+                "The tanggal field is required."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/holidays/{id}'
+    metadata:
+      custom: []
+      groupName: Holidays
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Memperbarui data hari libur.'
+      description: |-
+        Endpoint ini memperbarui data hari libur yang sudah ada.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID hari libur. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      tanggal:
+        custom: []
+        name: tanggal
+        description: 'Tanggal hari libur. Contoh: 2024-01-01'
+        required: false
+        example: architecto
+        type: date
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      deskripsi:
+        custom: []
+        name: deskripsi
+        description: 'Deskripsi hari libur. Contoh: Tahun Baru Masehi'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      tanggal: architecto
+      deskripsi: architecto
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Holiday updated successfully",
+            "data": {
+              "id": 1,
+              "tanggal": "2024-01-01",
+              "deskripsi": "Tahun Baru Masehi",
+              "created_at": "2024-01-01T00:00:00.000000Z",
+              "updated_at": "2024-01-01T01:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Holiday not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation Error",
+            "errors": {
+              "deskripsi": [
+                "The deskripsi field is required."
+              ]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/holidays/{id}'
+    metadata:
+      custom: []
+      groupName: Holidays
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Menghapus data hari libur.'
+      description: |-
+        Endpoint ini menghapus data hari libur yang sudah ada.
+        Hanya pengguna yang sudah login yang dapat mengakses endpoint ini.
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'ID hari libur. Contoh: 1'
+        required: true
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 16
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "Holiday deleted successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 401
+        content: |-
+          {
+            "success": false,
+            "message": "Unauthorized"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "Holiday not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

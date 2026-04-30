@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "kdkec": "111",
+    "nmkec": "MAJALAYA",
+    "jml_sls": 235,
+    "pemeta": 17,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 2,
+    "kdkec": "190",
+    "nmkec": "BATUJAYA",
+    "jml_sls": 178,
+    "pemeta": 12,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 3,
+    "kdkec": "020",
+    "nmkec": "CIAMPEL",
+    "jml_sls": 136,
+    "pemeta": 9,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 4,
+    "kdkec": "040",
+    "nmkec": "KLARI",
+    "jml_sls": 624,
+    "pemeta": 39,
+    "pengawas": 6,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 5,
+    "kdkec": "050",
+    "nmkec": "CIKAMPEK",
+    "jml_sls": 463,
+    "pemeta": 30,
+    "pengawas": 5,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 6,
+    "kdkec": "112",
+    "nmkec": "KARAWANG TIMUR",
+    "jml_sls": 515,
+    "pemeta": 34,
+    "pengawas": 6,
+    "pengawas_organik": null
+  },
+  {
+    "id": 7,
+    "kdkec": "051",
+    "nmkec": "PURWASARI",
+    "jml_sls": 259,
+    "pemeta": 17,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 8,
+    "kdkec": "070",
+    "nmkec": "JATISARI",
+    "jml_sls": 293,
+    "pemeta": 17,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 9,
+    "kdkec": "072",
+    "nmkec": "KOTABARU",
+    "jml_sls": 419,
+    "pemeta": 27,
+    "pengawas": 4,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 10,
+    "kdkec": "010",
+    "nmkec": "PANGKALAN",
+    "jml_sls": 142,
+    "pemeta": 9,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 11,
+    "kdkec": "011",
+    "nmkec": "TEGALWARU",
+    "jml_sls": 179,
+    "pemeta": 13,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 12,
+    "kdkec": "031",
+    "nmkec": "TELUKJAMBE TIMUR",
+    "jml_sls": 452,
+    "pemeta": 31,
+    "pengawas": 6,
+    "pengawas_organik": null
+  },
+  {
+    "id": 13,
+    "kdkec": "032",
+    "nmkec": "TELUKJAMBE BARAT",
+    "jml_sls": 113,
+    "pemeta": 9,
+    "pengawas": 2,
+    "pengawas_organik": null
+  },
+  {
+    "id": 14,
+    "kdkec": "071",
+    "nmkec": "BANYUSARI",
+    "jml_sls": 257,
+    "pemeta": 17,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 15,
+    "kdkec": "100",
+    "nmkec": "TELAGASARI",
+    "jml_sls": 266,
+    "pemeta": 17,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 16,
+    "kdkec": "113",
+    "nmkec": "KARAWANG BARAT",
+    "jml_sls": 560,
+    "pemeta": 38,
+    "pengawas": 6,
+    "pengawas_organik": null
+  },
+  {
+    "id": 17,
+    "kdkec": "060",
+    "nmkec": "TIRTAMULYA",
+    "jml_sls": 152,
+    "pemeta": 10,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 18,
+    "kdkec": "120",
+    "nmkec": "RAWAMERTA",
+    "jml_sls": 230,
+    "pemeta": 16,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 19,
+    "kdkec": "150",
+    "nmkec": "RENGASDENGKLOK",
+    "jml_sls": 291,
+    "pemeta": 19,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 20,
+    "kdkec": "081",
+    "nmkec": "CILAMAYA WETAN",
+    "jml_sls": 291,
+    "pemeta": 20,
+    "pengawas": 3,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 21,
+    "kdkec": "160",
+    "nmkec": "PEDES",
+    "jml_sls": 215,
+    "pemeta": 16,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 22,
+    "kdkec": "130",
+    "nmkec": "TEMPURAN",
+    "jml_sls": 231,
+    "pemeta": 15,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 23,
+    "kdkec": "151",
+    "nmkec": "JAYAKERTA",
+    "jml_sls": 164,
+    "pemeta": 11,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 24,
+    "kdkec": "082",
+    "nmkec": "CILAMAYA KULON",
+    "jml_sls": 207,
+    "pemeta": 14,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 25,
+    "kdkec": "090",
+    "nmkec": "LEMAHABANG",
+    "jml_sls": 187,
+    "pemeta": 11,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 26,
+    "kdkec": "140",
+    "nmkec": "KUTAWALUYA",
+    "jml_sls": 157,
+    "pemeta": 13,
+    "pengawas": 2,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 27,
+    "kdkec": "180",
+    "nmkec": "TIRTAJAYA",
+    "jml_sls": 138,
+    "pemeta": 10,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 28,
+    "kdkec": "161",
+    "nmkec": "CILEBAR",
+    "jml_sls": 135,
+    "pemeta": 9,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 29,
+    "kdkec": "170",
+    "nmkec": "CIBUAYA",
+    "jml_sls": 157,
+    "pemeta": 10,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  },
+  {
+    "id": 30,
+    "kdkec": "200",
+    "nmkec": "PAKISJAYA",
+    "jml_sls": 100,
+    "pemeta": 8,
+    "pengawas": 1,
+    "pengawas_organik": 1
+  }
+]

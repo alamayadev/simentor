@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "hosts": [
+      "http://192.168.1.11:9000",
+      "http://192.168.1.11:9000"
+    ],
+    "endpoints": [
+      "/api/wilkerstat-dashboard"
+    ],
+    "concurrency": 5,
+    "requests_per_endpoint": 20,
+    "timestamp": 1758538309.8071651
+  },
+  "summary": {
+    "http://192.168.1.11:9000": {
+      "/api/wilkerstat-dashboard": {
+        "count": 40,
+        "success": 40,
+        "errors": 0,
+        "mean_ms": 19609.004709990404,
+        "p50_ms": 19698.992750025354,
+        "p90_ms": 19970.321729965508,
+        "p99_ms": 20105.446708996315
+      }
+    }
+  },
+  "raw": [
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19837.94170001056,
+      "timestamp": 1758538152.5076318,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19872.153699980117,
+      "timestamp": 1758538152.5075223,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19891.73979999032,
+      "timestamp": 1758538152.507722,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19911.577399994712,
+      "timestamp": 1758538152.501563,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19938.67559998762,
+      "timestamp": 1758538152.5073113,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19627.73769994965,
+      "timestamp": 1758538172.3796835,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19686.307800002396,
+      "timestamp": 1758538172.3455858,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19652.213099994697,
+      "timestamp": 1758538172.3994675,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19633.00570001593,
+      "timestamp": 1758538172.4459922,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19688.147000037134,
+      "timestamp": 1758538172.4131455,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19563.485499995295,
+      "timestamp": 1758538192.0074263,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19709.838500013575,
+      "timestamp": 1758538192.0790033,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19840.231399983168,
+      "timestamp": 1758538192.0516849,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19890.15280001331,
+      "timestamp": 1758538192.0319006,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19859.837499971036,
+      "timestamp": 1758538192.1012979,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19967.759099963587,
+      "timestamp": 1758538211.5709195,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 20123.748200014234,
+      "timestamp": 1758538211.7888489,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 20005.578899988905,
+      "timestamp": 1758538211.9220579,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19993.3853999828,
+      "timestamp": 1758538211.9611413,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 20076.821299968287,
+      "timestamp": 1758538211.8919215,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19538.40439999476,
+      "timestamp": 1758538232.154296,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19628.552299982402,
+      "timestamp": 1758538232.1545126,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19675.463299965486,
+      "timestamp": 1758538232.15419,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19679.416899976786,
+      "timestamp": 1758538232.1539586,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19761.71939994674,
+      "timestamp": 1758538232.154665,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19791.03339998983,
+      "timestamp": 1758538251.6927059,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19821.35699997889,
+      "timestamp": 1758538251.8296585,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19818.512899975758,
+      "timestamp": 1758538251.8333807,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19881.49539998267,
+      "timestamp": 1758538251.7830708,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19786.60220000893,
+      "timestamp": 1758538251.9163895,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19016.102099965792,
+      "timestamp": 1758538271.4837458,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19079.6352000325,
+      "timestamp": 1758538271.6645732,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19135.210400039796,
+      "timestamp": 1758538271.6510203,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19120.815099973697,
+      "timestamp": 1758538271.702998,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19180.1130999811,
+      "timestamp": 1758538271.6518967,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 18887.005599972326,
+      "timestamp": 1758538290.4998527,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 18900.083200016525,
+      "timestamp": 1758538290.7442143,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 18897.34819997102,
+      "timestamp": 1758538290.8238184,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 18971.37800004566,
+      "timestamp": 1758538290.8320146,
+      "error": null
+    },
+    {
+      "host": "http://192.168.1.11:9000",
+      "endpoint": "/api/wilkerstat-dashboard",
+      "status_code": 200,
+      "ok": true,
+      "elapsed_ms": 19019.60219995817,
+      "timestamp": 1758538290.786239,
+      "error": null
+    }
+  ]
+}

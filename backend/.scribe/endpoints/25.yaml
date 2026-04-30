@@ -1,0 +1,529 @@
+name: UU
+description: ''
+endpoints:
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: api/kantor/uu
+    metadata:
+      custom: []
+      groupName: UU
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters:
+      sort:
+        custom: []
+        name: sort
+        description: 'Sort field. Default: -id.'
+        required: false
+        example: nama
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      per_page:
+        custom: []
+        name: per_page
+        description: 'Number of items per page. Default is 15.'
+        required: false
+        example: 16
+        type: integer
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      cursor:
+        custom: []
+        name: cursor
+        description: 'Cursor untuk pagination. Contoh: eyJpZCI6M...'
+        required: false
+        example: architecto
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        nullable: false
+        deprecated: false
+      'filter[nama]':
+        custom: []
+        name: 'filter[nama]'
+        description: 'Filter by nama.'
+        required: false
+        example: Undang-Undang
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      'filter[jenis]':
+        custom: []
+        name: 'filter[jenis]'
+        description: 'Filter by jenis.'
+        required: false
+        example: UU
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanQueryParameters:
+      sort: nama
+      per_page: 16
+      cursor: architecto
+      'filter[nama]': Undang-Undang
+      'filter[jenis]': UU
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "UU retrieved successfully",
+            "data": [
+              {
+                "id": 1,
+                "jenis": "UU",
+                "nama": "Undang-Undang Nomor 1 Tahun 2023",
+                "detil": "Tentang Administrasi Pemerintahan",
+                "created_at": "2024-01-15T00:00:00.000000Z",
+                "updated_at": "2024-01-15T00:00:00.000000Z"
+              }
+            ],
+            "meta": {
+              "per_page": 15,
+              "has_more": false,
+              "count": 1
+            },
+            "links": {
+              "next_cursor": null,
+              "next_page_url": null,
+              "prev_cursor": null,
+              "prev_page_url": null,
+              "path": "http://localhost:8000/api/kantor/uu"
+            },
+            "pagination_info": {
+              "total_page": 1,
+              "total_records": 1
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to retrieve UU",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - POST
+    uri: api/kantor/uu
+    metadata:
+      custom: []
+      groupName: UU
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Store a newly created resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      jenis:
+        custom: []
+        name: jenis
+        description: 'Jenis UU.'
+        required: true
+        example: UU
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama UU.'
+        required: true
+        example: 'Undang-Undang Nomor 1 Tahun 2023'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      detil:
+        custom: []
+        name: detil
+        description: 'Detil UU.'
+        required: true
+        example: 'Tentang Administrasi Pemerintahan'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      jenis: UU
+      nama: 'Undang-Undang Nomor 1 Tahun 2023'
+      detil: 'Tentang Administrasi Pemerintahan'
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 201
+        content: |-
+          {
+            "success": true,
+            "message": "UU created successfully",
+            "data": {
+              "id": 1,
+              "jenis": "UU",
+              "nama": "Undang-Undang Nomor 1 Tahun 2023",
+              "detil": "Tentang Administrasi Pemerintahan",
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "jenis": ["The jenis field is required."],
+              "nama": ["The nama field is required."],
+              "detil": ["The detil field is required."]
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 500
+        content: |-
+          {
+            "success": false,
+            "message": "Failed to create UU",
+            "errors": "Error message details"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - GET
+    uri: 'api/kantor/uu/{id}'
+    metadata:
+      custom: []
+      groupName: UU
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Display the specified resource.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the UU.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "UU retrieved successfully",
+            "data": {
+              "id": 1,
+              "jenis": "UU",
+              "nama": "Undang-Undang Nomor 1 Tahun 2023",
+              "detil": "Tentang Administrasi Pemerintahan",
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "UU not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - PUT
+    uri: 'api/kantor/uu/{id}'
+    metadata:
+      custom: []
+      groupName: UU
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Update the specified resource in storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the UU.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      jenis:
+        custom: []
+        name: jenis
+        description: 'Jenis UU.'
+        required: true
+        example: UU
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      nama:
+        custom: []
+        name: nama
+        description: 'Nama UU.'
+        required: true
+        example: 'Undang-Undang Nomor 1 Tahun 2023'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+      detil:
+        custom: []
+        name: detil
+        description: 'Detil UU.'
+        required: true
+        example: 'Tentang Administrasi Pemerintahan'
+        type: string
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanBodyParameters:
+      jenis: UU
+      nama: 'Undang-Undang Nomor 1 Tahun 2023'
+      detil: 'Tentang Administrasi Pemerintahan'
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "UU updated successfully",
+            "data": {
+              "id": 1,
+              "jenis": "UU",
+              "nama": "Undang-Undang Nomor 1 Tahun 2023",
+              "detil": "Tentang Administrasi Pemerintahan",
+              "created_at": "2024-01-15T00:00:00.000000Z",
+              "updated_at": "2024-01-15T00:00:00.000000Z"
+            }
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "UU not found"
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 422
+        content: |-
+          {
+            "success": false,
+            "message": "Validation error",
+            "errors": {
+              "jenis": ["The jenis field is required."],
+              "nama": ["The nama field is required."],
+              "detil": ["The detil field is required."]
+            }
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null
+  -
+    custom: []
+    httpMethods:
+      - DELETE
+    uri: 'api/kantor/uu/{id}'
+    metadata:
+      custom: []
+      groupName: UU
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Remove the specified resource from storage.'
+      description: ''
+      authenticated: true
+      deprecated: false
+    headers:
+      Authorization: 'Bearer Bearer {YOUR_AUTH_TOKEN}'
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        custom: []
+        name: id
+        description: 'The ID of the UU.'
+        required: true
+        example: 1
+        type: integer
+        enumValues: []
+        exampleWasSpecified: true
+        nullable: false
+        deprecated: false
+    cleanUrlParameters:
+      id: 1
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        custom: []
+        status: 200
+        content: |-
+          {
+            "success": true,
+            "message": "UU deleted successfully",
+            "data": null
+          }
+        headers: []
+        description: ''
+      -
+        custom: []
+        status: 404
+        content: |-
+          {
+            "success": false,
+            "message": "UU not found"
+          }
+        headers: []
+        description: ''
+    responseFields: []
+    auth:
+      - headers
+      - Authorization
+      - 'Bearer 6g43cv8PD1aE5beadkZfhV6'
+    controller: null
+    method: null
+    route: null

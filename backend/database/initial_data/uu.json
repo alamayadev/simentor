@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "jenis": "KPA",
+    "nama": "UU No.16/1997: Statistik",
+    "detil": "Undang-Undang Nomor 16 Tahun 1997 tentang Statistik (Lembaran Negara Nomor 39 Tahun 1997, Tambahan Lembaran Negara Nomor 3683)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 2,
+    "jenis": "KPA",
+    "nama": "UU No.17/2003: Keuangan Negara",
+    "detil": "Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara (Lembaran Negara Tahun 2003 Nomor 47, Tambahan Lembaran Negara Nomor 4286)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 3,
+    "jenis": "KPA",
+    "nama": "UU No.1/2004: Perbendaharaan Negara",
+    "detil": "Undang-Undang Nomor 1 Tahun  2004 tentang Perbendaharaan Negara (Lembaran Negara Tahun 2004 Nomor 5, Tambahan Lembaran Negara Nomor 4355)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 4,
+    "jenis": "KPA",
+    "nama": "UU No.62/2024: APBN 2025",
+    "detil": "Undang-undang (UU) Nomor 62 Tahun 2024 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 5,
+    "jenis": "KPA",
+    "nama": "PP No.51/1999: Penyelenggaraan Statistik",
+    "detil": "Peraturan Pemerintah Nomor 51 Tahun 1999 tentang Penyelenggaraan Statistik (Lembaran Negara Tahun 1999 Nomor 96, Tambahan Lembaran Negara Nomor 3854)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 6,
+    "jenis": "KPA",
+    "nama": "PP No.45/2013: Tata Cara Laksana APBN",
+    "detil": "Peraturan Pemerintah Nomor 45 Tahun 2013 tentang Tata Cara Pelaksanaan Anggaran Pendapatan dan Belanja Negara (Lembaran Negara Republik Indonesia Tahun 2013 Nomor 103, Tambahan Lembaran Negara Republik Indonesia Nomor 5423)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 7,
+    "jenis": "KPA",
+    "nama": "Perpres No.86/2007: BPS",
+    "detil": "Peraturan Presiden Nomor 86 Tahun 2007 tentang Badan Pusat Statistik (Lembaran Negara Republik Indonesia Tahun 2007 Nomor 139)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 8,
+    "jenis": "KPA",
+    "nama": "Permenkeu No.62/2023: Pelaporan Keuangan",
+    "detil": "Peraturan Menteri Keuangan Nomor 62 Tahun 2023 tentang Perencanaan Anggaran, Pelaksanaan Anggaran, serta Akuntansi dan Pelaporan Keuangan",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 9,
+    "jenis": "KPA",
+    "nama": "Per BPS No.8/2020: Organisasi dan Tata Kerja",
+    "detil": "Peraturan Badan Pusat Statistik Nomor 8 Tahun 2020 tentang Organisasi dan Tata Kerja Badan Pusat Statistik Provinsi dan Badan Pusat Statistik Kabupaten/Kota (Berita Negara Republik Indonesia Tahun 2020 Nomor 1586)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 10,
+    "jenis": "KPA",
+    "nama": "Permenkeu No.39/2024: Standar Biaya Masukan 2025",
+    "detil": "Peraturan Menteri Keuangan Nomor 39 Tahun 2024 tentang Standar Biaya Masukan Tahun Anggaran 2025",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 11,
+    "jenis": "Kepala",
+    "nama": "UU No.16/1997: Statistik",
+    "detil": "Undang-Undang Nomor 16 Tahun 1997 tentang Statistik (Lembaran Negara Nomor 39 Tahun 1997, Tambahan Lembaran Negara Nomor 3683)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 12,
+    "jenis": "Kepala",
+    "nama": "PP No.51/1999: Penyelenggaraan Statistik",
+    "detil": "Peraturan Pemerintah Nomor 51 Tahun 1999 tentang Penyelenggaraan Statistik (Lembaran Negara Tahun 1999 Nomor 96, Tambahan Lembaran Negara Nomor 3854)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 13,
+    "jenis": "Kepala",
+    "nama": "Perpres No.86/2007: BPS",
+    "detil": "Peraturan Presiden Nomor 86 Tahun 2007 tentang Badan Pusat Statistik (Lembaran Negara Republik Indonesia Tahun 2007 Nomor 139)",
+    "created_at": null,
+    "updated_at": null
+  },
+  {
+    "id": 14,
+    "jenis": "Kepala",
+    "nama": "Per BPS No.8/2020: Organisasi dan Tata Kerja",
+    "detil": "Peraturan Badan Pusat Statistik Nomor 8 Tahun 2020 tentang Organisasi dan Tata Kerja Badan Pusat Statistik Provinsi dan Badan Pusat Statistik Kabupaten/Kota (Berita Negara Republik Indonesia Tahun 2020 Nomor 1586)",
+    "created_at": null,
+    "updated_at": null
+  }
+]
