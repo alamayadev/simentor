@@ -1,0 +1,109 @@
+---
+title: "SKP Record List: Search, Download, and Edit Entries"
+description: "Find, download, edit, or delete uploaded SKP documents from the full record list. Filter by employee, year, or document name and navigate paginated results."
+---
+
+The SKP List page at `/skp/daftar` shows every SKP document that has been uploaded across all employees and periods. It is the authoritative record of what has been submitted — you can search for a specific document, filter by employee or year, download the original PDF, update a record's metadata, or delete a record if it was uploaded in error. The list defaults to the current year and shows your own records first, though you can clear the filters to see everything.
+
+## Summary statistics
+
+Four stat cards appear above the table to give you a quick sense of the dataset:
+
+| Card | What it shows |
+| --- | --- |
+| **Total SKP** | Total number of SKP documents in the current filtered view |
+| **Halaman** | Current page number out of the total number of pages |
+| **Tahun Tersedia** | Number of distinct years for which records exist |
+| **Pegawai Tercatat** | Number of distinct employees who have at least one record |
+
+## Table columns
+
+The main table lists one SKP record per row. The columns are:
+
+| Column | Description |
+| --- | --- |
+| **ID** | A unique numeric identifier for the record, shown in monospace font |
+| **Pegawai** | The employee's name and, directly beneath it, the SKP type (for example, "SKP Bulanan" or "SKP Tahunan (Penetapan)") |
+| **Periode** | The period the document covers. Monthly records show `MM/YYYY`; annual records show just `YYYY`. The upload date appears in smaller text below the period. |
+| **Nama Dokumen** | The file's document name as stored in the system |
+| **Konten** | A short extracted content preview from the document, if available |
+| **Aksi** | Action buttons — download, edit, and delete |
+
+## Searching and filtering
+
+<Steps>
+  <Step title="Search by keyword">
+    Type in the search bar at the top of the page. The search runs against document names and employee names. Results update automatically after a short pause as you type — you do not need to press Enter.
+  </Step>
+  <Step title="Open the filter panel">
+    Click the **Filter** button to reveal the additional filter controls. An orange dot on the button indicates that at least one filter is currently active.
+  </Step>
+  <Step title="Filter by employee">
+    Use the **Semua Pegawai** dropdown to select a specific employee. Only employees who have at least one SKP record appear in the list. When you first open the page, your own account is pre-selected automatically.
+  </Step>
+  <Step title="Filter by year">
+    Use the year dropdown to restrict results to a specific year. The available years are drawn from the records already in the system (`listTahun`). The page defaults to the current calendar year.
+  </Step>
+  <Step title="Reset filters">
+    If any filter is active, a **Reset Filter** link appears in the filter panel. Click it to clear all filters and the search field at once and return to the full unfiltered list.
+  </Step>
+</Steps>
+
+<Note>
+  Results are sorted alphabetically by document name. You cannot reorder the table by clicking column headers — use the search and filter tools to find specific records.
+</Note>
+
+## Downloading a document
+
+If an SKP record has an attached file, a **download icon** (arrow pointing down) appears in the **Aksi** column. Click it to open the PDF in a new browser tab. The file URL is resolved relative to the application's base URL, so it works regardless of which environment you're on.
+
+<Tip>
+  If the download icon is missing from a row, that record was saved without a file attachment. You can attach a file by using the **Edit** action on that row.
+</Tip>
+
+## Editing a record
+
+<Steps>
+  <Step title="Click the edit button">
+    Click the **pencil icon** in the **Aksi** column for the row you want to update. The **Edit SKP** modal opens pre-filled with the record's current values.
+  </Step>
+  <Step title="Update the fields">
+    Change the **Jenis SKP**, **Tahun**, or **Bulan** as needed. If you also want to replace the attached PDF, select a new file — the file field is optional when editing, so you can update metadata without re-uploading the document.
+  </Step>
+  <Step title="Save changes">
+    Click **Perbarui SKP**. The modal closes and the table refreshes to show the updated record.
+  </Step>
+</Steps>
+
+## Deleting a record
+
+<Steps>
+  <Step title="Click the delete button">
+    Click the **trash icon** in the **Aksi** column. A confirmation dialog appears showing the document name.
+  </Step>
+  <Step title="Confirm deletion">
+    Click **Hapus SKP** in the dialog to permanently delete the record. Click **Batal** to cancel without making any changes.
+  </Step>
+</Steps>
+
+<Warning>
+  Deletion is permanent. The document record and any associated file reference are removed immediately and cannot be recovered from within Simentor. Download the PDF first if you need to keep a copy.
+</Warning>
+
+## Uploading a new document
+
+You can add a new SKP record directly from the List page — you don't need to go to the Progress page.
+
+Click **Upload SKP** in the top-right of the page header. The upload modal opens with the **previous month** pre-filled as the default period (the system calculates this automatically). Fill in the Jenis, Tahun, Bulan (for monthly types), and attach a PDF of up to **7 MB**, then click **Upload SKP** to save.
+
+## Pagination
+
+The table displays **15 records per page**. Navigation controls appear at the bottom of the table:
+
+- The **left arrow** goes to the previous page (disabled on the first page).
+- The **right arrow** goes to the next page (disabled on the last page).
+- The current page and total page count are shown between the arrows and also in the summary text (`Halaman X dari Y | Total Z data`).
+
+<Accordion title="Why can't I see an upload I just made?">
+  The List page fetches fresh data on every visit and whenever a filter or search changes. If you uploaded a document from the Progress page or the Dashboard and then navigated directly to the List, the record should appear immediately. If it doesn't, check that your active filters — especially the year filter — include the period of the document you just uploaded.
+</Accordion>

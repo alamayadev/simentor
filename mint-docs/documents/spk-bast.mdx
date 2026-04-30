@@ -1,0 +1,102 @@
+---
+title: "SPK & BAST: Work Orders and Acceptance Reports Guide"
+description: "View, filter, and bulk-update SPK work orders and BAST acceptance reports for mitra contracts in Simentor, and download batched ZIP files."
+---
+
+The **SPK & BAST** page at `/kontraktual/spk-bast` is the central table for managing work-order contracts with field workers (mitra). An SPK (Surat Perintah Kerja) is issued at the start of a contract period, and a BAST (Berita Acara Serah Terima) is recorded once the work is accepted. Both documents are tracked per mitra per payment month (bulan bayar).
+
+## What each record contains
+
+Every row in the table represents one mitra–month combination and includes:
+
+| Field | Description |
+| --- | --- |
+| **Nama Mitra** | Full name of the field worker (`mitra.nama_lengkap`) |
+| **NIK** | National identity number of the mitra |
+| **Bulan Bayar** | Payment month for this contract period |
+| **Jumlah Tugas** | Number of assignments completed |
+| **Total** | Total contract value in IDR |
+| **SPK** | Work order number once the SPK has been set |
+| **BAST** | Acceptance report number once the BAST has been issued |
+
+Rows where **Total** exceeds the configured limit value are highlighted in red to flag high-value contracts for review.
+
+## Filtering by payment month
+
+Use the **Filter Bulan Bayar** dropdown in the table header to narrow the list to a specific payment month. The dropdown is populated with all months that have existing records. Select **Semua Periode** to view all months at once.
+
+<Note>
+  You must select a specific payment month before you can use the bulk update and download actions. Attempting bulk operations without a month filter selected will show a validation error.
+</Note>
+
+## Selecting rows for bulk actions
+
+Check the box in the header row to select all visible rows at once, or tick individual checkboxes to select specific records. The number of selected rows is shown in a sticky action bar that appears at the bottom of the page.
+
+You can adjust how many records appear per page using the **Tampilkan** dropdown (10, 25, 50, or 100 rows).
+
+## Updating SPK status
+
+Once you have selected one or more rows, you can set their SPK date in bulk:
+
+<Steps>
+  <Step title="Select the rows">
+    Tick the checkboxes next to the mitra records you want to update. Ensure you have chosen a **Bulan Bayar** filter first.
+  </Step>
+  <Step title="Click Bulk SPK">
+    In the sticky action bar, click **Bulk SPK**. A modal opens titled "Bulk Update SPK".
+  </Step>
+  <Step title="Enter the SPK date">
+    Use the date picker to set the **Tanggal SPK**. This date is applied to all selected records.
+  </Step>
+  <Step title="Apply">
+    Click **Terapkan**. Simentor updates the SPK date for all selected records. A success message confirms the update, and the selection is cleared.
+  </Step>
+</Steps>
+
+<Warning>
+  Bulk updates overwrite any existing SPK date for the selected records. Confirm the date is correct before applying.
+</Warning>
+
+## Recording a BAST after work completion
+
+After the contracted work has been verified and accepted, record the BAST date:
+
+<Steps>
+  <Step title="Select the rows">
+    Tick the mitra records for which you are accepting work.
+  </Step>
+  <Step title="Click Bulk BAST">
+    Click **Bulk BAST** in the sticky action bar. A modal opens titled "Bulk Update BAST".
+  </Step>
+  <Step title="Enter the BAST date">
+    Set the **Tanggal BAST** using the date picker.
+  </Step>
+  <Step title="Apply">
+    Click **Terapkan**. Simentor updates the BAST date for all selected records. The BAST column in the table will reflect the acceptance report number once the update is complete.
+  </Step>
+</Steps>
+
+## Downloading documents
+
+With rows selected, two download buttons appear in the action bar:
+
+<AccordionGroup>
+  <Accordion title="Unduh ZIP SPK">
+    Downloads a ZIP archive containing the SPK PDF for each selected record. The file is named `spk-{YYYYMMDD}.zip`. Only rows that have a numeric record ID are included in the download.
+  </Accordion>
+
+  <Accordion title="Unduh ZIP BAST">
+    Downloads a ZIP archive containing the BAST PDF for each selected record. The file is named `bast-{YYYYMMDD}.zip`. As with SPK downloads, only rows with a valid ID are included.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  If you need documents for a large number of mitra, filter by the target **Bulan Bayar**, click the header checkbox to select all rows on the current page, then use the ZIP download. Increase the **Tampilkan** count to include more records in a single batch.
+</Tip>
+
+If a download fails, an error message appears below the action bar explaining the cause. Common causes include selecting rows without numeric IDs, or a temporary server error.
+
+## Pagination
+
+Navigate through large datasets using the **Previous** and **Next** buttons at the bottom of the table. The footer shows the current page, total pages, and total record count.

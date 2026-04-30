@@ -1,0 +1,313 @@
+---
+title: "Letters: Surat Keluar, Tugas, Keputusan, Permintaan"
+description: "Create, number, and download all four official letter types in Simentor: outgoing letters, assignment letters, decision letters, and request letters."
+---
+
+The **Surat** section under the **Umum** menu centralises all official letter management for your office. You can create, search, and download four distinct letter types from this area. Each type follows its own numbering format and, where applicable, its own workflow for assigning personnel to a letter before generating the final document.
+
+<Tabs>
+  <Tab title="Surat Keluar">
+    ## Surat Keluar — Outgoing Letters
+
+    **Path:** `/umum/surat/keluar`
+
+    Surat Keluar records general outgoing correspondence from your office. Each letter is numbered automatically using the format configured for your unit (e.g. `B-{nomor}/32150/KA.220/{tahun}`), and you can compose the letter body using the built-in rich-text editor before printing or saving.
+
+    ### Browsing and filtering
+
+    The list view shows every outgoing letter with the following columns:
+
+    | Column | Description |
+    | --- | --- |
+    | **Nomor Surat** | Formatted letter number and internal ID |
+    | **Tanggal** | Date of the letter |
+    | **Tujuan** | Recipient name or address |
+    | **Perihal** | Subject of the letter |
+    | **Sifat** | Classification: Biasa, Penting, Segera, or Rahasia |
+
+    Use the filters at the top of the page to narrow your results:
+
+    - **Pencarian** — search by recipient (tujuan), subject (perihal), or letter body
+    - **Tahun** — filter by year; defaults to the current year
+    - **Tanggal** — filter by a specific date within the selected year
+
+    Click **Reset** to clear all filters, or **Muat Ulang** to refresh the list.
+
+    <Tip>
+      The **Nomor Baru** stat card at the top shows the next available letter number padded to four digits. It updates automatically when you change the year filter.
+    </Tip>
+
+    ### Creating an outgoing letter
+
+    <Steps>
+      <Step title="Open the form">
+        Click **Buat Surat** in the page header. This opens the letter composition form at `/umum/surat/keluar/form`.
+      </Step>
+      <Step title="Fill in the letter details">
+        Complete the **Detail Surat** panel on the left:
+
+        - **Tanggal** _(required)_ — the letter date
+        - **Tahun** — defaults to the current year
+        - **Nomor** — leave blank to auto-assign, or enter a specific number
+        - **Dari** _(required)_ — sender name (pre-filled from your office settings)
+        - **Tujuan** _(required)_ — recipient
+        - **Lokasi Penerima** — recipient's city or location, shown in the letter header
+        - **Perihal** _(required)_ — subject line
+        - **Lampiran** — number of enclosures
+        - **Sifat** — Biasa, Penting, Segera, or Rahasia
+        - **Tembusan** — carbon-copy recipients, separated by semicolons (`;`)
+      </Step>
+      <Step title="Set the signatory">
+        In the **Penandatangan** panel, confirm or update:
+
+        - **Nama** — signer's full name
+        - **Jabatan** — position title
+        - **NIP** — national employee ID (optional)
+      </Step>
+      <Step title="Compose the letter body">
+        Use the rich-text editor on the right (**Isi Surat**) to write the body. The toolbar provides:
+
+        - Formatting: Bold, Italic, Underline
+        - Alignment: rata kiri, rata tengah, rata kanan, rata penuh
+        - Lists: bullet and numbered
+        - Tables: click the table icon, set the number of rows and columns, then click **Sisipkan**. After inserting a table you can add/remove rows and columns or toggle borders by clicking any cell.
+
+        Click the refresh icon in the toolbar to reset the body to the default template.
+      </Step>
+      <Step title="Preview and save">
+        Click **Pratinjau** to open a full-page preview of the formatted letter. Choose the paper size (A4 or F4) from the dropdown in the preview modal, then click **Cetak** to send the letter directly to your printer.
+
+        Click **Simpan** to save the record to the database. A success notice confirms the letter has been stored.
+      </Step>
+    </Steps>
+
+    <Note>
+      The formatted letter number (e.g. `B-0012/32150/KA.220/2026`) is displayed in the top-right corner of the editor and updates live as you fill in the Nomor and Tahun fields.
+    </Note>
+
+    ### Editing and deleting
+
+    From the letter list, open the action menu (⋯) on any row to:
+
+    - **Edit** — reopen the form pre-filled with existing data
+    - **Sisip** — insert a supplementary letter with a sub-number (e.g. `0012.A`)
+    - **Hapus** — permanently delete the letter after confirming the dialog
+
+    <Warning>
+      Deletion is permanent and cannot be undone. Confirm only when you are sure the record is no longer needed.
+    </Warning>
+  </Tab>
+  <Tab title="Surat Tugas">
+    ## Surat Tugas — Assignment Letters
+
+    **Path:** `/umum/surat/tugas`
+
+    Surat Tugas authorises staff or field workers (mitra) to carry out specific activities. The page uses a two-panel layout: the left panel lists all assignment letter headers, and the right panel shows the personnel detail lines attached to the currently selected letter. Only when at least one detail line exists can you download the DOCX file.
+
+    ### Understanding the layout
+
+    The **header** panel displays:
+
+    | Column | Description |
+    | --- | --- |
+    | **Nomor Surat** | Formatted number with classification code |
+    | **Tanggal** | Date of the letter |
+    | **Kepada** | Addressed to (e.g. "Tim Survei") |
+
+    Expand any row using the chevron (▾) button to view the **Menimbang** (considerations) and **Uraian** (task description) fields inline without opening an edit modal.
+
+    ### Creating an assignment letter
+
+    <Steps>
+      <Step title="Click Buat Surat">
+        Click **Buat Surat** in the top-right corner. A modal opens.
+      </Step>
+      <Step title="Complete the header fields">
+        Fill in:
+
+        - **Tahun** _(required)_ — letter year
+        - **Tanggal Surat** _(required)_ — issue date
+        - **Klasifikasi** _(required)_ — select from the searchable dropdown (format: `kode - keterangan`)
+        - **Kepada** _(required)_ — addressee (e.g. a team name or individual)
+        - **Menimbang** — optional considerations/rationale
+        - **Uraian** _(required)_ — full description of the assigned task
+
+        For **Edit** and **Sisip** modes, you must also supply a **Nomor Induk** (e.g. `0045`). On initial creation the system assigns the next available number automatically.
+      </Step>
+      <Step title="Save the header">
+        Click **Simpan**. The new letter appears at the top of the list and is automatically selected, revealing its detail panel on the right.
+      </Step>
+    </Steps>
+
+    <Note>
+      Optionally attach a PDF scan of the signed letter when editing an existing header using the **Lampiran PDF** field.
+    </Note>
+
+    ### Adding personnel to a letter
+
+    A Surat Tugas is complete only when it has personnel detail lines. Each letter supports either **Organik** (permanent staff) or **Mitra** (contracted field workers) — not both in the same letter.
+
+    <Steps>
+      <Step title="Select the letter">
+        Click any row in the left panel to load its details in the right panel.
+      </Step>
+      <Step title="Add an organik or mitra detail">
+        Click **\+ Organik** to assign a permanent employee, or **\+ Mitra** to assign a field worker. A modal opens with the following fields:
+
+        - **Pegawai** / **Mitra** _(required)_ — searchable dropdown of names, NIPs, and positions
+        - **Nama Kegiatan** _(required)_ — the activity name (auto-filled when a kegiatan is linked for mitra)
+        - **Dasar** _(required)_ — legal/regulatory basis for the assignment
+        - **Hari** _(required)_ — number of working days (must be ≥ 1)
+        - **Wilayah Kerja** _(required)_ — work area or district
+        - **Tanggal Mulai** _(required)_ — start date
+        - **No. DIPA** _(required)_ — budget line reference
+        - **Jenis Kendaraan** — vehicle type (organik only)
+        - **SPPD** — toggle if a travel order is required (organik only)
+        - **Penugasan** — assignment type from the kegiatan (mitra only)
+      </Step>
+      <Step title="Use Bulk Mitra for large groups">
+        Click **Bulk Mitra** to add multiple mitra at once. Select a **Kegiatan** from the dropdown, then tick the names you want to include. All selected mitra share the same task parameters entered in the bulk form.
+      </Step>
+    </Steps>
+
+    <Warning>
+      If a letter contains a mix of organik and mitra personnel (which can happen after manual data corrections), the DOCX download button is disabled. The warning "Detail campuran tidak didukung generator" is shown. Resolve the mix before downloading.
+    </Warning>
+
+    ### Downloading DOCX
+
+    When the letter has at least one detail line and no mixed personnel, click the **DOCX** button in the top-right corner of the detail panel. Simentor generates and downloads a `.docx` file named after the letter's `no_surat` (e.g. `ST_045_BPS_2026.docx`).
+
+    ### Inserting a sub-number
+
+    To insert a supplementary letter (sisip) after an existing number, open the action menu (⋯) on a row and choose **Sisip Surat**. Provide the **Nomor Induk** for the inserted entry; the system will track it as a sub-entry.
+
+    ### Filtering and search
+
+    - **Pencarian** — search by nomor surat, kepada, or uraian
+    - **Tahun** and **Tanggal** dropdowns for date-based filtering
+    - **Reset** and **Muat Ulang** to clear or refresh
+  </Tab>
+  <Tab title="Surat Keputusan">
+    ## Surat Keputusan — Decision Letters
+
+    **Path:** `/umum/surat/keputusan`
+
+    Surat Keputusan (SK) formalises official administrative decisions such as appointing field teams or establishing working groups. The page shares the same two-panel workflow as Surat Tugas: a header list on the left and a personnel detail panel on the right.
+
+    ### Header fields
+
+    When you click **Buat Surat**, the creation modal asks for:
+
+    | Field | Required | Description |
+    | --- | --- | --- |
+    | **Tahun (thn)** | Yes | Decision year |
+    | **Tanggal Surat** | Yes | Date of the decision |
+    | **Klasifikasi (kode\_klas)** | Yes | Classification code, searchable dropdown |
+    | **Kepada** | Yes | Addressed to |
+    | **Kegiatan** | Yes | Activity name covered by the decision |
+    | **Perihal / Menimbang** | No | Subject line or considerations |
+    | **Pejabat Penandatangan (oleh)** | Yes | Kepala BPS or Kuasa Pengguna Anggaran (KPA) |
+
+    For **Edit** and **Sisip** modes, you must also supply the **Nomor Induk**. The next available SK number is shown in the stat card at the top.
+
+    ### Expanding a row
+
+    Click the chevron (▾) next to any letter number to view the **Kegiatan** and **Perihal / Menimbang** fields without opening the edit modal.
+
+    ### Adding personnel details
+
+    The detail workflow is identical to Surat Tugas, with one addition for organik entries: the **Jabatan Kegiatan** field records the person's role within the activity (e.g. "Ketua Tim").
+
+    Personnel types and their unique fields:
+
+    <AccordionGroup>
+      <Accordion title="Organik detail fields">
+        - **Pegawai** — employee from the permanent staff list
+        - **Jabatan Kegiatan** — role in the activity
+        - **Dasar**, **Nama Kegiatan**, **Hari**, **Wilayah Kerja**, **Tanggal Mulai**, **No. DIPA**
+      </Accordion>
+
+      <Accordion title="Mitra detail fields (single)">
+        - **Mitra** — field worker from the mitra roster
+        - **Penugasan** — assignment type linked to the selected kegiatan
+        - **Dasar**, **Nama Kegiatan**, **Hari**, **Wilayah Kerja**, **Tanggal Mulai**, **No. DIPA**
+      </Accordion>
+
+      <Accordion title="Bulk Mitra">
+        Select a **Kegiatan**, then tick multiple mitra names. All selected workers are added with the same task parameters in a single operation. The system reports how many were created and how many (if any) failed.
+      </Accordion>
+    </AccordionGroup>
+
+    <Warning>
+      A personnel mix of organik and mitra in the same SK disables the DOCX generator. The message "Detail campuran tidak didukung generator" appears. Remove the mismatched entries before attempting to download.
+    </Warning>
+
+    ### Downloading the SK as DOCX
+
+    Select an SK in the list, ensure the detail panel shows at least one personnel entry, then click **DOCX**. The file is saved as `{no_surat}.docx`.
+
+    ### Filtering the SK list
+
+    Use the **Pencarian** box to search by nomor surat, kepada, or uraian. Filter by **Tahun** and **Tanggal** using the dropdowns. Click **Reset** to return to the default year filter.
+  </Tab>
+  <Tab title="Surat Permintaan">
+    ## Surat Permintaan — Request Letters
+
+    **Path:** `/umum/surat/permintaan`
+
+    Surat Permintaan records incoming or outgoing requests for data and services (e.g. a district planning agency requesting PDRB figures). Each entry is given a sequential letter number under the configured classification scheme.
+
+    ### Columns in the list
+
+    | Column | Description |
+    | --- | --- |
+    | **Nomor Surat** | Formatted letter number with sub-number if inserted |
+    | **Tanggal** | Date of the request letter |
+    | **Pengirim** | Sending organisation or individual (`dari`) |
+    | **Perihal** | Subject of the request |
+
+    ### Creating a request letter number
+
+    <Steps>
+      <Step title="Click Buat Nomor">
+        Click **Buat Nomor** in the header. A modal opens.
+      </Step>
+      <Step title="Fill in the details">
+        Complete the form fields:
+
+        - **Tanggal** _(required)_ — date of the letter
+        - **Tahun (thn)** _(required)_ — year
+        - **Nomor Urut** _(required for standard entries)_ — sequential number; pre-filled with the next available number
+        - **Klasifikasi (kode\_klas)** _(required)_ — classification from the dropdown
+        - **Pengirim / Asal Surat (dari)** _(required)_ — the sending party
+        - **Perihal** _(required)_ — brief description of the request
+      </Step>
+      <Step title="Save">
+        Click **Simpan**. The new entry appears in the table immediately.
+      </Step>
+    </Steps>
+
+    ### Inserting a sub-number (sisip)
+
+    Open the action menu (⋯) on an existing row and choose **Sisip Nomor**. The modal pre-fills the year, sender, subject, and classification from the source entry. Provide the date for the inserted entry. Sisip entries display their sub-number as `{nomor}.{no_sisip}` in the Nomor Surat column.
+
+    ### Editing and deleting
+
+    From the action menu (⋯) on any row:
+
+    - **Edit Data** — update the date, year, number, classification, sender, or subject
+    - **Hapus** — permanently delete the entry after confirming the dialog
+
+    <Warning>
+      Deleting a Surat Permintaan is permanent. The confirmation message displays the sender and subject so you can verify you are deleting the correct record.
+    </Warning>
+
+    ### Filtering
+
+    - **Pencarian** — search by sender (pengirim) or subject (perihal)
+    - **Tahun** — filter by year; use the "Semua Tahun" option to see all records
+
+    The **Nomor Baru** stat card at the top shows the next available sequential number for the currently selected year.
+  </Tab>
+</Tabs>

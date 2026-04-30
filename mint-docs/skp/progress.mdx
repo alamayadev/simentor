@@ -1,0 +1,86 @@
+---
+title: "SKP Progress: Identify and Resolve Missing Uploads"
+description: "Use the SKP Progress page to identify employees with missing SKP uploads by period and document type, then upload your own documents directly from the page."
+---
+
+The SKP Progress page at `/skp/progres` tells you exactly which employees have not yet uploaded their SKP documents for a given period. Instead of showing aggregate percentages like the dashboard, this page names the individuals who are still outstanding — making it straightforward for team leaders and administrators to follow up. If you are a regular staff member, your own name appears highlighted in red when you haven't uploaded for the current period.
+
+## Reading the progress cards
+
+The page is built around a set of **progress cards**, each covering one SKP type and period. Every card shows:
+
+- **Title** — the SKP type and the specific period in brackets, for example `SKP Bulanan (03/2025)` or `Penetapan Tahunan (2025)`.
+- **Count not uploaded** — the number of employees who have not yet submitted a document for that period.
+- **Total employees** — the total number of staff in your organisation.
+- **Names list** — a comma-separated list of employees who are still missing their upload. If there are more than six names, a **\+N lainnya** button lets you expand the full list.
+
+<Note>
+  Your own name appears in **red** in the missing-names list when you are one of the employees yet to upload. Everyone else's name appears in the standard grey colour.
+</Note>
+
+## Two tabs of SKP types
+
+Progress cards are split across two tabs so the page stays manageable:
+
+<Tabs>
+  <Tab title="Bulanan & Penetapan">
+    This tab shows two cards side by side:
+
+    - **SKP Bulanan** — employees who have not uploaded their monthly SKP for the selected year and month.
+    - **Penetapan Tahunan** — employees who have not yet uploaded their annual target-setting document for the selected year.
+  </Tab>
+  <Tab title="Penilaian & Evaluasi">
+    This tab shows two cards side by side:
+
+    - **Penilaian SKP** — employees who have not yet uploaded their annual assessment document for the selected year.
+    - **Evaluasi Kinerja** — employees who have not yet uploaded their year-end evaluation document for the selected year.
+  </Tab>
+</Tabs>
+
+## Filtering by year and month
+
+Two dropdowns at the top of the page let you narrow the data to a specific period:
+
+- **Tahun Bulanan** — select a year to see bulanan progress for that year. Choosing a year also sets the reference year for the annual types on the **Penilaian & Evaluasi** tab.
+- **Bulan** — select a month (01–12) to focus the SKP Bulanan card on that specific month. Months are shown as two-digit numbers (01, 02, … 12).
+
+When the page first loads, it automatically pre-selects the current year and month, so you see the most relevant period immediately.
+
+## Uploading an SKP document
+
+You can upload an SKP document directly from this page without navigating elsewhere.
+
+<Steps>
+  <Step title="Open the upload modal">
+    Click the **Upload SKP** button in the top-right filter bar. The modal opens with the current year and month pre-filled.
+  </Step>
+  <Step title="Select the SKP type">
+    Choose one of the four document types from the **Jenis SKP** dropdown:
+
+    - SKP Bulanan
+    - SKP Tahunan (Penetapan)
+    - SKP Tahunan (Penilaian)
+    - SKP Evaluasi Tahunan
+  </Step>
+  <Step title="Set the period">
+    Select the **Tahun** (year). If you chose **SKP Bulanan**, a **Bulan** (month) field also appears — select the correct month.
+  </Step>
+  <Step title="Attach the PDF file">
+    Click the upload area and choose your PDF file. The file must be in PDF format and no larger than **7 MB**.
+  </Step>
+  <Step title="Submit">
+    Click **Upload SKP**. If the upload succeeds, the modal closes and the progress cards refresh to reflect your submission. If there is an error, a red message appears inside the modal describing what went wrong.
+  </Step>
+</Steps>
+
+<Warning>
+  You cannot upload without attaching a PDF file — the file field is mandatory. If you try to submit without a file, the form will show the error "File PDF wajib diunggah."
+</Warning>
+
+## What happens after upload
+
+A successful upload immediately invalidates the cached data for the Progress page, the Dashboard, and the List. All three views will reload their data on the next visit, so the completed upload is reflected across the entire SKP module without any manual refresh.
+
+<Tip>
+  After uploading, switch to the **Penilaian & Evaluasi** tab to check whether the annual documents are also due. Monthly uploads are the most frequent task, but the annual types have hard deadlines tied to the performance review calendar.
+</Tip>

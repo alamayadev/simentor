@@ -1,0 +1,121 @@
+---
+title: "Activity Monitoring: Track Field Execution by Sample"
+description: "Monitor per-sample execution status for active field activities, use filters and monitoring configurations, and export results to Excel in Simentor."
+---
+
+The Activity Monitoring page at `/kegiatan/monitoring` lets you track the execution status of each sample unit within an ongoing field activity. Unlike the activity list — which works at the activity level — monitoring works at the sample level: each row represents a specific census block, village, or respondent unit. You can see at a glance which samples are complete, which are still in progress, and which are overdue.
+
+## Data shown in the table
+
+The monitoring table shows the following columns for each sample row:
+
+| Column | Description |
+| --- | --- |
+| **Sample Code** | Unique sample identifier (e.g. `SMP-001`), with the sub-district and village names shown below |
+| **Function** | The statistical function of the related activity (Sosial, Produksi, Distribusi, etc.) |
+| **Status** | Execution status of the sample (see colour codes below) |
+| **Actions** | Edit and Delete buttons for each row |
+
+### Status colour codes
+
+Status labels use colours so you can scan the table quickly:
+
+| Status | Colour | Meaning |
+| --- | --- | --- |
+| **Selesai** | Green | Data collection for this sample is complete |
+| **Sedang Berjalan** | Blue | An officer is actively working on this sample |
+| **Belum Dimulai** | Grey | No activity has been recorded for this sample yet |
+| **Terlambat** | Red | The sample is past its deadline and not yet finished |
+
+<Tip>
+  Use the Activity filter to focus the view on a single activity. When monitoring an activity with hundreds of samples, this is far more efficient than scrolling through the full list.
+</Tip>
+
+## Search and filter
+
+Type in the search bar above the table to search by sample code, activity name, sub-district, village, partner name, or function. Results update as you type.
+
+For more targeted filtering, click **Filter** and use the two options:
+
+- **Function** — show only samples from a specific statistical function (Sosial, Produksi, Distribusi, Nerwilis, IPDS, or Umum)
+- **Activity** — select a specific activity from the searchable dropdown
+
+When both filters are active, click **Reset** to clear them at once.
+
+<Note>
+  The Activity filter list updates automatically based on the selected Function. Select a function first to narrow down the available activities.
+</Note>
+
+## Adding a new monitoring record
+
+<Steps>
+  <Step title="Open the add form">
+    Click **Tambah Monitoring** in the top-right corner.
+  </Step>
+  <Step title="Fill in the sample details">
+    Complete the following fields:
+
+    - **Sample Code** — a unique code for this sample (e.g. `SMP-001`)
+    - **Function** — select the matching statistical function
+    - **Activity** — select the activity from the searchable dropdown
+    - **Sub-district Code** — the regional code for the sub-district (e.g. `3215112`)
+    - **Village Code** — the regional code for the village (e.g. `3215112001`)
+    - **Monitoring Config** — select the configuration prepared for this activity (see below)
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The record appears in the table immediately.
+  </Step>
+</Steps>
+
+## Editing and deleting monitoring records
+
+Click **Edit** on any row to open the same form with the existing data pre-filled. Update the fields you need and save.
+
+Click **Hapus** on a row to delete it, then confirm the dialog.
+
+<Warning>
+  Deleting a monitoring record permanently removes the execution history for that sample. This action cannot be undone. Make sure the record is no longer needed before deleting.
+</Warning>
+
+## Exporting monitoring data
+
+Click **Export XLSX** next to the search bar to download a file named `monitoring-kegiatan.xlsx`. If the Activity filter is active when you export, the downloaded file contains only data from the selected activity — useful for creating per-activity reports without manual filtering in Excel.
+
+<Tip>
+  Apply the Activity filter before exporting for a cleaner report. This saves time compared to exporting everything and then filtering in Excel.
+</Tip>
+
+## Monitoring configuration
+
+Before adding monitoring records, make sure a configuration exists for the relevant activity. A configuration defines which detail fields are tracked for each sample in that activity.
+
+### Opening the configuration pages
+
+Click **Konfigurasi** in the top-left of the monitoring page and choose from the dropdown:
+
+- **Config Monitoring** — manage the mapping between activities and their detail column sets
+- **Config Detil** — manage individual column definitions available for use in configurations
+
+### Creating a new monitoring config
+
+<Steps>
+  <Step title="Open Config Monitoring">
+    From the Konfigurasi menu, select **Config Monitoring**. This page lists all existing mappings with their Function, Activity, and assigned detail columns.
+  </Step>
+  <Step title="Click Tambah Mapping">
+    Click **Tambah Mapping** in the top-right corner.
+  </Step>
+  <Step title="Select Function and Activity">
+    Choose the function first — the activity list filters automatically based on your selection. Then select the activity you want to configure.
+  </Step>
+  <Step title="Select detail columns">
+    From the available Config Detil list, check the columns you want to track for this activity. Each checked item will appear as an additional field in the monitoring form for this activity.
+  </Step>
+  <Step title="Save the configuration">
+    Click **Simpan Konfigurasi**. The config is immediately available when adding new monitoring records.
+  </Step>
+</Steps>
+
+<Note>
+  Each activity should have only one active monitoring config. Creating duplicate configs for the same activity can cause confusion when selecting a config in the monitoring form.
+</Note>

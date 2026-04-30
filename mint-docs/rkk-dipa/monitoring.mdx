@@ -1,0 +1,71 @@
+---
+title: "DIPA Monitoring: Track Budget Pagu and Realization"
+description: "Use the DIPA Monitoring page to view budget summary cards, a monthly realisasi vs. rencana chart, and a paginated detail table for every budget item."
+---
+
+The DIPA Monitoring page at `/umum/rkk-dipa/monitoring` gives you a live snapshot of how your budget is performing. It combines five summary cards, an interactive bar chart comparing actual realization against planned amounts for each month of the year, and a detailed table showing every budget item's pagu, realisasi, sisa, and serapan. All figures update as new disbursement records and planning data are saved elsewhere in the module.
+
+## Selecting a fiscal year
+
+Use the year selector in the top-right corner of the page to switch between the current year and the two previous fiscal years. All summary cards and the chart refresh automatically when you change the year.
+
+## Summary cards
+
+The five cards at the top of the **Ringkasan & Chart** tab give you an immediate read on budget health:
+
+| Card | What it shows |
+| --- | --- |
+| **Total Pagu** | The full approved budget ceiling for the selected year across all budget items. |
+| **Total Realisasi** | Cumulative actual expenditure recorded to date, plus the percentage of pagu it represents. |
+| **Sisa Anggaran** | Remaining unspent budget — pagu minus total realisasi. |
+| **Realisasi Bulan Ini** | Disbursements recorded in the current month. |
+| **Rencana Bulan Ini** | The planned disbursement target for the current month, labelled "Target Planning". |
+
+<Tip>
+  If Total Pagu shows zero, your DIPA revision data has not been imported yet. Ask a user with the `katim` role to upload the current DIPA Excel file under **Revisi & Import Data**.
+</Tip>
+
+## Monthly chart
+
+Below the summary cards, the **Realisasi vs Rencana per Bulan** bar chart displays a paired bar for each month of the selected year:
+
+- **Green bars** represent actual realisasi for that month.
+- **Blue bars** represent the planned rencana amount.
+
+The Y-axis labels use the compact **jt** (juta) format so that even large values remain readable. Hovering over a bar shows the full IDR amount and the month name as a tooltip.
+
+An empty or missing bar for a month means no disbursement was recorded (or no plan was set) for that period — it does not indicate an error.
+
+## Tabel Detail tab
+
+Switch to the **Tabel Detail** tab to see every budget item as a row in a paginated table. The table shows 8 rows per page.
+
+### Table columns
+
+| Column | Description |
+| --- | --- |
+| **Item Anggaran** | The budget item description. A secondary line shows the output or component name when available. |
+| **Pagu** | The approved budget ceiling for this item, in full IDR. |
+| **Realisasi** | Actual expenditure recorded against this item, displayed in green. |
+| **Sisa** | The difference between pagu and realisasi (pagu − realisasi). |
+| **Serapan** | Budget absorption rate as a percentage, shown with a mini progress bar. Bars are green at 50% or above and amber below 50%. |
+
+### Reading the serapan bar
+
+The progress bar next to each serapan percentage gives a quick visual cue:
+
+- **Green bar** — absorption is 50% or higher, on track.
+- **Amber bar** — absorption is below 50%, may need attention.
+- **Empty bar** — no realisasi recorded yet for this item.
+
+### Pagination
+
+Use the **Sebelumnya** and **Berikutnya** buttons at the bottom of the table to move between pages. The footer also shows the current page number and the total number of records returned for the selected year.
+
+## Exporting data
+
+Click the **Ekspor** button in the top-right toolbar to download the monitoring data. The export reflects the currently selected fiscal year.
+
+<Note>
+  The monitoring data is read-only on this page. To add or correct realization records, go to **Pencairan**. To adjust planned amounts, go to **Perencanaan**.
+</Note>

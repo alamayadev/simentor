@@ -1,0 +1,168 @@
+---
+title: "Assignments & Officers: Manage Field Task Distribution"
+description: "Create, edit, and delete activity assignments for mitra in Simentor, and view the officer roster with workload summaries and assignment history."
+---
+
+The Assignments module connects activities to the people who carry them out. Two pages work together: **Penugasan** at `/kegiatan/penugasan` for managing task distribution directly, and **Petugas** at `/kegiatan/petugas` for viewing the full roster of field partners and their workload.
+
+---
+
+## Penugasan — Assignments
+
+### What the table shows
+
+The assignments table lists every recorded assignment with the following columns:
+
+| Column | Description |
+|---|---|
+| **Activity** | Activity name, with its function and year shown below |
+| **Partner** | Name of the assigned partner or employee, with their ID number below |
+| **Role** | Assignment role: `PCL`, `PML`, `OPERATOR`, or `SUPERVISOR` |
+| **Volume** | Number of units this person is responsible for |
+| **Value** | Honorarium amount in IDR |
+| **Payment Month** | Month and year the honorarium is disbursed |
+| **Actions** | Edit and Delete buttons (only visible for assignments you created) |
+
+### Summary statistics
+
+Four cards above the table give you a running total based on loaded data:
+
+- **Total Assignments** — total number of assignments currently shown
+- **In Progress** — assignments not yet linked to a partner (partner not yet set)
+- **Completed** — assignments linked to a partner
+- **Total Value** — accumulated honorarium total in IDR
+
+### Searching and filtering
+
+Use the search bar to search by activity name, officer name, or role. Click **Filter** to open advanced filter options:
+
+<Accordion title="Activity filter">
+  Select a specific activity from the searchable dropdown. When this filter is active together with the Payment Month filter, a totals row appears at the bottom of the table.
+</Accordion>
+
+<Accordion title="Role filter">
+  Filter by assignment role: `PCL`, `PML`, `OPERATOR`, or `SUPERVISOR`.
+</Accordion>
+
+<Accordion title="Partner filter">
+  Search and select a specific partner from the searchable dropdown.
+</Accordion>
+
+<Accordion title="Payment month filter">
+  Filter by disbursement month. Options are drawn from the months that already exist in the assignment records.
+</Accordion>
+
+Click **Reset** to clear all active filters at once.
+
+### Creating a new assignment
+
+<Steps>
+  <Step title="Click Tambah Penugasan">
+    Click the **Tambah Penugasan** button next to the Filter button.
+  </Step>
+  <Step title="Select the activity">
+    Choose an activity from the searchable dropdown. Type part of the activity name to narrow the options.
+  </Step>
+  <Step title="Select the partner (optional)">
+    Choose the partner to assign. If the partner is not yet known, you can leave this field empty and fill it in later.
+  </Step>
+  <Step title="Set the role and volume">
+    Choose the **Role** (PCL, PML, OPERATOR, or SUPERVISOR), enter the **Volume** (number of units), and enter the **Value** (honorarium in IDR).
+  </Step>
+  <Step title="Set the payment month">
+    Select the disbursement month and year using the **Payment Month** field.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The new assignment appears in the table and updates the summary cards.
+  </Step>
+</Steps>
+
+<Note>
+You can only edit or delete assignments you created yourself. Assignments created by other users remain visible in the table but show no Edit or Delete buttons.
+</Note>
+
+### Editing an assignment
+
+Click **Edit** on an assignment row. The same form opens with the existing data pre-filled. Update the fields you need, then click **Simpan**.
+
+### Deleting an assignment
+
+Click **Hapus** on the row and confirm the dialog.
+
+<Warning>
+Deleting an assignment removes the honorarium record for that officer for the related activity. If this data has already been used as the basis for a DIPA disbursement, coordinate with your finance team before deleting.
+</Warning>
+
+### Exporting assignment data
+
+Click **Export XLSX** at the top of the table to download a file named `penugasan.xlsx`. If the **Payment Month** filter is active, the exported file contains only assignments from that month.
+
+### Recording budget realization
+
+When both the **Activity** and **Payment Month** filters are active at the same time, a totals row appears at the bottom of the table along with a **Catat Realisasi** button. Click this button to jump directly to the DIPA Disbursement page with the total value already filled in — you don't need to re-enter the amount manually.
+
+<Tip>
+Use this at month-end: select the activity and payment month you want to disburse, verify the total, then click **Catat Realisasi** to go straight to the disbursement form.
+</Tip>
+
+---
+
+## Petugas — Officers
+
+The Petugas page at `/kegiatan/petugas` shows the full list of registered field partners, with their profile information and a summary of their assignment workload.
+
+### Summary statistics
+
+Four cards at the top give a snapshot of the field workforce:
+
+- **Total Officers** — total number of registered partners
+- **Active Officers** — partners with at least one active assignment
+- **Average Assignments** — average number of assignments per partner per month
+- **Most Assignments** — the highest assignment count held by any single partner in a month
+
+### Table columns
+
+| Column | Description |
+|---|---|
+| **Name** | Partner's full name, with their ID number below |
+| **Position** | Partner's position or title (e.g. `Mitra Pendataan`) |
+| **Sub-district** | The partner's home sub-district |
+| **Contact** | Partner's phone number, with their age below |
+| **Assignments** | Total assignment count recorded for this partner |
+| **Actions** | **Tambah Penugasan** button to assign directly from the partner profile |
+
+### Search and filter
+
+Use the search bar to search by partner name. Click **Filter** for more options:
+
+- **Sub-district** — filter by sub-district
+- **Village** — available once a sub-district is selected; filter to a specific village
+- **Position** — filter by partner role or title
+
+Click **Reset** to clear all active filters.
+
+### Creating an assignment from the Officers page
+
+<Steps>
+  <Step title="Find the partner">
+    Search for the partner using the search bar or filters. Click **Tambah Penugasan** on their row.
+  </Step>
+  <Step title="Fill in the assignment details">
+    The form opens with the partner's name already filled in. Complete:
+    - **Role** — PCL, PML, OPERATOR, or SUPERVISOR
+    - **Activity** — select from the searchable dropdown
+    - **Volume** — number of units assigned to this partner
+    - **Payment Month** — disbursement month and year
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The new assignment is immediately reflected in the partner's assignment count.
+  </Step>
+</Steps>
+
+<Note>
+The assignment form on the Officers page does not include a Value (honorarium amount) field. To set an explicit honorarium, create the assignment from the [Assignments page](/kegiatan/assignments) instead, which includes the Value field.
+</Note>
+
+### How Petugas and Penugasan relate
+
+The Officers page and the Assignments page are linked: the partners listed on the Officers page are the source data for the Partner dropdown in the assignment form. Assignments created from either page update the assignment count shown on the partner's row.

@@ -1,0 +1,114 @@
+---
+title: "SKP Dashboard: Organisation-Wide Performance Overview"
+description: "Understand every metric, chart, and status indicator on the SKP Dashboard — including completion percentages, role breakdowns, trend charts, and activity feed."
+---
+
+The SKP Dashboard at `/skp/dashboard` gives you a real-time picture of how your organisation is tracking against its performance targets. At a glance you can see how many employees have uploaded their monthly SKP, what percentage have completed their annual target-setting (penetapan), and how far along the formal scoring process is. The page refreshes its data automatically every hour, so the numbers you see always reflect the current state without requiring a manual reload.
+
+## Summary cards
+
+The top section of the dashboard contains two cards that summarise the two most time-sensitive metrics.
+
+### SKP Bulanan card
+
+This card shows progress for the most recent monthly SKP period. It displays:
+
+- The **period label** — the year of the most recent bulanan cycle, plus the last specific period on record.
+- A **horizontal progress bar** that fills from left to right as more employees upload. The bar turns green as the percentage climbs.
+- The **progress percent** — calculated as `(total employees with SKP Bulanan uploaded ÷ total employees) × 100`, rounded to the nearest whole number.
+- A **breakdown by role** (for example: staf, katim, madya, kepala) showing how many employees in each role have uploaded.
+
+<Tip>
+  If your own name appears highlighted in red on the Progress page but the Dashboard shows a high percentage, it means the majority of your colleagues have uploaded — but you haven't yet. Go to **Progress** to check which period is still open.
+</Tip>
+
+### SKP Penetapan card
+
+This card tracks annual target-setting completion using a **semicircular gauge chart**. Each arc segment represents a different role group, colour-coded as follows:
+
+| Role | Colour |
+| --- | --- |
+| Staf | Blue (`#3b82f6`) |
+| Katim | Indigo (`#6366f1`) |
+| Madya | Purple (`#8b5cf6`) |
+| Kepala | Fuchsia (`#d946ef`) |
+
+The large number in the centre of the gauge is the **penetapan percent** — calculated as `(total employees with SKP Tetap uploaded ÷ total employees) × 100`. A legend below the gauge lists each role with its exact count.
+
+## Metric cards
+
+Below the two summary cards, four smaller metric cards provide trend data for each major SKP type.
+
+<Tabs>
+  <Tab title="SKP Bulanan trend">
+    **Label:** SKP Bulanan `[year]`
+
+    Shows the **total number of bulanan uploads** for the selected year alongside a mini bar chart. Each bar represents one calendar month; bar height is proportional to the number of uploads that month relative to total employees. Hover over any bar to see the exact count for that month.
+  </Tab>
+  <Tab title="SKP Penilaian">
+    **Label:** SKP Penilaian `[year]`
+
+    Displays the **latest penilaian count** — specifically the highest value recorded across all assessment periods for the year. An area/line chart beneath the number plots the penilaian count over time, letting you see whether the assessment process is accelerating or stalling.
+  </Tab>
+  <Tab title="SKP Evaluasi">
+    **Label:** SKP Evaluasi `[year]`
+
+    Shows the **total number of employees** who have completed the annual evaluation upload. A bar chart groups records by date, so you can see when evaluation submissions were clustered. Each bar's date label appears beneath the chart.
+  </Tab>
+  <Tab title="SKP Penetapan timeline">
+    **Label:** SKP Penetapan `[year]`
+
+    Displays the **most recent penetapan count** alongside a bar chart of penetapan activity over time. Amber-coloured bars indicate the relative volume of target-setting submissions on each recorded date.
+  </Tab>
+</Tabs>
+
+## Progress SKP Penilaian panel
+
+The larger panel in the lower-left section gives a detailed view of scoring progress:
+
+- The **nilai percent** — calculated as `(total employees with SKP Nilai ÷ total employees) × 100` — appears as a large percentage at the top.
+- A sentence below confirms how many employees have been scored against the total.
+- A **segmented progress bar** breaks the workforce into three segments:
+  - **Belum** (light blue) — employees who have not yet uploaded a monthly SKP record
+  - **Proses** (medium blue) — employees with a bulanan upload but not yet a nilai record
+  - **Selesai by role** (distinct greens) — employees whose scoring is complete, broken out by role
+- An **accuracy indicator** at the bottom of the panel compares the current figure against the previous quarter.
+
+<Note>
+  The accuracy figure shown (87%) is a fixed reference benchmark comparing against the prior quarter. It is not a configurable threshold.
+</Note>
+
+## Aktivitas Terkini feed
+
+The panel on the lower-right side shows the most recent SKP upload activity across all employees. The feed displays three columns:
+
+| Column | What it shows |
+| --- | --- |
+| Nama SKP | The document name of the uploaded SKP record |
+| Pegawai | The name of the employee who uploaded it |
+| Waktu | How long ago the upload happened (relative time, in Indonesian) |
+
+A pulsing green dot next to the **Aktivitas Terkini** header indicates the feed is live. The **New Activities** badge appears when new uploads have been registered since the last data refresh.
+
+## Status indicators
+
+Two status badges appear throughout the dashboard:
+
+- **Live** — shown with a green background. Indicates the current period is open and employees can still upload.
+- **Closed** — shown with a red background. Indicates the period has ended and uploads are no longer accepted.
+
+## Data refresh
+
+<Accordion title="How often does the dashboard update?">
+  Dashboard data is cached and automatically refreshed in the background **every hour**. You do not need to reload the page — the numbers update silently.
+
+  If you need to see an upload that happened in the last few minutes (for example, right after submitting a document), navigate to the **Progress** or **List** page instead — those pages load fresh data on every visit.
+</Accordion>
+
+## Quick actions
+
+Three buttons appear in the top-right of the dashboard header:
+
+- **Daftar Pegawai** — opens the employee list for your organisation.
+- **Laporan SKP** — generates an SKP report.
+- **Input SKP** — opens the upload modal so you can add a new SKP document immediately.

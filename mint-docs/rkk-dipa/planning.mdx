@@ -1,0 +1,98 @@
+---
+title: "Budget Planning: Managing Monthly Disbursement Plans"
+description: "Create, edit, and review monthly disbursement plans for each DIPA budget item, and export your annual plan to Excel directly from the Perencanaan page."
+---
+
+The Perencanaan page at `/umum/rkk-dipa/perencanaan` is where you set the planned disbursement amounts that appear alongside actual realisasi in the Monitoring chart. For each budget item in your DIPA, you record a target disbursement amount and the month you expect it to be spent. These records do not commit any funds — they serve as the **rencana** (plan) benchmarks that Simentor compares against actual pencairan transactions.
+
+## Adding a new plan entry
+
+<Steps>
+  <Step title="Open the Input Rencana tab">
+    Navigate to **Perencanaan** and confirm the **Input Rencana** tab is active. You can also click the **Tambah Rencana** button in the page header to jump directly to this tab.
+  </Step>
+  <Step title="Search for a budget item">
+    In the **Pilih Sumber Budget** panel on the left, type at least 3 characters in the search field — either a budget item code or a keyword from the description.
+
+    Each result card shows:
+
+    - The **item code** (monospaced, e.g. `5211`).
+    - The item's full description.
+    - The approved **Pagu** amount for that item.
+    - The funding source (sumber dana).
+
+    Click a card to select it. The selected card highlights with a blue border.
+  </Step>
+  <Step title="Fill in the plan details">
+    In the **Rincian Rencana** panel on the right, complete the three fields:
+
+    - **Jumlah Rencana Pencairan (Rp)** — Enter the planned disbursement amount in full rupiah (e.g., `5000000` for Rp 5.000.000). Do not use dots or commas.
+    - **Bulan Rencana** — Pick the target month using the month selector (format: YYYY-MM).
+    - **Deskripsi Rencana** — A text description of the plan. This field pre-fills with the selected item's description; you can leave it as-is or customize it.
+  </Step>
+  <Step title="Save the plan">
+    Click **Simpan Rencana**. The button is disabled until a budget item is selected and a positive amount is entered. On success, a green confirmation banner appears and the view switches to the **Daftar Rencana** tab automatically.
+  </Step>
+</Steps>
+
+<Warning>
+  The planned amount you enter is not validated against the budget item's pagu. You are responsible for ensuring your rencana does not exceed the available ceiling. Check the **Pagu** badge on the item card before saving.
+</Warning>
+
+## Viewing existing plans
+
+Switch to the **Daftar Rencana** tab to browse all saved planning entries. You can view the data in two modes:
+
+<Tabs>
+  <Tab title="Bulanan (Monthly)">
+    Shows a paginated list of individual plan records filtered by month. The table columns are:
+
+    | Column | Description |
+    | --- | --- |
+    | **Akun / Key** | The account code and the full budget item key below it. |
+    | **Uraian** | The plan description. |
+    | **Bulan Rencana** | The target month in long-date format (e.g., "Januari 2025"). |
+    | **Jumlah Rencana** | The planned amount in full IDR, right-aligned. |
+    | **Aksi** | Edit and delete buttons (see below). |
+
+    Use the **Filter Bulan** selector to narrow results to a specific month. Click **Reset** to return to the current month. The footer shows total planned amount and pagination controls (20 records per page).
+  </Tab>
+  <Tab title="Tahunan (Yearly)">
+    Shows a wide spreadsheet-style grid with one row per budget item and a column for each month (JAN through DES), plus a **Total** column at the right edge. Use the **Filter Tahun** dropdown to switch between available years.
+
+    Each row groups all monthly plans for a given account and budget item. The footer row sums each month column and the overall total for the selected year.
+
+    <Tip>
+      Scroll horizontally on smaller screens to see all 12 month columns. The account and description columns stay visible as you scroll.
+    </Tip>
+  </Tab>
+</Tabs>
+
+## Editing a plan
+
+In the **Bulanan** view, click the pencil icon on any row to open the Edit Rencana modal. You can update:
+
+- **Jumlah Rencana Pencairan (Rp)** — the planned amount.
+- **Bulan Rencana** — the target month.
+- **Deskripsi Rencana** — the description text.
+
+Click **Simpan Perubahan** to save. The monitoring chart updates automatically once the change is saved.
+
+<Note>
+  Editing is only available in the **Bulanan** view. The **Tahunan** grid is read-only and aggregates values from the individual monthly records.
+</Note>
+
+## Deleting a plan
+
+Click the trash-can icon on any row in the **Bulanan** view. A confirmation dialog asks you to confirm before the record is deleted permanently. Deletion cannot be undone.
+
+## Exporting to Excel
+
+Click **Export Excel** in the **Daftar Rencana** toolbar to download all plan records for the current filter period as an Excel file. The exported year is determined by the active filter:
+
+- In **Bulanan** mode, the year is derived from the selected filter month.
+- In **Tahunan** mode, the year matches the **Filter Tahun** dropdown value.
+
+<Tip>
+  The exported Excel file is useful for sharing your disbursement plan with supervisors or for reconciling with official DIPA documents outside Simentor.
+</Tip>

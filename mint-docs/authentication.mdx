@@ -1,0 +1,88 @@
+---
+title: "Authenticate with Simentor: Login and Access Roles"
+description: "Learn how to log in to Simentor, how the Remember Me option controls session duration, what each role can access, and how to resolve access denied errors."
+---
+
+Simentor uses email and password authentication backed by a bearer token. When you sign in, a token is issued and stored in your browser. That token controls which pages you can visit and what actions you can take, based on the role assigned to your account. This page explains the full login flow, how sessions work, and what the three roles in Simentor can each access.
+
+## Signing in
+
+<Steps>
+  <Step title="Go to the login page">
+    Open your office's Simentor URL. You'll see the login form on the right side of the screen with two fields: **Email** and **Password**.
+  </Step>
+  <Step title="Enter your credentials">
+    Type your office email address (for example, `nama@bps.go.id`) into the **Email** field and your password into the **Password** field. Click the eye icon on the right edge of the password field to reveal what you've typed if you need to check for typos.
+  </Step>
+  <Step title="Choose whether to stay signed in">
+    Below the password field is a checkbox labelled **Ingat saya di perangkat ini** ("Remember me on this device").
+
+    - **Checked** — Your session token is saved in `localStorage`. You remain signed in even after you close the browser tab or the browser itself. Use this only on a personal, trusted device.
+    - **Unchecked** — Your session token is saved in `sessionStorage`. The session ends as soon as you close the tab. This is the safer choice on shared or office computers.
+  </Step>
+  <Step title="Submit and reach the dashboard">
+    Click **Masuk ke Simentor**. If your credentials are correct, Simentor redirects you to `/skp/dashboard` — your main operational command center.
+
+    If the login fails, an error message appears below the checkbox: "Email atau password salah." Check that your email has no leading or trailing spaces, confirm your password, and try again.
+
+    <Warning>
+      Never share your password with colleagues. Each staff member should have their own account so that activity logs and SKP records remain accurate.
+    </Warning>
+  </Step>
+</Steps>
+
+## Signing out
+
+To end your session, click your profile menu in the top-right corner of the navigation bar and select **Keluar** (Log out). Simentor removes your token and user data from both `localStorage` and `sessionStorage`, and returns you to the login page.
+
+<Note>
+  If you used **Remember me**, signing out is especially important on shared devices because the session would otherwise persist past a browser restart.
+</Note>
+
+## Session persistence
+
+| Scenario | Where the token is stored | Session ends when |
+| --- | --- | --- |
+| **Remember me** checked | `localStorage` | You explicitly sign out |
+| **Remember me** unchecked | `sessionStorage` | You close the browser tab |
+
+If you reopen Simentor in a new tab after a `sessionStorage`-only session, you'll be asked to log in again. This is expected behavior and is not an error.
+
+## Roles and access
+
+Simentor has three roles. Your role is assigned by a super-admin and determines which modules and routes you can open.
+
+| Role | Who it's for | What they can access |
+| --- | --- | --- |
+| **super-admin** | System administrator | Everything — including all `/admin/*` routes for managing users, roles, permissions, and metadata |
+| **katim** | Kepala Tim (Team Lead) | All standard routes, plus `/bank-data/raw` and `/umum/rkk-dipa/revisi-import` |
+| **Regular user** | Office staff | All standard authenticated routes: SKP, Kegiatan, RKK DIPA monitoring, Documents, IPDS, and the activity calendar |
+
+### Route-level restrictions
+
+The table below lists the specific routes that require an elevated role. Every other authenticated route is open to all signed-in users regardless of their role.
+
+| Route | Required role |
+| --- | --- |
+| `/admin/pengguna` | `super-admin` |
+| `/admin/peran` | `super-admin` |
+| `/admin/izin` | `super-admin` |
+| `/admin/metadata` | `super-admin` |
+| `/bank-data/raw` | `katim` |
+| `/umum/rkk-dipa/revisi-import` | `katim` |
+
+<Note>
+  Super-admins pass every role check automatically. If you are assigned `super-admin`, you can access all routes listed above without any additional configuration.
+</Note>
+
+## What to do when access is denied
+
+If you navigate to a restricted route without the required role, Simentor will block access to that page. When this happens:
+
+1. **Check the navigation bar.** Menu items that your role cannot access are typically hidden. If you can see the menu item but still cannot open the page, your role assignment may be misconfigured.
+2. **Contact your Simentor administrator.** Ask them to review your assigned role in **Admin → Pengguna**. They can update your role there if it needs to change.
+3. **Do not attempt to access restricted URLs directly.** Typing a restricted path into the address bar will result in the same access denial — the restriction is enforced by the application, not just the navigation menu.
+
+<Tip>
+  If you regularly need access to a restricted route as part of your job, ask your administrator to assign you the appropriate role rather than sharing credentials with someone who already has it.
+</Tip>

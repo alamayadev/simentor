@@ -1,0 +1,120 @@
+---
+title: "Metadata: Manage Reference Data and Dropdown Lists"
+description: "Add, edit, and delete two-level reference data categories and sub-items at /admin/metadata. Changes apply immediately across all Simentor forms and filters."
+---
+
+The **Manajemen Metadata** page at `/admin/metadata` lets you maintain the static reference data that Simentor uses throughout its forms and tables — things like category names, organisational unit labels, and other lookup values that appear in dropdown menus across the application. Because this data is shared system-wide, changes you make here immediately affect every module that references the same entries. This page is accessible only to users with the `super-admin` role.
+
+<Note>
+  `/admin/metadata` is restricted to the `super-admin` role. Any other role will be denied access.
+</Note>
+
+## How metadata is structured
+
+Metadata is organised as a two-level hierarchy:
+
+- **Kategori (parent)** — the top-level grouping. Each category has a **Nama Metadata** (`name`) and an optional **Nama Lain** (`name2`) that serves as an alternative label or abbreviation. Categories appear as individual cards on the page.
+- **Sub-item (child)** — entries nested under a category. Each sub-item also has a `name` and an optional `name2`. Sub-items are listed in a table inside the parent card, paginated at 10 rows per card.
+
+This two-level tree means you can have a category such as "Jabatan" with children like "Pengolah Data", "Analis", and "Koordinator" — and the full list appears wherever a jabatan dropdown is rendered in the application.
+
+## Viewing metadata
+
+The page displays all categories as cards in a responsive grid (up to three columns). Each card shows:
+
+- The category name and its `name2` label (displayed as a secondary line in uppercase)
+- A table of sub-items (children), with their `name` and `name2` values
+- A sub-item count and pagination controls if a category has more than 10 children
+
+If no metadata has been added yet, the page shows an empty state with a prompt to add the first category.
+
+## Adding a new category
+
+<Steps>
+  <Step title="Click Tambah Kategori">
+    Click the **Tambah Kategori** button in the page header to open the **Tambah Kategori Metadata** modal.
+  </Step>
+  <Step title="Fill in the fields">
+    | Field | Required | Description |
+    | --- | --- | --- |
+    | **Nama Metadata** | Yes | The primary name for this category (e.g. "Jabatan", "Unit Kerja") |
+    | **Nama Lain** | No | An alternative name or abbreviation shown as a secondary label on the card |
+  </Step>
+  <Step title="Save">
+    Click **Simpan** (or the submit button in the modal). A green notice ("Metadata berhasil ditambahkan.") confirms the category was created and the new card appears in the grid.
+  </Step>
+</Steps>
+
+## Adding a sub-item to a category
+
+<Steps>
+  <Step title="Find the parent card">
+    Locate the category card you want to add a sub-item to.
+  </Step>
+  <Step title="Click the plus icon">
+    Click the **\+** button in the top-right corner of the card header (labelled "Tambah Sub-item"). This opens the **Tambah Sub-Metadata** modal with the parent category already set.
+  </Step>
+  <Step title="Fill in the fields">
+    Enter the **Nama Metadata** (required) and, if needed, the **Nama Lain** for the new sub-item.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The sub-item appears in the table inside the parent card.
+  </Step>
+</Steps>
+
+<Tip>
+  Use **Nama Lain** for abbreviations or code names that other parts of the application may display in compact views. For example, a sub-item with `name` = "Badan Pusat Statistik Kabupaten Lahat" could have `name2` = "BPS Kab. Lahat".
+</Tip>
+
+## Editing a category or sub-item
+
+<Steps>
+  <Step title="Open the action menu">
+    Click the three-dot (**⋯**) icon on the category card header (to edit the category itself) or on the sub-item row inside the card.
+  </Step>
+  <Step title="Click Edit Data">
+    The **Edit Metadata** modal opens, pre-filled with the current `name` and `name2` values.
+  </Step>
+  <Step title="Update the fields">
+    Change **Nama Metadata** or **Nama Lain** as needed.
+  </Step>
+  <Step title="Save">
+    Click **Simpan** (the modal submit button). A green notice confirms the update.
+  </Step>
+</Steps>
+
+## Deleting a category or sub-item
+
+<Steps>
+  <Step title="Open the action menu">
+    Click the three-dot icon on the category card or sub-item row.
+  </Step>
+  <Step title="Click Hapus Data">
+    A confirmation dialog appears: "Apakah Anda yakin ingin menghapus metadata \[name\]? Tindakan ini tidak dapat dibatalkan."
+  </Step>
+  <Step title="Confirm">
+    Click the confirm button to permanently delete the entry.
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting a **category** also removes all of its sub-items. There is no undo. If other modules reference a deleted entry, the corresponding dropdowns will be missing that value until you recreate it.
+</Warning>
+
+## Why metadata matters
+
+Metadata entries are the source of truth for reference lists across Simentor. When a form anywhere in the application offers a dropdown — for example a list of organisational positions, unit types, or classification labels — that list is populated from the metadata tree managed on this page.
+
+Keeping metadata accurate and up to date ensures that:
+
+- Staff can select the correct values in forms without typing free text
+- Reports and filters that group data by these reference values remain consistent
+- New categories and values can be introduced without developer intervention
+
+<Accordion title="What happens if I edit a metadata name that is already in use?">
+  Changing the `name` of an entry updates the display label immediately across all dropdowns that load from the metadata tree. Existing records that stored a reference to the old entry by ID are unaffected — they will display the updated name the next time they are loaded. If other records store the name as plain text rather than an ID, those stored values will not be updated automatically.
+</Accordion>
+
+<Accordion title="Can I add more than two levels of hierarchy?">
+  The current metadata structure supports two levels: a parent category and its direct children. Deeper nesting (grandchildren) is not supported through the Metadata management interface.
+</Accordion>

@@ -1,0 +1,161 @@
+---
+title: "User Accounts: Create, Edit, and Remove Staff Access"
+description: "Add new staff accounts, assign roles and permissions, reset passwords, and delete accounts from the /admin/pengguna page. Requires the super-admin role."
+---
+
+The **Manajemen Pengguna** page at `/admin/pengguna` is your central workspace for managing every login account in Simentor. From here you can add new staff members, assign their roles and permissions, reset passwords, and remove accounts that are no longer needed. This page is accessible only to users holding the `super-admin` role.
+
+<Note>
+  Only users with the `super-admin` role can access `/admin/pengguna`. Attempting to visit this page with any other role will result in an access denied error.
+</Note>
+
+## The user list
+
+When you open the page you see a summary bar showing four quick-stat cards — **Total Pengguna**, **Aktif**, **Admin**, and the count for the currently active tab — followed by the main user table.
+
+The table has two tabs:
+
+| Tab | Description |
+| --- | --- |
+| **Organik** | Internal staff accounts (pegawai internal dan staf kantor) |
+| **Mitra** | Field partner accounts and external users (mitra lapangan dan pengguna eksternal) |
+
+Each row in the table contains:
+
+| Column | Content |
+| --- | --- |
+| (checkbox) | Select the row for bulk operations |
+| **Pengguna** | Full name and email address |
+| **Peran** | The user's primary role (e.g. `super-admin`, `katim`, `staf`, `mitra`) |
+| **Status** | Account status (e.g. `aktif`) |
+| **Izin** | Up to two granular permissions shown inline; the remainder are summarised as `+N` |
+| **Login Terakhir** | The date and time of the user's last activity |
+| **Aksi** | Three-dot menu for per-row actions |
+
+## Searching and filtering
+
+The search bar above the table filters by user name in real time as you type — there is a 300 ms debounce, so results appear a moment after you stop typing.
+
+<Steps>
+  <Step title="Switch to the correct tab">
+    Click **Organik** to search internal staff, or **Mitra** to search partner accounts.
+  </Step>
+  <Step title="Type in the search box">
+    Enter any part of the user's name in the **Pencarian** field. The placeholder text shows the active tab (e.g. "Cari pengguna organik...").
+  </Step>
+  <Step title="Clear the filter">
+    Click **Reset** to clear the search term and restore the full list.
+  </Step>
+  <Step title="Reload fresh data">
+    Click **Muat Ulang** to force a fresh fetch from the server, discarding any cached results.
+  </Step>
+</Steps>
+
+The table is paginated (10 rows per page). Use the **Sebelumnya** and **Berikutnya** buttons at the bottom of the table to navigate between pages.
+
+## Creating a new user
+
+<Steps>
+  <Step title="Open the form">
+    Click the **Tambah Pengguna** button in the top-right corner of the page header.
+  </Step>
+  <Step title="Fill in the required fields">
+    The **Tambah Pengguna** modal contains:
+
+    | Field | Required | Notes |
+    | --- | --- | --- |
+    | **Nama Lengkap** | Yes | The user's display name |
+    | **Email** | Yes | Must be a valid email address |
+    | **Password** | Yes | Mandatory for new accounts |
+    | **Peran** | No | Select one or more roles from the checkbox list |
+    | **Izin Akses** | No | Granular permissions; only editable by `super-admin` |
+  </Step>
+  <Step title="Assign roles (optional)">
+    Under **Peran**, tick one or more roles from the scrollable list. A user can hold multiple roles simultaneously. Roles you assign here control which pages and features the user can access.
+  </Step>
+  <Step title="Assign granular permissions (optional)">
+    If the account needs access beyond what its role provides, tick individual items under **Izin Akses**. This section is only active when you are logged in as `super-admin`; the checkboxes are disabled for all other roles.
+  </Step>
+  <Step title="Save the account">
+    Click **Simpan**. A green success notice ("Pengguna berhasil ditambahkan.") confirms the account was created.
+  </Step>
+</Steps>
+
+<Warning>
+  If you leave **Nama Lengkap**, **Email**, or **Password** empty and click **Simpan**, the system will show a validation error and refuse to save. All three fields are required when creating a new account.
+</Warning>
+
+## Editing a user or resetting their password
+
+<Steps>
+  <Step title="Open the action menu">
+    Click the three-dot (**⋯**) icon in the **Aksi** column for the user you want to change.
+  </Step>
+  <Step title="Click Edit Pengguna">
+    The same form modal opens, pre-filled with the user's current **Nama Lengkap**, **Email**, **Peran**, and **Izin Akses**.
+  </Step>
+  <Step title="Make your changes">
+    Update any field. To reset the password, type a new value in the **Password Baru** field. Leave it blank to keep the existing password unchanged.
+  </Step>
+  <Step title="Save">
+    Click **Perbarui**. A green notice ("Pengguna berhasil diperbarui.") confirms the change.
+  </Step>
+</Steps>
+
+<Tip>
+  You can also manage a user's granular permissions independently of the edit modal. From the action menu, choose **Kelola Izin Akses** to open a dedicated permissions dialog where you can toggle individual permissions and save with **Simpan Izin**.
+</Tip>
+
+## Deleting a user
+
+<Steps>
+  <Step title="Open the action menu">
+    Click the three-dot icon next to the user you want to remove.
+  </Step>
+  <Step title="Click Hapus Pengguna">
+    A confirmation dialog appears: "Yakin ingin menghapus akun \[name\]? Tindakan ini tidak dapat dibatalkan."
+  </Step>
+  <Step title="Confirm deletion">
+    Click **Hapus** to permanently delete the account. Click the X or dismiss the dialog to cancel.
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting a user is permanent. There is no undo or recycle bin. Make sure the account is no longer needed before proceeding.
+</Warning>
+
+## Bulk role assignment
+
+When you need to apply the same set of roles to multiple users at once:
+
+<Steps>
+  <Step title="Select users">
+    Tick the checkboxes next to each user you want to update. You can also tick the header checkbox to select every user on the current page.
+  </Step>
+  <Step title="Open the bulk update panel">
+    A sticky action bar appears at the bottom of the screen showing how many users are selected. Click **Bulk Update Roles**.
+  </Step>
+  <Step title="Choose roles">
+    In the **Bulk Update Roles** modal, tick one or more roles from the list.
+  </Step>
+  <Step title="Apply">
+    Click **Terapkan Roles**. The selected roles are assigned to all chosen users simultaneously.
+  </Step>
+</Steps>
+
+<Note>
+  Bulk update replaces the role assignment for the selected users. Roles that were not ticked in the modal are removed. Review your selection carefully before clicking **Terapkan Roles**.
+</Note>
+
+## Role badge colours
+
+Each role displays with a coloured badge in the **Peran** column for quick visual reference:
+
+| Role | Badge colour |
+| --- | --- |
+| `super-admin` | Red |
+| `kepala` | Purple |
+| `katim` | Blue |
+| `admin` | Orange |
+| `mitra` | Emerald |
+| `staf` | Emerald |

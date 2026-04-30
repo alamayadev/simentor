@@ -1,0 +1,260 @@
+---
+title: "Pencairan: Disbursement, History, Integrity, and Import"
+description: "Record SP2D disbursements manually or via SAKTI FA, review transaction history, fix orphaned records with the Merge tool, and import DIPA revision files."
+---
+
+This page covers the four sub-sections of the RKK DIPA module that deal with recording and maintaining actual expenditure data: **Pencairan** (recording disbursements), **Riwayat Pencairan** (transaction history), **Integritas Data** (orphan detection and merging), and **Revisi & Import Data** (uploading DIPA revisions and SAKTI reports).
+
+---
+
+## Pencairan — Recording disbursements
+
+The Pencairan page at `/umum/rkk-dipa/pencairan` is where you log that an SP2D payment has been made against a budget item. You can enter records manually or pull them from SAKTI FA.
+
+### Summary cards
+
+Three cards at the top of the manual entry form give you context:
+
+| Card | Description |
+| --- | --- |
+| **Total Realisasi** | The cumulative disbursed amount across all recorded transactions. |
+| **Transaksi Tercatat** | The total count of disbursement records in the system. |
+| **Tanggal Input** | The date currently selected in the realization date field, formatted in long Indonesian date format. |
+
+### Recording a disbursement manually
+
+<Steps>
+  <Step title="Switch to the Manual tab">
+    On the Pencairan page, the **Manual** tab is active by default. If you are on the **Dari Sakti FA** tab, click **Manual** to return.
+  </Step>
+  <Step title="Find the budget item">
+    Type at least 3 characters in the **Pilih Sumber Budget** search field. Each result shows the item code, description, approved pagu, and funding source. Click a card to select it.
+  </Step>
+  <Step title="Enter transaction details">
+    Fill in the **Rincian Transaksi** panel on the right:
+
+    - **Jumlah Pencairan (Rp)** — The disbursed amount in full rupiah.
+    - **Tanggal Realisasi** — The SP2D realization date. Defaults to today.
+  </Step>
+  <Step title="Save">
+    Click **Simpan Realisasi**. The button stays disabled until a budget item is selected and a positive amount is entered. A green banner confirms success. Click **Reset** to clear the form without saving.
+  </Step>
+</Steps>
+
+<Warning>
+  Saved disbursement records immediately affect the **Total Realisasi** and **Sisa Anggaran** figures on the Monitoring page. Double-check the amount and date before saving.
+</Warning>
+
+### Synchronizing from SAKTI FA
+
+If your office uses SAKTI as its official financial accounting system, you can pull disbursement data from it rather than typing each transaction by hand.
+
+<Steps>
+  <Step title="Switch to the Dari Sakti FA tab">
+    Click the **Dari Sakti FA** tab on the Pencairan page.
+  </Step>
+  <Step title="Set the fiscal year and disbursement month">
+    Enter the **Tahun Anggaran** and select the **Bulan Pencairan** using the month picker.
+  </Step>
+  <Step title="Check data availability">
+    Click **Cek Data FA SAKTI**. Simentor queries the SAKTI integration and displays a preview card showing:
+
+    - **Usage Date** — the period identifier returned by SAKTI.
+    - **Jumlah Baris** — the number of data rows found.
+    - **Total Nilai** — the total disbursement value for that period in IDR.
+  </Step>
+  <Step title="Synchronize">
+    Review the summary, then click **Sinkronisasi Realisasi Sakti**. Simentor processes the SAKTI data, matches each row to the corresponding budget item in your DIPA, and saves the records. A success card confirms the period, row count, and total amount that were imported.
+
+    Any existing records for the same period are replaced during synchronization.
+  </Step>
+</Steps>
+
+<Note>
+  Transactions imported from SAKTI are labelled with a "sakti" badge in the history view, so you can distinguish them from manually entered records.
+</Note>
+
+### Recent transactions panel
+
+Beneath the form, the **Transaksi Terakhir** panel shows the 5 most recent disbursement records regardless of which tab is active. Each entry displays the budget item key, transaction description, disbursed amount, and realization date.
+
+---
+
+## Riwayat Pencairan — Disbursement history
+
+The Riwayat page at `/umum/rkk-dipa/riwayat` gives you a full paginated history of all disbursement transactions with filtering and, for authorized users, inline editing.
+
+### Summary cards
+
+Four cards at the top provide totals before and after any filters are applied:
+
+| Card | Description |
+| --- | --- |
+| **Total Transaksi** | Total count of all disbursement records across all time. |
+| **Total Nilai (Semua)** | Sum of all disbursed amounts regardless of active filters. |
+| **Transaksi (Filter)** | Count of records matching the active filters. |
+| **Nilai (Filter)** | Sum of disbursed amounts for the filtered records. |
+
+### Filtering transactions
+
+The filter bar lets you narrow the history table by several dimensions simultaneously:
+
+- **Program** — Select a program name from the dropdown. Selecting a program enables the Output filter.
+- **Output** — Narrows within the selected program. Disabled until a program is chosen.
+- **Dari Tanggal** — Start date for the date range filter.
+- **Sampai Tanggal** — End date for the date range filter.
+
+Filters combine — selecting a program and a date range returns only transactions that match both. When any filter is active, a **Reset Filter** button appears to clear all filters at once.
+
+### History table columns
+
+| Column | Description |
+| --- | --- |
+| **Tanggal** | The SP2D realization date, plus a source badge ("manual" or "sakti"). |
+| **Budget Key** | The budget item key in monospaced font. |
+| **Deskripsi** | Description of the transaction (truncated if long). |
+| **Jumlah Pencairan** | The disbursed amount in full IDR, right-aligned. |
+
+The table shows 20 rows per page. Use **Sebelumnya** and **Berikutnya** to paginate. The footer shows which records are displayed (e.g., "1–20 dari 87 data").
+
+### Editing and deleting records
+
+Users with the `katim` role see an edit (pencil) and delete (trash-can) button on every row:
+
+- **Edit** — Opens an inline field to correct the disbursed amount. Enter the corrected amount and press confirm. The monitoring totals recalculate automatically.
+- **Delete** — Shows a confirmation modal before permanently removing the record. This action cannot be undone.
+
+<Warning>
+  All other users see "Read only" instead of action buttons. If you need to correct a record and cannot see the edit button, contact a user with the `katim` role.
+</Warning>
+
+### SAKTI reconciliation tab
+
+The **Rekonsiliasi SAKTI** tab on the Riwayat page lets you compare Simentor's internal disbursement records against the official SAKTI figures. The reconciliation table shows:
+
+| Column | Description |
+| --- | --- |
+| **Segmen / Key** | The budget item key identifying the line item. |
+| **Deskripsi** | The activity description for that key. |
+| **Internal (Simentor)** | Total amount recorded in Simentor. |
+| **Official (SAKTI)** | Total amount from the imported SAKTI report. |
+| **Selisih** | The difference. Displayed in red when non-zero, green when the two figures match exactly. |
+
+If the table is empty, SAKTI data has not been imported for the current fiscal year. Use **Revisi & Import Data** to upload a SAKTI FA report.
+
+---
+
+## Integritas Data — Orphan detection and merging
+
+The Integritas Data page at `/umum/rkk-dipa/integritas` detects **orphaned transactions** — disbursement records whose budget item reference no longer exists in the current DIPA revision. This typically happens after a DIPA revision renames a budget item or changes its unique code.
+
+### How to check data integrity
+
+Click **Periksa Integritas** in the page header. Simentor scans all disbursement records and checks them against the current DIPA master data.
+
+**If integrity is 100%:** A green shield banner confirms that all transactions are linked to valid budget items. No action is needed.
+
+**If orphans are detected:** A red warning banner lists the count of unlinked budget item keys. Below it, the orphan table appears:
+
+| Column | Description |
+| --- | --- |
+| **Old Budget Key** | The budget item key that no longer exists in the current DIPA revision. |
+| **Deskripsi Terakhir** | The last description used for this key before the revision. |
+| **Total Lost Amount** | The sum of all disbursed amounts on orphaned transactions, shown in red. |
+| **Jml Trx** | The count of affected transactions. |
+| **Aksi Resolusi** | A **Petakan Ulang** button to open the merge modal. |
+
+### Resolving an orphan with Merge
+
+<Steps>
+  <Step title="Open the merge modal">
+    Click **Petakan Ulang** next to the orphaned item. The modal shows the old budget item key and its last known description in a red "Item Sumber (Lama)" panel.
+  </Step>
+  <Step title="Search for the replacement item">
+    In the search field, type at least 3 characters to find the new budget item in the current DIPA revision. Each result shows the item code, description, and approved pagu.
+  </Step>
+  <Step title="Select the target item">
+    Click the correct item from the results. A green "Target Terpilih" preview panel confirms your selection, showing the item's description and pagu.
+  </Step>
+  <Step title="Confirm the merge">
+    Click **Konfirmasi Merge**. Simentor re-links the orphaned transactions to the new budget item. The monitoring page will now include those transactions in the correct budget item's realisasi total.
+  </Step>
+</Steps>
+
+<Note>
+  The merge operation is reversible only by importing a DIPA revision that restores the original key, or by performing another merge back. Review your selection carefully before confirming.
+</Note>
+
+### Why orphans occur
+
+Each DIPA revision may change item names or their unique codes. When Simentor imports a new revision, any existing transaction that references an old code becomes "orphaned" because the key no longer maps to an active budget item. Without a merge, those amounts are excluded from monitoring totals, causing realisasi figures to appear lower than they actually are.
+
+---
+
+## Revisi & Import Data — Upload and synchronize
+
+The Revisi & Import Data page at `/umum/rkk-dipa/revisi-import` is restricted to users with the `katim` role. It provides two upload workflows: importing a new DIPA revision file, and importing a SAKTI FA realization report.
+
+<Warning>
+  This page is only visible and accessible to accounts with the `katim` role. Standard staff accounts do not have access to this section.
+</Warning>
+
+### Importing a new DIPA revision
+
+<Steps>
+  <Step title="Select the RKK DIPA tab">
+    On the Import & Sinkronisasi page, ensure the **RKK DIPA** tab is active.
+  </Step>
+  <Step title="Fill in revision metadata">
+    Complete the three fields in the upload form:
+
+    - **Tahun Anggaran** — The fiscal year for this DIPA (e.g., 2025).
+    - **Revisi Ke-** — The revision number (e.g., `1` for the first revision, `2` for the second).
+    - **Tanggal Revisi** — The official date of the revision.
+
+    Simentor shows a preview of the expected filename, for example `RKK_DIPA_REVISI_2_2025_MAR_15.xlsx`, to help you confirm the metadata before uploading.
+  </Step>
+  <Step title="Select the Excel file">
+    Click the dropzone (or drag a file onto it) to select your DIPA Excel file. Accepted formats are `.xlsx` and `.xls`. The selected filename appears below the dropzone icon.
+  </Step>
+  <Step title="Process the import">
+    Click **Proses Ingest RKK DIPA**. Simentor parses the file and updates the budget master data. When complete, a log panel shows the import results. Any errors are displayed in a red message box.
+  </Step>
+</Steps>
+
+The **Log Terakhir DIPA** panel on the right shows a table of previous import records with columns for **Waktu** (import timestamp), **Tahun** (fiscal year), and **Nama File** (filename).
+
+### Importing SAKTI FA data
+
+<Steps>
+  <Step title="Switch to the SAKTI FA tab">
+    Click the **SAKTI FA** tab on the Import & Sinkronisasi page.
+  </Step>
+  <Step title="Enter fiscal year and disbursement month">
+    Set **Tahun Anggaran** and select the **Bulan Pencairan** using the month picker.
+  </Step>
+  <Step title="Select the SAKTI report file">
+    Click the dropzone to select the FA Detail report exported from SAKTI. The file must be in `.xlsx` or `.xls` format. Simentor expects the **Laporan FA Detail (16 Segmen)** cumulative format.
+  </Step>
+  <Step title="Run the sync">
+    Click **Sync Data Realisasi SAKTI**. Simentor processes the SAKTI report and matches each row to the corresponding budget item in your DIPA. Existing SAKTI records for the same fiscal year are replaced. A log panel confirms the result on success.
+  </Step>
+</Steps>
+
+<Note>
+  After a SAKTI import completes, check the **Rekonsiliasi SAKTI** tab under Riwayat Pencairan to verify that the imported totals match what you expect from your official SAKTI reports. Any non-zero **Selisih** values indicate a discrepancy that may need investigation.
+</Note>
+
+<AccordionGroup>
+  <Accordion title="What if the DIPA import shows errors?">
+    Common causes include an incorrect file format (the file must be the official Excel template for DIPA), mismatched column headers, or a fiscal year that already has an identical import hash. Check the log panel for the specific error message, verify the file is the correct template, and try again with the correct revision metadata.
+  </Accordion>
+
+  <Accordion title="What if the SAKTI sync finds zero rows?">
+    This usually means the report file is for a period with no activity, or the report type is not the 16-Segment FA Detail cumulative format. Make sure you are exporting the correct report from SAKTI before uploading.
+  </Accordion>
+
+  <Accordion title="Do imports overwrite previous data?">
+    For DIPA imports, each upload adds a new revision record; earlier revisions remain in the log but the latest import becomes the active budget master. For SAKTI imports, data for the same fiscal year is replaced with each new upload. Disbursement records entered manually are not affected by either import type.
+  </Accordion>
+</AccordionGroup>

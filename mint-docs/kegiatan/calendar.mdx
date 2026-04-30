@@ -1,0 +1,96 @@
+---
+title: "Activity Calendar: View Scheduled Activities by Month"
+description: "Navigate the monthly activity calendar in Simentor, filter by active, upcoming, or completed status, and read the details on each activity card."
+---
+
+The Activity Calendar at `/kegiatan/kalender` presents all scheduled office activities as cards grouped by their execution status. Instead of reading a long table, you can see at a glance which activities are running this month, which are coming up soon, and which have already finished — all in a layout you can navigate month by month.
+
+## Navigating months
+
+The top of the page shows a navigation panel with the active month and year. Use the arrow buttons to move between months:
+
+- **‹** (left arrow) — move to the previous month
+- **›** (right arrow) — move to the next month
+
+When you switch months, the activity data reloads automatically for the selected period. The calendar has no year boundary, so you can browse historical activity schedules or plan ahead for upcoming months.
+
+<Tip>
+  Check the calendar at the start of each month to see which activities are running alongside those about to begin. This helps you prepare officer assignments earlier.
+</Tip>
+
+## Status tabs
+
+After selecting a month, three tabs filter the activity cards by status:
+
+<Tabs>
+  <Tab title="Berjalan (Active)">
+    Shows activities whose start and end dates span the selected month — meaning these activities are actively running during that period.
+
+    The count of active activities is shown as a small number next to the tab label.
+  </Tab>
+  <Tab title="Akan Datang (Upcoming)">
+    Shows activities that have not yet started in the selected month — their start date is in the future relative to that month.
+
+    Use this tab to plan officer assignments before the activity begins.
+  </Tab>
+  <Tab title="Selesai (Completed)">
+    Shows activities whose end date has passed relative to the selected month.
+
+    Useful for reviewing what has been completed and verifying that all assignments were recorded.
+  </Tab>
+</Tabs>
+
+## Activity cards
+
+Each activity is displayed as a card with the following information:
+
+| Field | Description |
+| --- | --- |
+| **Activity name** | Full name of the activity, shown at the top of the card |
+| **Function** | The statistical function (Sosial, Produksi, etc.) with a colour dot for quick identification |
+| **Date range** | Start and end dates of the activity |
+| **Volume** | The target volume and unit (e.g. `250 Ruta` or `45 BS`) |
+| **Assignments** | Total volume already allocated to officers through the Penugasan page |
+
+### Function colour codes
+
+The coloured dot on each card indicates the activity's statistical function:
+
+| Function | Colour |
+| --- | --- |
+| Umum | Grey |
+| Distribusi | Amber |
+| Produksi | Blue |
+| Sosial | Green |
+| Nerwilis | Purple |
+| IPDS | Orange |
+
+## Understanding volume and assignment numbers
+
+Each card shows two coverage figures:
+
+- **Volume** is the total target the activity must reach (e.g. 250 households)
+- **Assignments** is the total volume already assigned to officers through the Penugasan page
+
+If the Assignments figure is much lower than Volume, there are remaining targets that have not yet been assigned to any officer.
+
+<Note>
+  The assignments figure on the calendar is the sum of all assignment volumes for that activity. It reflects planned coverage, not actual field progress. For real-time field progress, use the [Monitoring](/kegiatan/monitoring) page.
+</Note>
+
+## Pagination
+
+If the number of activities in one tab exceeds the per-page limit, pagination controls appear below the card grid. You can:
+
+- Select the number of cards per page: **10**, **20**, or **50**
+- Move between pages using the left and right arrow buttons
+
+The label "Menampilkan X – Y dari Z data" tells you your current position in the list.
+
+## Creating activities
+
+The Calendar view is read-only — you cannot add activities directly from this page. To create a new activity, go to the [Kegiatan overview](/kegiatan/overview) and click **Tambah Kegiatan**. Once saved, the activity will appear on the calendar in the months covered by its start and end dates.
+
+<Tip>
+  The Calendar is especially useful for presenting a progress overview to management. Navigate to the relevant month and open the **Berjalan** tab to show all active activities alongside their volumes and assignment coverage.
+</Tip>

@@ -1,0 +1,94 @@
+---
+title: "Contractual Monitoring: Spot Missing Docs and Alerts"
+description: "Review active mitra contracts for missing SPK, missing BAST, or values above Rp 4 million. Use the three alert tabs and export flagged records to XLSX."
+---
+
+The **Monitoring Kontrak** page at `/kontraktual/monitoring` gives you an at-a-glance view of contracts that require attention. Rather than showing every record, it surfaces only the entries that fall into one of three alert categories — making it easy to spot missing documents or contracts that exceed value thresholds before they become compliance issues.
+
+## Summary statistics
+
+Four stat cards at the top of the page update in real time as you switch tabs or change the month filter:
+
+| Card | Description |
+| --- | --- |
+| **Total Data** | Total records matching the current tab and filter |
+| **Tampil Saat Ini** | Number of records visible on the current page |
+| **Tanpa Dokumen** | Records on the current page where either the SPK or BAST number is missing |
+| **Di Atas 4JT** | Records on the current page where the contract value exceeds Rp 4,000,000 |
+
+<Note>
+  The **Tanpa Dokumen** and **Di Atas 4JT** counts reflect only the rows currently loaded on the page, not the entire dataset. Navigate through pages or reduce the filter scope to get a complete picture.
+</Note>
+
+## Alert tabs
+
+The table is divided into three tabs. Each tab queries a different subset of your contract data:
+
+<Tabs>
+  <Tab title="Tanpa SPK">
+    ### Tanpa SPK — contracts without a work order
+
+    Shows mitra–month records where no SPK number has been issued yet. These contracts have been registered in the system but the work order document is still pending. Review this tab regularly at the start of each payment period to ensure all active contractors have a valid work order before work begins.
+
+    The table displays:
+
+    | Column | Description |
+    | --- | --- |
+    | **Nama** | Full name of the partner |
+    | **Posisi** | Partner's position or role |
+    | **Bulan Bayar** | Payment month for this contract |
+    | **Total** | Contract value formatted in IDR |
+    | **SPK/BAST** | Displays the existing SPK or BAST number if available |
+  </Tab>
+  <Tab title="Tanpa BAST">
+    ### Tanpa BAST — contracts awaiting acceptance
+
+    Shows records where no BAST has been issued yet. These contracts already have an SPK but have not yet been formally accepted. The **SPK/BAST** column on this tab displays the SPK number so you can verify which work order corresponds to the pending acceptance.
+
+    Check this tab after each activity period closes to confirm all completed work has been signed off.
+  </Tab>
+  <Tab title="Diatas 4JT">
+    ### Diatas 4JT — contracts above the value threshold
+
+    Shows records where the contract value (`total`, `nilai`, or `nominal`) exceeds Rp 4,000,000. This tab helps you identify contracts that may require additional review or approval under procurement regulations before payment is processed.
+
+    The **Total** column highlights these values; cross-reference with the SPK and BAST status to ensure all required documents are in place.
+  </Tab>
+</Tabs>
+
+## Filtering by payment month
+
+Use the **Filter Bulan** dropdown in the tab bar to restrict results to a specific payment month. The dropdown lists all months for which records exist. Selecting **Semua Bulan** removes the month constraint and shows all matching records across all periods.
+
+Switching tabs or changing the month filter automatically resets the page back to page 1.
+
+## Navigating to SPK/BAST detail records
+
+The monitoring table intentionally provides a read-only overview. To take action on a flagged contract — such as setting an SPK date or recording a BAST — navigate to the **SPK & BAST** page:
+
+<Steps>
+  <Step title="Note the mitra name and payment month">
+    From the monitoring table, identify the **Nama** and **Bulan Bayar** values for the record you want to update.
+  </Step>
+  <Step title="Go to the SPK & BAST page">
+    Navigate to **Kontraktual → SPK & BAST** (`/kontraktual/spk-bast`).
+  </Step>
+  <Step title="Apply the month filter">
+    Set the **Filter Bulan Bayar** dropdown to the payment month you noted. This narrows the table to that period.
+  </Step>
+  <Step title="Locate and select the record">
+    Find the mitra row in the filtered table, tick the checkbox, and use **Bulk SPK** or **Bulk BAST** to apply the appropriate date.
+  </Step>
+</Steps>
+
+<Tip>
+  For large periods with many flagged records, use the **Tanpa SPK** tab in monitoring to identify the full list, export it using **Ekspor XLSX** (see below), then work through the exported list systematically on the SPK & BAST page.
+</Tip>
+
+## Exporting monitoring data
+
+Click **Ekspor XLSX** in the page header to download the current tab's data as an Excel file. The export respects the active tab and the selected month filter, so switch to the relevant tab and apply your filter before exporting.
+
+## Pagination
+
+Use **Sebelumnya** and **Berikutnya** to page through results. The footer shows the current page, total pages, and total record count for the active tab and filter combination.

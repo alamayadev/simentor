@@ -1,0 +1,60 @@
+---
+title: "RKK DIPA: Budget Management and Monitoring Overview"
+description: "Learn how Simentor's RKK DIPA module helps you track budget ceilings, plan disbursements, and monitor realization against your DIPA allocation."
+---
+
+The RKK DIPA module is Simentor's central workspace for managing your office's **Daftar Isian Pelaksanaan Anggaran** (Budget Implementation List). It connects every stage of the budget cycle — from setting monthly disbursement plans to recording actual SP2D transactions — and surfaces the numbers you need to stay on top of pagu, realisasi, and sisa anggaran without switching between spreadsheets.
+
+## What you can do in this module
+
+The module is divided into six sub-sections, each covering a distinct part of the budget management workflow:
+
+<CardGroup cols={2}>
+  <Card title="Monitoring" icon="chart-bar" href="/rkk-dipa/monitoring">
+    View summary cards and a bar chart comparing monthly realisasi against rencana. Switch to the detail table for a row-by-row breakdown of pagu, realisasi, sisa, and serapan per budget item.
+  </Card>
+
+  <Card title="Perencanaan" icon="calendar-days" href="/rkk-dipa/planning">
+    Record and manage monthly disbursement plans linked to specific budget items. View your plan data in both a monthly list and an annual spreadsheet-style grid.
+  </Card>
+
+  <Card title="Pencairan" icon="coins" href="/rkk-dipa/disbursement">
+    Input disbursement realization records manually or synchronize data directly from the SAKTI FA system. Each record captures the budget item key, amount, and realization date.
+  </Card>
+
+  <Card title="Riwayat Pencairan" icon="clock-rotate-left" href="/rkk-dipa/disbursement">
+    Browse the full history of disbursement transactions with filters for date range, program, and output. Users with the `katim` role can edit or delete individual records.
+  </Card>
+
+  <Card title="Integritas Data" icon="shield-check" href="/rkk-dipa/disbursement">
+    Detect and resolve orphaned transactions — realization records whose budget item keys no longer exist in the current DIPA revision. Use the Merge tool to re-link them.
+  </Card>
+
+  <Card title="Revisi & Import Data" icon="upload" href="/rkk-dipa/disbursement">
+    Upload a new DIPA revision Excel file to update the budget master data, or import a SAKTI FA realization report for reconciliation. **Restricted to the `katim` role.**
+  </Card>
+</CardGroup>
+
+## Key concepts
+
+| Term | Meaning |
+| --- | --- |
+| **Pagu** | The approved budget ceiling for a given budget item or component. |
+| **Realisasi** | Actual expenditure recorded against the budget (from SP2D transactions). |
+| **Sisa Anggaran** | Remaining budget — the difference between pagu and realisasi. |
+| **Serapan** | Budget absorption rate, expressed as a percentage of pagu. |
+| **Rencana** | The planned disbursement amount you enter for a given month. |
+| **SP2D** | Surat Perintah Pencairan Dana — the payment order that triggers a disbursement. |
+| **SAKTI FA** | The government's official financial accounting system. Simentor can sync realization data directly from it. |
+
+## Currency display
+
+All monetary values in this module use Indonesian Rupiah (IDR). Full amounts are displayed with the `Rp` prefix and thousand separators (for example, **Rp 125.000.000**). Summary charts use the abbreviated **jt** (juta = million) format for readability on the Y-axis.
+
+## Role-based access
+
+Most users can view monitoring data, create planning entries, and record disbursements. The **Revisi & Import Data** sub-section — which uploads new DIPA revision files and SAKTI FA reports — is restricted to accounts with the `katim` role. If you do not see that menu item, your role does not include import permissions.
+
+<Note>
+  If a menu item is missing or you see an "Access Denied" message, ask your Simentor administrator to review your assigned role.
+</Note>

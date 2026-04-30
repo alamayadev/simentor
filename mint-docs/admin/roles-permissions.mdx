@@ -1,0 +1,181 @@
+---
+title: "Roles and Permissions — Access Control in Simentor"
+description: "Manage roles at /admin/peran and granular permissions at /admin/izin. Understand the built-in role hierarchy and route-based access guards."
+---
+
+Simentor uses role-based access control (RBAC). Roles are broad groupings that determine which pages a user can navigate to; permissions are fine-grained flags that control individual actions within those pages. Both are managed exclusively by `super-admin` users — the **Manajemen Peran** page lives at `/admin/peran` and the **Izin Akses** page lives at `/admin/izin`.
+
+<Note>
+  Both `/admin/peran` and `/admin/izin` are restricted to the `super-admin` role. Any other role will be denied access.
+</Note>
+
+## Built-in roles and what they can access
+
+Simentor ships with the following roles. You can create additional custom roles, but these three cover the most common staff structures in a public-sector statistical office:
+
+<CardGroup cols={3}>
+  <Card title="super-admin" icon="shield-halved">
+    Full access to every page and every action in Simentor, including all four admin sections (`/admin/pengguna`, `/admin/peran`, `/admin/izin`, `/admin/metadata`). The `super-admin` role bypasses all route guards — if a user has this role, additional role checks are never evaluated.
+  </Card>
+  <Card title="katim" icon="users">
+    Team lead role. Has access to all standard authenticated routes, plus two restricted areas: the raw data bank at `/bank-data/raw` and the DIPA revision import at `/umum/rkk-dipa/revisi-import`. Cannot access admin pages.
+  </Card>
+  <Card title="staf / mitra" icon="user">
+    Standard access. Can reach all pages that do not appear in the route guard table. Cannot access admin pages, `/bank-data/raw`, or `/umum/rkk-dipa/revisi-import`.
+  </Card>
+</CardGroup>
+
+## Route access matrix
+
+The table below shows every route that requires a specific role. All other authenticated routes are open to any logged-in user.
+
+| Route | Required role(s) | Notes |
+|-------|-----------------|-------|
+| `/admin/pengguna` | `super-admin` | User management |
+| `/admin/peran` | `super-admin` | Role management |
+| `/admin/izin` | `super-admin` | Permission management |
+| `/admin/metadata` | `super-admin` | Metadata management |
+| `/bank-data/raw` | `katim` | Raw data bank |
+| `/umum/rkk-dipa/revisi-import` | `katim` | DIPA revision import |
+| All other authenticated routes | Any logged-in user | No additional role required |
+
+<Note>
+  The `super-admin` role is a universal bypass. A `super-admin` user can access every route in the table, including `katim`-only routes, without also holding the `katim` role.
+</Note>
+
+## Managing roles at /admin/peran
+
+Roles are displayed as cards in a responsive grid (up to three columns). Each card shows the role name, ID, guard (`web`), how many users hold the role, and up to five of its assigned permissions.
+
+### Creating a role
+
+<Steps>
+  <Step title="Open the form">
+    Click **Tambah Peran** in the page header.
+  </Step>
+  <Step title="Enter a name">
+    Type a short, lowercase identifier in the **Nama Peran** field (e.g. `admin`, `kepala`, `verifikator`). Role names must be unique.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The new role card appears in the grid immediately.
+  </Step>
+</Steps>
+
+### Editing a role name
+
+<Steps>
+  <Step title="Find the role card">
+    Locate the role you want to rename in the grid. Use the **Berikutnya** / **Sebelumnya** buttons if there are more than six roles.
+  </Step>
+  <Step title="Click the edit icon">
+    Click the pencil icon (Edit3) in the top-right corner of the role card.
+  </Step>
+  <Step title="Update the name">
+    Change the **Nama Peran** field and click **Perbarui**.
+  </Step>
+</Steps>
+
+### Deleting a role
+
+<Steps>
+  <Step title="Click the delete icon">
+    Click the red trash icon on the role card.
+  </Step>
+  <Step title="Confirm">
+    The confirmation dialog shows: "Yakin ingin menghapus peran [name]? Tindakan ini tidak dapat dibatalkan." Click **Hapus** to proceed.
+  </Step>
+</Steps>
+
+<Warning>
+  Deleting a role removes it from every user who holds it. Review which users are assigned the role (shown as "N pengguna" on the card) before deleting.
+</Warning>
+
+## Managing permissions at /admin/izin
+
+Permissions are grouped by **prefix** — a short namespace that identifies the module the permission belongs to. Each group card displays the prefix, module badge, total permission count, and a list of every individual permission inside it with its guard name.
+
+The module colours used in badges are:
+
+| Module | Badge colour |
+|--------|-------------|
+| SKP | Orange |
+| Kegiatan | Blue |
+| SPK & BAST | Emerald |
+| Umum | Amber |
+| IPDS | Purple |
+| Admin | Red |
+| System | Gray |
+
+The system infers a module from the permission prefix automatically — for example, any permission starting with `skp` is tagged as **SKP**, and `raw-data` or `asset` or `tiket` prefixes resolve to **IPDS**.
+
+### Searching permission groups
+
+Type a prefix (e.g. `raw-data`) in the **Filter Prefix** search box and click **Terapkan** to narrow the grid to matching groups. Click **Reset** to restore all groups.
+
+### Creating permissions (bulk create)
+
+When you add a new module to Simentor, use bulk create to generate a standard set of permissions for it in one step.
+
+<Steps>
+  <Step title="Open the form">
+    Click **Tambah Izin** in the page header.
+  </Step>
+  <Step title="Enter a prefix">
+    Type the module prefix in the **Prefix** field (e.g. `raw-data`). The system will create a family of permissions under that prefix automatically.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The new permission group card appears in the grid.
+  </Step>
+</Steps>
+
+<Tip>
+  Use lowercase, hyphen-separated prefixes that match the module's URL segment (e.g. `raw-data` for `/bank-data/raw`). This keeps permissions easy to trace back to the features they protect.
+</Tip>
+
+### Editing a permission name
+
+<Steps>
+  <Step title="Find the permission">
+    Locate the permission in its group card.
+  </Step>
+  <Step title="Click the edit icon">
+    Click the pencil icon to the right of the permission row.
+  </Step>
+  <Step title="Update the name">
+    Edit the **Nama Izin** field (e.g. change `raw-data-view` to `raw-data-read`) and click **Perbarui**.
+  </Step>
+</Steps>
+
+### Deleting a permission
+
+Click the red trash icon next to the permission, then confirm in the dialog. Removing a permission also removes it from every role and user it was assigned to.
+
+## Assigning permissions to roles
+
+After creating a role at `/admin/peran`, go to `/admin/pengguna` to assign permissions to individual users, or use the dedicated permissions modal:
+
+<Steps>
+  <Step title="Navigate to the user">
+    Open `/admin/pengguna` and find the user whose role you want to configure.
+  </Step>
+  <Step title="Open Kelola Izin Akses">
+    Click the three-dot menu on the user's row and choose **Kelola Izin Akses**.
+  </Step>
+  <Step title="Toggle permissions">
+    In the **Ubah Izin Akses** modal, tick or untick individual permissions from the full list.
+  </Step>
+  <Step title="Save">
+    Click **Simpan Izin** to apply the changes to that user.
+  </Step>
+</Steps>
+
+<Note>
+  Granular permissions assigned directly to a user supplement the permissions already inherited through their roles. They are displayed in the **Izin** column of the user list (up to two shown inline, with the remainder summarised as `+N`).
+</Note>
+
+## Assigning roles to users
+
+You can assign roles to individual users or in bulk. See the [User Accounts](/admin/users) page for full instructions on both workflows. In summary:
+
+- **Individual:** Open the user's edit modal from `/admin/pengguna`, tick the desired roles under **Peran**, and click **Perbarui**.
+- **Bulk:** Select multiple users with checkboxes, click **Bulk Update Roles** in the sticky action bar, choose roles, and click **Terapkan Roles**.

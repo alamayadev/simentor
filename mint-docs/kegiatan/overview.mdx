@@ -1,0 +1,80 @@
+---
+title: "Kegiatan: Create, Assign, Monitor, Evaluate Activities"
+description: "Manage official office activities in Simentor from creation to evaluation — covering field surveys, assignments, real-time monitoring, and budget reporting."
+---
+
+The Kegiatan module is your central workspace for managing every official activity run by your office — from field surveys like Susenas to data processing and administrative tasks. Each activity moves through a complete lifecycle: it is created and configured, staff or field partners (mitra) are assigned to it, it is monitored in real time, and finally evaluated based on budget absorption and execution quality.
+
+## Key concepts
+
+Before using this module, it helps to understand three building blocks.
+
+**Kegiatan** is a single official activity. Each activity has a code, name, statistical function (such as Sosial, Produksi, or Distribusi), activity type (such as Pengumpulan Data or Supervisi), a target volume and unit, a date range, and honorarium rate fields for PCL, PML, and Entri roles.
+
+**Penugasan** (assignment) links an activity to the people who carry it out. One activity can have many assignments — each recording the assigned mitra or employee, their role (PCL, PML, OPERATOR, or SUPERVISOR), the volume they are responsible for, their honorarium value, and the payment month.
+
+**Petugas** (officers / mitra) is the roster of available field personnel. From the Petugas page you can view each person's assignment history and create new assignments directly from their profile.
+
+## Activity workflow
+
+<Steps>
+  <Step title="Create a new activity">
+    Go to **Kegiatan → Daftar Kegiatan** and click **Tambah Kegiatan**. Fill in all required fields: year, function, activity code, name, start and end dates, activity type, number of officers, volume, and unit. Rate fields (PCL, PML, Entri) are optional and can be added later.
+  </Step>
+  <Step title="Assign officers">
+    Once the activity is saved, open **Kegiatan → Penugasan** and add an assignment for each officer or partner involved. Specify their role, volume, honorarium value, and payment month.
+  </Step>
+  <Step title="Monitor progress">
+    Use **Kegiatan → Monitoring** to view execution status per sample or area. Filter by function or activity and export monitoring data to Excel when needed.
+  </Step>
+  <Step title="Evaluate results">
+    Open **Kegiatan → Evaluasi** to compare budget versus absorption per function, view monthly honorarium charts, and see which partners have the highest totals.
+  </Step>
+</Steps>
+
+## Activity statuses
+
+Each activity has one of three administrative statuses:
+
+| Status | Meaning |
+| --- | --- |
+| **Berjalan** | Activity is actively being executed |
+| **Tidak Dicairkan** | Activity budget was not disbursed |
+| **Dibatalkan** | Activity was cancelled before or during execution |
+
+<Note>
+  Statuses do not change automatically based on dates. You must update an activity's status manually using the **Edit** button on the activity row.
+</Note>
+
+## Statistical functions
+
+Every activity is categorised by function for reporting and budget grouping:
+
+| Function | Covers |
+| --- | --- |
+| **Umum** | General administrative and operational activities |
+| **Distribusi** | Distribution surveys and data collection |
+| **Produksi** | Agricultural and industrial production surveys |
+| **Sosial** | Social, population, and poverty surveys (including Susenas) |
+| **Nerwilis** | Regional accounts and statistical analysis |
+| **IPDS** | Statistics processing and dissemination integration |
+
+## Pages in this module
+
+<CardGroup cols={2}>
+  <Card title="Activity List" icon="list" href="/kegiatan/monitoring">
+    Create, edit, search, and delete activities. View volume summaries, assignment counts, and honorarium rates in one table.
+  </Card>
+
+  <Card title="Monitoring" icon="chart-bar" href="/kegiatan/monitoring">
+    Track sample-level execution status in real time. Filter by function or activity, then export results to Excel.
+  </Card>
+
+  <Card title="Calendar" icon="calendar" href="/kegiatan/calendar">
+    View all activities in a monthly calendar layout. Navigate between months and filter by status: Active, Upcoming, or Completed.
+  </Card>
+
+  <Card title="Assignments & Officers" icon="users" href="/kegiatan/assignments">
+    Manage partner assignments to activities. View each officer's workload and assignment history.
+  </Card>
+</CardGroup>
