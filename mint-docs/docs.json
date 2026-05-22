@@ -57,6 +57,14 @@
             ]
           },
           {
+            "group": "IPDS",
+            "pages": [
+              "ipds/tickets",
+              "ipds/assets",
+              "ipds/bank-data"
+            ]
+          },
+          {
             "group": "Administration",
             "pages": [
               "admin/users",

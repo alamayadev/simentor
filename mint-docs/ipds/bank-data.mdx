@@ -1,0 +1,160 @@
+---
+title: "Data Bank: Upload, Archive, and Download Data Files"
+description: "Manage statistical and operational data files in SImentor's Data Bank. Raw data requires the katim role; the archive is accessible to all authenticated users."
+---
+
+The Data Bank (Bank Data) is SImentor's central repository for statistical and operational data files used by the office. It is split into two views — **Raw Data** and **Arsip Data** — each serving a different purpose and audience.
+
+<CardGroup cols={2}>
+  <Card title="Raw Data" icon="database">
+    Unprocessed data files used for processing and analysis. Restricted to users with the `katim` role.
+  </Card>
+
+  <Card title="Arsip Data" icon="archive">
+    Published documents, reports, and statistical tables that have been archived for general reference. Accessible to all authenticated users.
+  </Card>
+</CardGroup>
+
+## Supported file formats
+
+Both views accept the same file types when uploading:
+
+| Format | Extension |
+| --- | --- |
+| CSV (comma-separated values) | `.csv` |
+| Excel spreadsheet | `.xlsx`, `.xls` |
+| ZIP archive | `.zip` |
+| RAR archive | `.rar` |
+
+## What each record contains
+
+Every data file entry — whether raw or archived — stores the following fields:
+
+| Field | Description |
+| --- | --- |
+| **Nama Data** | Display name of the data file, e.g. "Data Penduduk 2024" |
+| **Fungsi** | The statistical function or division the data belongs to (e.g., Distribusi, Produksi, Sosial, IPDS) |
+| **Keterangan** | A short description or notes about the file |
+| **File** | The attached file (CSV, Excel, ZIP, or RAR) |
+
+---
+
+## Raw Data (`/bank-data/raw`)
+
+The Raw Data view stores unprocessed data files collected during statistical activities. These files are the source material for further processing and analysis.
+
+<Warning>
+  Access to the Raw Data view is restricted to users with the **katim** role. If you do not have this role, you will not be able to open this page.
+</Warning>
+
+### Upload a new raw data file
+
+<Steps>
+  <Step title="Navigate to Raw Data">
+    Go to **Bank Data → Raw Data** in the sidebar.
+  </Step>
+  <Step title="Click Tambah Data">
+    Click the **Tambah Data** button in the top-right corner.
+  </Step>
+  <Step title="Select the Fungsi">
+    In the **Fungsi** dropdown, select the statistical function this data belongs to (e.g., Sosial, Distribusi).
+  </Step>
+  <Step title="Enter the data name">
+    In **Nama Data**, type a clear, descriptive name — for example, "Data Susenas Maret 2024".
+  </Step>
+  <Step title="Add a description (optional)">
+    Enter a **Keterangan** to describe the file's contents, source, or coverage period.
+  </Step>
+  <Step title="Attach the file">
+    Click the **File Attachment** field and select a `.csv`, `.xlsx`, `.xls`, `.zip`, or `.rar` file from your computer. A file is required when adding a new entry.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The entry appears in the table immediately.
+  </Step>
+</Steps>
+
+### Edit a raw data entry
+
+<Steps>
+  <Step title="Find the entry">
+    Use the search bar or Fungsi filter to locate the entry.
+  </Step>
+  <Step title="Click the edit button">
+    Click the pencil icon on the right side of the row.
+  </Step>
+  <Step title="Update the fields">
+    Change the name, description, Fungsi, or replace the attached file. When editing, uploading a new file is optional — leaving the file field empty keeps the existing file.
+  </Step>
+  <Step title="Save">
+    Click **Simpan** to apply the changes.
+  </Step>
+</Steps>
+
+### Download a file
+
+Click the **download icon** (arrow pointing down) on any row that has an attached file. The file will download directly to your computer.
+
+### Delete a raw data entry
+
+Click the trash icon on the row and confirm the deletion in the dialog.
+
+<Warning>
+  Deleting a raw data entry is permanent. The record and its attached file are removed immediately and cannot be recovered.
+</Warning>
+
+---
+
+## Arsip Data (`/bank-data/arsip`)
+
+The Arsip Data view stores published documents, reports, and statistical tables that have been formally archived for reference. This section is accessible to all authenticated SImentor users.
+
+### Browse archived files
+
+Open **Bank Data → Arsip Data** in the sidebar. The table lists all archived entries with their name, Fungsi, description, and attached file.
+
+### Add a new archive entry
+
+<Steps>
+  <Step title="Click Arsip Baru">
+    Click the **Arsip Baru** button in the top-right corner.
+  </Step>
+  <Step title="Select the Fungsi">
+    Choose the statistical function from the **Fungsi** dropdown.
+  </Step>
+  <Step title="Enter the data name">
+    Type a descriptive name in **Nama Data**, such as "Laporan Kemiskinan Kabupaten 2023".
+  </Step>
+  <Step title="Add a description (optional)">
+    Use **Keterangan** to note what the archive contains, its period, or its source.
+  </Step>
+  <Step title="Attach the file">
+    Select a `.csv`, `.xlsx`, `.xls`, `.zip`, or `.rar` file. A file is required when creating a new archive entry.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**.
+  </Step>
+</Steps>
+
+### Download an archived file
+
+Click the **download icon** on any row with an attached file to save it to your computer.
+
+---
+
+## Search and filter data files
+
+Both the Raw Data and Arsip Data views share the same search and filter controls.
+
+<Tabs>
+  <Tab title="Search by name">
+    Type in the **Cari nama data...** search bar to filter entries by their **Nama Data** field. Results update as you type.
+  </Tab>
+  <Tab title="Filter by Fungsi">
+    Use the **Semua Fungsi** dropdown next to the search bar to show only entries belonging to a specific statistical function — for example, only Sosial or only IPDS data.
+  </Tab>
+  <Tab title="Reset">
+    Clear the search bar and set the Fungsi dropdown back to **Semua Fungsi** to see all entries again.
+  </Tab>
+</Tabs>
+
+The total count of data entries for the current view is shown below the page header, updated in real time as you search or filter.

@@ -1,0 +1,149 @@
+---
+title: "IT Support Tickets: Submit and Track Help Requests"
+description: "Submit, track, and resolve IT support requests in SImentor's IPDS module — covering seven issue categories from printer faults to network and account problems."
+---
+
+The Tiket Bantuan IT page at `/ipds/tiket` is your central place to report IT problems and track their progress to resolution. When something breaks — a printer that won't respond, a network outage, or a software issue — you submit a ticket here and the IPDS team handles it.
+
+## What a ticket contains
+
+Each ticket records the following information:
+
+| Field | Description |
+| --- | --- |
+| **ID** | Unique ticket number, shown as `#123` |
+| **Jenis Keluhan** | Category of the issue (see list below) |
+| **Deskripsi** | Full description of the problem as reported |
+| **Pelapor** | Name of the staff member who submitted the ticket |
+| **Status** | Current handling stage (see statuses below) |
+| **Keterangan** | Notes added by the handler when updating the ticket |
+| **Tanggal** | Date the ticket was created |
+
+### Issue categories (Jenis Keluhan)
+
+When submitting a ticket, you choose from these categories:
+
+- **Sistem** — system-level errors or outages
+- **Software** — application bugs or installation issues
+- **Printer** — printer faults or connectivity problems
+- **Hardware PC/Laptop** — physical device failures
+- **Jaringan** — network or internet connectivity problems
+- **Akun BPS** — BPS account access issues
+- **Lainnya** — anything that doesn't fit the above categories
+
+## Ticket statuses
+
+The **Status** badge on each row tells you where the ticket stands:
+
+| Status | Meaning |
+| --- | --- |
+| **Pending** | Submitted but not yet picked up |
+| **In Progress** | Being actively worked on by the IPDS team |
+| **Selesai Ditangani** | Handled and closed by the team |
+| **Resolved** | Marked resolved |
+| **closed** | Ticket is closed |
+
+<Note>
+  When the IPDS team updates your ticket, they may add a **Keterangan** explaining what was done or what further action is required on your end.
+</Note>
+
+## Ticket summary stats
+
+At the top of the page, four summary cards give you an instant overview:
+
+<CardGroup cols={4}>
+  <Card title="Total Tiket" icon="message-square">
+    All tickets ever submitted
+  </Card>
+
+  <Card title="Pending" icon="alert-circle">
+    Awaiting action from the IPDS team
+  </Card>
+
+  <Card title="Diproses" icon="clock">
+    Currently being handled
+  </Card>
+
+  <Card title="Selesai / Ditutup" icon="check-circle">
+    Resolved or closed tickets
+  </Card>
+</CardGroup>
+
+## Submit a new ticket
+
+<Steps>
+  <Step title="Click Tiket Baru">
+    Click the **Tiket Baru** button in the top-right corner of the page.
+  </Step>
+  <Step title="Select the issue category">
+    In the **Jenis Keluhan** dropdown, choose the category that best describes your problem — for example, Printer, Jaringan, or Software.
+  </Step>
+  <Step title="Describe the problem">
+    In the **Deskripsi** field, write a clear description of the issue. Include relevant details: which device is affected, what error message appeared, and when the problem started.
+  </Step>
+  <Step title="Submit">
+    Click **Simpan**. Your ticket appears in the table with a **Pending** status.
+  </Step>
+</Steps>
+
+<Tip>
+  The more detail you include in **Deskripsi**, the faster the IPDS team can diagnose the issue without needing to follow up.
+</Tip>
+
+## Update a ticket (handler)
+
+When the IPDS team resolves or progresses a ticket, they update its status and optionally add notes:
+
+<Steps>
+  <Step title="Find the ticket">
+    Locate the ticket in the table using the search bar or filters.
+  </Step>
+  <Step title="Click the edit button">
+    Click the pencil icon on the right side of the ticket row.
+  </Step>
+  <Step title="Set the new status">
+    Choose from **Selesai**, **Perlu Perbaikan**, or **Pending** in the **Status** dropdown.
+  </Step>
+  <Step title="Add a note (optional)">
+    Enter a **Keterangan** to explain the resolution or any follow-up needed.
+  </Step>
+  <Step title="Save">
+    Click **Simpan** to apply the changes.
+  </Step>
+</Steps>
+
+## Delete a ticket
+
+Click the trash icon on the ticket row, then confirm in the dialog that appears.
+
+<Warning>
+  Deleting a ticket is permanent. The ticket and all its data will be removed immediately. Only delete tickets that were created in error.
+</Warning>
+
+## Search and filter tickets
+
+<Tabs>
+  <Tab title="Search">
+    Type in the search bar above the table to filter tickets in real time. The search matches against:
+
+    - Problem description (`Deskripsi`)
+    - Reporter name (`Pelapor`)
+    - Issue category (`Jenis Keluhan`)
+    - Status
+  </Tab>
+  <Tab title="Filter by category">
+    Click **Filter** to open the filter panel, then select a **Jenis Keluhan** from the dropdown to show only tickets of that category — for example, only Printer tickets.
+  </Tab>
+  <Tab title="Sort order">
+    In the filter panel, use the **Urutkan** dropdown:
+
+    - **Terbaru** — newest tickets first (default)
+    - **Terlama** — oldest tickets first
+    - **Status** — sorted alphabetically by status
+  </Tab>
+  <Tab title="Reset">
+    Click **Reset** in the filter panel to clear all active filters and return to the default view.
+  </Tab>
+</Tabs>
+
+The filter panel shows a result count below the filter controls — for example, "Menampilkan 5 dari 24 data" — so you always know how many tickets match your current selection.

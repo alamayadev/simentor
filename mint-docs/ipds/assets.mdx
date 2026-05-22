@@ -1,0 +1,202 @@
+---
+title: "IT Asset Inventory: Track Hardware, Software, Network"
+description: "Add, edit, and manage the office IT asset inventory in SImentor — covering computers, printers, network gear, warranty tracking, and maintenance schedules."
+---
+
+The Asset TI page at `/ipds/asset` gives the IPDS team a complete inventory of all IT hardware, software, and network equipment owned by the office. Each asset record tracks its identity, location, condition, and upcoming maintenance schedule in one place.
+
+## What an asset record contains
+
+<Accordion title="Identity fields">
+  | Field | Description |
+  | --- | --- |
+  | **Kode Asset** | Unique asset code, e.g. `AS-001` |
+  | **Tipe** | Asset type: `hardware`, `software`, or `network` |
+  | **Kategori** | Device category: Server, Laptop, Desktop, Monitor, Printer, or Router |
+  | **Brand** | Manufacturer name, e.g. Dell, Lenovo |
+  | **Model** | Model name or number, e.g. PowerEdge R740 |
+  | **Serial Number** | Manufacturer serial number |
+  | **Device** | Optional device label |
+</Accordion>
+
+<Accordion title="Location and assignment">
+  | Field | Description |
+  | --- | --- |
+  | **Lokasi** | Physical location of the asset, e.g. "Data Center Jakarta" |
+  | **Pengguna** | Name of the staff member or team the asset is assigned to |
+  | **IP Address** | Network IP address (for networked devices) |
+</Accordion>
+
+<Accordion title="Status and lifecycle">
+  | Field | Description |
+  | --- | --- |
+  | **Status** | Operational status (see table below) |
+  | **Tanggal Pembelian** | Date the asset was purchased |
+  | **Tanggal Pengiriman** | Date the asset was delivered |
+  | **Garansi Berakhir** | Date the manufacturer warranty expires |
+  | **License Key** | Software license key (for software assets) |
+</Accordion>
+
+<Accordion title="Value">
+  | Field | Description |
+  | --- | --- |
+  | **Purchase Value** | Original purchase price (IDR) |
+  | **Depreciation Value** | Accumulated depreciation |
+  | **Value (net)** | Current book value after depreciation |
+</Accordion>
+
+### Asset statuses
+
+| Status | Meaning |
+| --- | --- |
+| **active** | Available and operational, not yet assigned |
+| **in-use** | Currently in active use by a staff member or team |
+| **maintenance** | Temporarily out of service for maintenance |
+| **retired** | Decommissioned, no longer in use |
+| **expired** | Software license or warranty has expired |
+
+### Asset condition (from statistics)
+
+The summary cards at the top of the page show condition counts from the statistics endpoint:
+
+- **Baik** — in good working condition
+- **Rusak Ringan** — minor damage or wear
+- **Rusak Berat** — severe damage, likely needs replacement
+
+## Asset summary stats
+
+Four cards at the top of the page give you a quick overview of the inventory:
+
+<CardGroup cols={4}>
+  <Card title="Total Aset" icon="hard-drive">
+    Total number of assets in the inventory
+  </Card>
+
+  <Card title="Baik" icon="monitor">
+    Assets in good condition
+  </Card>
+
+  <Card title="Rusak Ringan" icon="wrench">
+    Assets with minor damage
+  </Card>
+
+  <Card title="Rusak Berat" icon="cpu">
+    Assets with severe damage
+  </Card>
+</CardGroup>
+
+## View the asset inventory
+
+The asset table shows **Kode Asset**, **Brand/Model**, **Serial Number**, **Kategori**, **Lokasi**, **Pengguna**, **Status**, and purchase year with current book value for each asset.
+
+To see full details for any asset, click the **chevron arrow** on the left of the row. The row expands to show all fields including IP Address, License Key, warranty dates, and any scheduled maintenance entries.
+
+## Add a new asset record
+
+<Steps>
+  <Step title="Click Tambah Asset">
+    Click the **Tambah Asset** button in the top-right corner of the page.
+  </Step>
+  <Step title="Fill in the required fields">
+    The form requires at minimum:
+
+    - **Kode Asset** — enter a unique code such as `AS-042`
+    - **Tipe** — select Hardware, Software, or Network
+    - **Kategori** — select the device category
+    - **Brand** — enter the manufacturer name
+    - **Model** — enter the model name
+    - **Lokasi** — enter the physical location
+    - **Status** — set the initial status
+  </Step>
+  <Step title="Fill in optional fields">
+    Add any known optional details: Serial Number, Pengguna, purchase dates, warranty expiry, IP Address, or License Key.
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The new asset appears in the inventory immediately.
+  </Step>
+</Steps>
+
+## Edit an existing asset
+
+<Steps>
+  <Step title="Find the asset">
+    Use the search bar or filters to locate the asset in the table.
+  </Step>
+  <Step title="Click the edit button">
+    Click the pencil icon on the right side of the asset row.
+  </Step>
+  <Step title="Update the fields">
+    Change any fields as needed — for example, update **Status** to `maintenance`, change **Lokasi** after a device is moved, or add a **Pengguna** when assigning the device.
+  </Step>
+  <Step title="Save">
+    Click **Simpan** to apply the changes.
+  </Step>
+</Steps>
+
+## Delete an asset
+
+Click the trash icon on the asset row, then confirm in the dialog.
+
+<Warning>
+  Deleting an asset also permanently deletes all its maintenance schedules. This action cannot be undone.
+</Warning>
+
+## Maintenance schedules
+
+Each asset can have one or more upcoming maintenance entries. To view them, expand the asset row by clicking the chevron arrow.
+
+### Add a maintenance schedule
+
+<Steps>
+  <Step title="Expand the asset row">
+    Click the chevron arrow on the left of the asset row to open the detail view.
+  </Step>
+  <Step title="Click Tambah in the Jadwal Maintenance section">
+    Find the **Jadwal Maintenance** section at the bottom of the expanded row and click **Tambah**.
+  </Step>
+  <Step title="Fill in the schedule">
+    Enter the **Jadwal Maintenance** (next maintenance date) and the **Tim Bertanggung Jawab** (responsible team name, e.g. "Infrastructure Team").
+  </Step>
+  <Step title="Save">
+    Click **Simpan**. The schedule appears under the asset immediately.
+  </Step>
+</Steps>
+
+You can edit or delete individual maintenance entries using the pencil and trash icons next to each schedule entry.
+
+## Search and filter assets
+
+<Tabs>
+  <Tab title="Search">
+    Type in the search bar to filter assets in real time. The search matches against:
+
+    - `Kode Asset`
+    - `Brand` and `Model`
+    - `Lokasi`
+    - `Pengguna`
+    - `Kategori`
+    - `Status`
+  </Tab>
+  <Tab title="Filter by type">
+    Click **Filter** to open the filter panel. Use the **Tipe** dropdown to show only `hardware`, `software`, or `network` assets.
+  </Tab>
+  <Tab title="Filter by category">
+    In the filter panel, use the **Kategori** dropdown to show only a specific device category — for example, only Laptop or only Printer assets.
+  </Tab>
+  <Tab title="Filter by status">
+    Use the **Status** dropdown to show assets in a specific state — for example, only assets currently in **maintenance**.
+  </Tab>
+  <Tab title="Sort order">
+    Use the **Urutkan** dropdown to change the sort:
+
+    - **Terbaru** — by most recent purchase date (default)
+    - **Terlama** — by oldest purchase date
+    - **Kode Asset** — alphabetically by asset code
+    - **Status** — alphabetically by status
+  </Tab>
+  <Tab title="Reset">
+    Click **Reset** in the filter panel to clear all filters and restore the default view.
+  </Tab>
+</Tabs>
+
+The filter panel shows a result count below the controls — for example, "Menampilkan 8 dari 42 data".
